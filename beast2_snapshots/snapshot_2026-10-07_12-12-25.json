@@ -1,0 +1,2923 @@
+{
+  "timestamp": "2026-10-07_12-12-25",
+  "data": {
+    "BEAST.base": {
+      "repo": "CompEvol/beast2",
+      "releases": {
+        "v2.7.8": {
+          "BEAST.app.package.v2.7.8.zip": 11377,
+          "BEAST.base.package.v2.7.8.zip": 11374
+        },
+        "v2.7.7": {
+          "BEAST.app.package.v2.7.7.zip": 2813,
+          "BEAST.base.package.v2.7.7.zip": 2283,
+          "BEAST.v2.7.7.Windows.zip": 25172
+        },
+        "v2.7.6": {
+          "BEAST.app.package.v2.7.6.zip": 2146,
+          "BEAST.base.package.v2.7.6.zip": 1899,
+          "BEAST.v2.7.6.Windows.zip": 7107
+        },
+        "v2.7.5": {
+          "BEAST.app.package.v2.7.5.zip": 1870,
+          "BEAST.base.package.v2.7.5.zip": 1600,
+          "BEAST.v2.7.5.Windows.zip": 4768
+        },
+        "v2.7.4": {
+          "BEAST.app.package.v2.7.4.zip": 1130,
+          "BEAST.base.package.v2.7.4.zip": 905,
+          "BEAST.v2.7.4.Windows.zip": 3483
+        },
+        "v2.7.3": {
+          "BEAST.app.addon.v2.7.3.zip": 873,
+          "BEAST.base.addon.v2.7.3.zip": 569,
+          "BEAST.v2.7.3.Windows.zip": 3099
+        },
+        "2.7.2": {
+          "BEAST.app.addon.v2.7.2.zip": 1663,
+          "BEAST.base.addon.v2.7.2.zip": 1673
+        },
+        "v2.7.1": {
+          "BEAST.v2.7.1.Windows.zip": 3006
+        },
+        "v2.7.0": {
+          "BEAST.v2.7.0.Windows.zip": 1206
+        },
+        "v2.6.7": {
+          "BEAST.package.v2.6.7.zip": 383,
+          "BEAST.v2.6.7.Windows.zip": 3076,
+          "BEAST_with_JRE.v2.6.7.Windows.zip": 3034
+        },
+        "v2.6.6": {
+          "BEAST.v2.6.6.Windows.zip": 3454,
+          "BEAST_with_JRE.v2.6.6.Windows.zip": 4123
+        },
+        "v2.6.5": {
+          "BEAST.package.v2.6.5.zip": 282
+        },
+        "v2.6.4": {
+          "BEAST.v2.6.4.Windows.zip": 1745,
+          "BEAST_with_JRE.v2.6.4.Windows.zip": 1976
+        },
+        "v2.6.3": {
+          "BEAST.package.v2.6.3.zip": 1507,
+          "BEAST.v2.6.3.Windows.zip": 4844,
+          "BEAST_with_JRE.v2.6.3.Windows.zip": 5435
+        },
+        "v2.6.2": {
+          "BEAST.package.v2.6.2.zip": 1286,
+          "BEAST.v2.6.2.Windows.zip": 3302,
+          "BEAST_with_JRE.v2.6.2.Windows.zip": 3301
+        },
+        "v2.6.1": {
+          "BEAST.package.v2.6.1.zip": 12336
+        },
+        "v2.6.0": {
+          "BEAST.v2.6.0.Windows.zip": 8741,
+          "BEAST_with_JRE.v2.6.0.Windows.zip": 498,
+          "BEAST_with_JRE2.v2.6.0.Windows.zip": 4715
+        },
+        "v2.5.2": {
+          "BEAST.v2.5.2.Windows.zip": 4059,
+          "BEAST_with_jre.v2.5.2.Windows.zip": 4091
+        },
+        "v2.5.1": {
+          "BEAST.package.v2.5.1.zip": 244,
+          "BEAST.v2.5.1.Windows.zip": 3941,
+          "BEAST_with_JRE.v2.5.1.Windows.zip": 3555
+        },
+        "v2.5.0": {
+          "BEAST.v2.5.0.Windows.zip": 3326,
+          "BEAST_with_JRE.v2.5.0.Windows.zip": 2597
+        },
+        "v2.4.8": {
+          "BEAST.v2.4.8.addon.zip": 826,
+          "BEAST.v2.4.8.Windows.zip": 4722,
+          "BEAST_with_JRE.v2.4.2.Windows.zip": 228
+        },
+        "v2.4.7": {
+          "BEAST.addon.v2.4.7.zip": 423,
+          "BEAST.v2.4.7.Windows.zip": 5789
+        },
+        "v2.4.6": {
+          "BEAST.addon.v2.4.6.zip": 234,
+          "BEAST.v2.4.6.Windows.zip": 2068
+        },
+        "v2.4.5": {
+          "BEAST.addon.v2.4.5.zip": 223,
+          "BEAST.v2.4.5.Windows.zip": 2978
+        },
+        "v2.4.4": {
+          "BEAST.addon.v2.4.4.zip": 206,
+          "BEAST.v2.4.4.Windows.zip": 2019
+        },
+        "v2.4.3": {
+          "BEAST.addon.v2.4.3.zip": 247,
+          "BEAST.v2.4.3.Windows.zip": 1942
+        },
+        "v2.4.2": {
+          "BEAST.addon.v2.4.2.zip": 93,
+          "BEAST.v2.4.2.Windows.zip": 1423
+        },
+        "v2.4.1": {
+          "BEAST.addon.v2.4.1.zip": 129,
+          "BEAST.v2.4.1.Windows.zip": 973
+        },
+        "v2.4.0": {
+          "beast.package.2.4.0.zip": 54,
+          "BEAST.v2.4.0.Windows.zip": 1443
+        },
+        "2.3.3pre": {
+          "BEAST.v2.3.3pre3.Windows.zip": 178
+        },
+        "v2.3.2": {
+          "BEAST.v2.3.2.Windows.zip": 1789
+        },
+        "v2.3.1": {
+          "BEAST.v2.3.1.Windows.zip": 1698
+        },
+        "v2.3.0": {
+          "BEAST.v2.3.0.Windows.zip": 1862
+        },
+        "v2.2.1": {
+          "BEAST.v2.2.1.Windows.zip": 2038
+        },
+        "V2.2.0": {
+          "BEAST.v2.2.0.Windows.repackaged.zip": 134,
+          "BEAST.v2.2.0.Windows.zip": 1479
+        },
+        "v2.1.3": {
+          "BEAST.v2.1.3.zip": 10460
+        },
+        "v2.1.2": {
+          "BEAST.v2.1.2.zip": 19274
+        },
+        "v2.1.1": {
+          "BEAST.v2.1.1.zip": 19485
+        },
+        "v2.1.0": {
+          "BEAST.v2.1.0.Windows.zip": 168
+        },
+        "v2.0.2": {
+          "BEAST.v2.0.2.Windows.zip": 409
+        }
+      }
+    },
+    "BEASTLabs": {
+      "repo": "BEAST2-Dev/BEASTLabs",
+      "releases": {
+        "v2.1.0-beta1": {
+          "BEASTLabs.v2.1.0.zip": 26
+        },
+        "v2.0.0": {
+          "BEASTlabs.addon.v2.0.0.zip": 9105,
+          "BEASTlabs.package.v2.0.1.zip": 759,
+          "BEASTlabs.package.v2.0.2.zip": 15462,
+          "BEASTLabs.package.v2.0.3.zip": 11194
+        },
+        "v1.9.0": {
+          "BEASTlabs.addon.v1.9.0.zip": 11891,
+          "BEASTlabs.addon.v1.9.1.zip": 6725,
+          "BEASTlabs.addon.v1.9.2.zip": 5168,
+          "BEASTlabs.addon.v1.9.3.zip": 332,
+          "BEASTlabs.addon.v1.9.4.zip": 2254,
+          "BEASTlabs.addon.v1.9.5.zip": 3318
+        },
+        "v1.8.0": {
+          "BEASTlabs.addon.v1.8.0.zip": 2325,
+          "BEASTlabs.addon.v1.8.1.zip": 3346,
+          "BEASTlabs.addon.v1.8.2.zip": 9114,
+          "BEASTlabs.addon.v1.8.2pre.zip": 11
+        },
+        "v1.7.0": {
+          "BEASTlabs.addon.v1.7.0.zip": 1701,
+          "BEASTlabs.addon.v1.7.1.zip": 4578
+        },
+        "v1.6.0": {
+          "BEASTlabs.addon.v1.6.0.zip": 332
+        },
+        "v1.5.0": {
+          "BEASTlabs.addon.v1.5.0.zip": 203,
+          "BEASTlabs.addon.v1.5.1.zip": 24,
+          "BEASTlabs.addon.v1.5.2.zip": 108,
+          "BEASTlabs.addon.v1.5.3.zip": 577
+        },
+        "v1.4.0": {
+          "BEASTlabs.addon.v1.4.0.zip": 68
+        },
+        "v1.3.0": {
+          "BEASTlabs.addon.v1.3.0.zip": 103,
+          "BEASTlabs.addon.v1.3.1.zip": 791,
+          "BEASTlabs.addon.v1.3.2.zip": 533,
+          "BEASTlabs.addon.v1.3.3.zip": 123,
+          "BEASTlabs.addon.v1.3.4.zip": 9,
+          "BEASTlabs.addon.v1.3.5.zip": 612
+        }
+      }
+    },
+    "bModelTest": {
+      "repo": "BEAST2-Dev/bModelTest",
+      "releases": {
+        "v1.4.0": {
+          "BMT.v1.4.0.zip": 9
+        },
+        "v1.3.3": {
+          "bModelTest.addon.v1.3.3.zip": 6084
+        },
+        "v.1.3.2": {
+          "bModelTest.addon.v1.3.2.zip": 636
+        },
+        "v1.3.0": {
+          "bModelTest.addon.v1.3.0.zip": 221,
+          "bModelTest.addon.v1.3.1.zip": 70
+        },
+        "v1.2.0": {
+          "bModelTest.addon.v1.2.0.zip": 208,
+          "bModelTest.addon.v1.2.1.zip": 2836
+        },
+        "v1.1.0": {
+          "bModelTest.addon.v1.1.0.zip": 445,
+          "bModelTest.addon.v1.1.1.zip": 106,
+          "bModelTest.addon.v1.1.2.zip": 2065
+        },
+        "v1.0.0": {
+          "bModelTest.addon.v1.0.0.zip": 124,
+          "bModelTest.addon.v1.0.1.zip": 33,
+          "bModelTest.addon.v1.0.2.zip": 101,
+          "bModelTest.addon.v1.0.3.zip": 390,
+          "bModelTest.addon.v1.0.4.zip": 1717
+        },
+        "v0.3.0": {
+          "bModelTest.addon.v0.3.0.zip": 76,
+          "bModelTest.addon.v0.3.1.zip": 102,
+          "bModelTest.addon.v0.3.2.zip": 370,
+          "bModelTest.addon.v0.3.3.zip": 215
+        },
+        "v0.2.0": {
+          "bModelTest.addon.v0.2.0.zip": 65
+        },
+        "0.0.1": {
+          "bModelTest.addon.v0.0.1.zip": 19,
+          "bModelTest.addon.v0.0.2.zip": 156,
+          "bModelTest.addon.v0.1.0.zip": 21,
+          "bModelTest.addon.v0.1.1.zip": 271,
+          "bModelTest.addon.v0.1.2.zip": 13,
+          "bModelTest.addon.v0.1.3.zip": 440
+        }
+      }
+    },
+    "OBAMA": {
+      "repo": "rbouckaert/obama",
+      "releases": {
+        "v1.1.2": {
+          "OBAMA.v1.1.2.zip": 6
+        },
+        "v.1.1.1": {
+          "OBAMA.addon.v1.1.1.zip": 1516
+        },
+        "v1.1.0": {
+          "OBAMA.addon.v1.1.0.zip": 83
+        },
+        "v0.2.0": {
+          "OBAMA.addon.v0.2.0.zip": 676
+        },
+        "v0.1.0": {
+          "OBAMA.addon.v0.1.0.zip": 39
+        },
+        "v0.0.1": {
+          "OBAMA.addon.v0.0.1.zip": 19
+        }
+      }
+    },
+    "BICEPS": {
+      "repo": "rbouckaert/biceps",
+      "releases": {
+        "v1.2.0": {
+          "BICEPS.v1.2.0.zip": 6
+        },
+        "v1.1.2": {
+          "BICEPS.addon.v1.1.2.zip": 2021
+        },
+        "v1.1.0": {
+          "BICEPS.addon.v1.1.0.zip": 245,
+          "BICEPS.addon.v1.1.1.zip": 775
+        }
+      }
+    },
+    "ORC": {
+      "repo": "jordandouglas/ORC",
+      "releases": {
+        "v1.3.1": {
+          "ORC.v1.3.1.zip": 59
+        },
+        "v1.3.0": {
+          "ORC.v1.3.0.zip": 19
+        },
+        "v1.2.1": {
+          "ORC.addon.v1.2.1.zip": 9439
+        },
+        "v1.2.0": {
+          "ORC.addon.v1.2.0.zip": 10824
+        },
+        "v1.1.2": {
+          "ORC.addon.v1.1.2.zip": 5527
+        },
+        "v1.1.1": {
+          "ORC.addon.v1.1.1.zip": 8024
+        },
+        "v1.1.0": {
+          "ORC.addon.v1.1.0.zip": 1031
+        },
+        "v1.0.0": {
+          "ORC.addon.v1.0.0.zip": 27,
+          "ORC.addon.v1.0.1.zip": 51,
+          "ORC.addon.v1.0.2.zip": 41
+        }
+      }
+    },
+    "speedemon": {
+      "repo": "rbouckaert/speedemon",
+      "releases": {
+        "v1.2.0": {
+          "speedemon.v1.2.0.zip": 3
+        },
+        "publish": {
+          "speedemon.addon.v1.1.0.zip": 1945
+        }
+      }
+    },
+    "gammaspike": {
+      "repo": "jordandouglas/GammaSpikeModel",
+      "releases": {
+        "v1.3.0": {
+          "gammaspike.v1.3.0.zip": 6
+        },
+        "v1.2.0": {
+          "gammaspike.package.v1.2.0.zip": 229
+        },
+        "v1.1.0": {
+          "gammaspike.package.v1.1.0.zip": 214
+        },
+        "v1.0.1": {
+          "gammaspike.package.v1.0.1.zip": 59
+        },
+        "v1.0.0": {
+          "gammaspike.package.v1.0.0.zip": 64
+        },
+        "v0.0.3": {
+          "gammaspike.package.v0.0.3.zip": 19
+        },
+        "v0.0.2": {
+          "gammaspike.package.v0.0.2.zip": 12
+        },
+        "v0.0.1": {
+          "gammaspike.package.v0.0.1.zip": 8
+        }
+      }
+    },
+    "resub": {
+      "repo": "jordandouglas/resub",
+      "releases": {
+        "v1.0.0": {
+          "resub.v1.0.0.package.zip": 206
+        },
+        "v0.0.1": {
+          "resub.package.v0.0.1.zip": 9
+        }
+      }
+    },
+    "contraband": {
+      "repo": "fkmendes/contraband",
+      "releases": {
+        "v1.0.2": {
+          "contraband.addon.v1.0.2.zip": 452
+        }
+      }
+    },
+    "Babel": {
+      "repo": "rbouckaert/Babel",
+      "releases": {
+        "v0.4.0": {
+          "Babel.addon.v0.4.0.zip": 265,
+          "Babel.addon.v0.4.1.zip": 422,
+          "Babel.addon.v0.4.2.zip": 1422
+        },
+        "v0.3.0": {
+          "Babel.addon.v0.3.0.zip": 12,
+          "Babel.addon.v0.3.1.zip": 641
+        },
+        "v0.2.0": {
+          "Babel.addon.v0.2.0.zip": 180,
+          "Babel.addon.v0.2.1.zip": 8463
+        },
+        "0.0.1": {
+          "Babel.addon.v0.1.0.zip": 35,
+          "Babel.addon.v0.1.1.zip": 85,
+          "Babel.addon.v0.1.2.zip": 19,
+          "Babel.addon.v0.1.3.zip": 51,
+          "Babel.addon.v0.1.4.zip": 88,
+          "Babel.addon.v0.1.5.zip": 53,
+          "Babel.addon.v0.1.6.zip": 33,
+          "Babel.addon.v0.1.7.zip": 37,
+          "tutorial_data.zip": 10
+        }
+      }
+    },
+    "BEAST_CLASSIC": {
+      "repo": "BEAST2-Dev/beast-classic",
+      "releases": {
+        "v1.7.0-beta1": {
+          "BEAST_CLASSIC.v1.7.0.zip": 25
+        },
+        "v1.6.0": {
+          "BEAST_CLASSIC.addon.v1.6.0.zip": 1195,
+          "BEAST_CLASSIC.addon.v1.6.1.zip": 27,
+          "BEAST_CLASSIC.package.v1.6.2.zip": 477,
+          "BEAST_CLASSIC.package.v1.6.3.zip": 1881,
+          "BEAST_CLASSIC.package.v1.6.4.zip": 3485
+        },
+        "v1.5.0": {
+          "BEAST_CLASSIC.addon.v1.5.0.zip": 1639
+        },
+        "v1.4.0": {
+          "BEAST_CLASSIC.addon.v1.4.0.zip": 1707
+        },
+        "v1.3.0": {
+          "BEAST_CLASSIC.addon.v1.3.0.zip": 1156,
+          "BEAST_CLASSIC.addon.v1.3.1.zip": 143,
+          "BEAST_CLASSIC.addon.v1.3.2.zip": 831
+        },
+        "v1.2.0": {
+          "BEAST_CLASSIC.addon.v1.2.0.zip": 94,
+          "BEAST_CLASSIC.addon.v1.2.1.zip": 1063
+        }
+      }
+    },
+    "SNAPP": {
+      "repo": "BEAST2-Dev/SNAPP",
+      "releases": {
+        "v1.6.0": {
+          "SNAPP.addon.v1.6.0.zip": 217,
+          "SNAPP.addon.v1.6.1.zip": 5090
+        },
+        "v1.5.0": {
+          "SNAPP.addon.v1.5.0.zip": 2314,
+          "SNAPP.addon.v1.5.1.zip": 983
+        },
+        "v1.4.0": {
+          "SNAPP.addon.v1.4.0.zip": 289,
+          "SNAPP.addon.v1.4.1.zip": 494,
+          "SNAPP.addon.v1.4.2.zip": 2388
+        },
+        "v1.3.0": {
+          "SNAPP.addon.v1.3.0.zip": 3996
+        },
+        "v1.2.0": {
+          "SNAPP.addon.v1.2.0.zip": 24,
+          "SNAPP.addon.v1.2.1.zip": 256,
+          "SNAPP.addon.v1.2.2.zip": 73,
+          "SNAPP.addon.v1.2.3.zip": 110,
+          "SNAPP.addon.v1.2.4.zip": 298,
+          "SNAPP.addon.v1.2.5.zip": 798
+        }
+      }
+    },
+    "snapper": {
+      "repo": "rbouckaert/snapper",
+      "releases": {
+        "v1.1.0": {
+          "snapper.addon.v1.1.0.zip": 505,
+          "snapper.addon.v1.1.1.zip": 111,
+          "snapper.addon.v1.1.2.zip": 367,
+          "snapper.addon.v1.1.3.zip": 508,
+          "snapper.package.v1.1.4.zip": 1127,
+          "snapper.package.v1.1.5.zip": 1129
+        },
+        "v1.0.0": {
+          "snapper.addon.v1.0.0.zip": 259
+        },
+        "v0.0.1": {
+          "snapper.addon.v0.0.1.zip": 31
+        }
+      }
+    },
+    "TreeStat2": {
+      "repo": "alexeid/TreeStat2",
+      "releases": {
+        "v0.2.0": {
+          "TreeStat2.v0.2.0.zip": 805
+        },
+        "v0.1.0": {
+          "TreeStat2.v0.1.0.zip": 418,
+          "TreeStat2.v0.1.1.zip": 911
+        },
+        "v0.0.1": {
+          "TreeStat2.v0.0.1.zip": 62,
+          "TreeStat2.v0.0.2.zip": 1747
+        }
+      }
+    },
+    "starbeast3": {
+      "repo": "rbouckaert/starbeast3",
+      "releases": {
+        "v1.3.0": {
+          "starbeast3.v1.3.0.zip": 7
+        },
+        "v1.2.1": {
+          "starbeast3.addon.v1.2.1.zip": 8857
+        },
+        "v1.2.0": {
+          "starbeast3.addon.v1.2.0.zip": 222
+        },
+        "v1.1.9": {
+          "starbeast3.addon.v1.1.9.zip": 6443
+        },
+        "v1.1.8": {
+          "starbeast3.addon.v1.1.8.zip": 7672
+        },
+        "v1.1.7": {
+          "starbeast3.addon.v1.1.7.zip": 5844
+        },
+        "v1.1.6": {
+          "starbeast3.addon.v1.1.6.zip": 911
+        },
+        "v1.1.5": {
+          "starbeast3.addon.v1.1.5.zip": 585
+        },
+        "v1.1.4": {
+          "starbeast3.addon.v1.1.4.zip": 1009
+        },
+        "v.1.1.3": {
+          "starbeast3.addon.v1.1.3.zip": 1769
+        },
+        "v.1.1.2": {
+          "starbeast3.addon.v1.1.2.zip": 735
+        },
+        "v.1.1.1": {
+          "starbeast3.addon.v1.1.1.zip": 346
+        },
+        "v1.1.0": {
+          "starbeast3.addon.v1.1.0.zip": 45
+        },
+        "v0.0.1": {
+          "starbeast3.addon.v0.0.1.zip": 35
+        }
+      }
+    },
+    "SpeciesNetwork": {
+      "repo": "zhangchicool/speciesnetwork",
+      "releases": {
+        "v1.0.0": {
+          "SpeciesNetwork.zip": 1148
+        },
+        "v0.13.0": {
+          "SpeciesNetwork.zip": 820,
+          "Tutorial.zip": 289
+        },
+        "v0.12.2": {
+          "SpeciesNetwork.zip": 31
+        }
+      }
+    },
+    "MODEL_SELECTION": {
+      "repo": "BEAST2-Dev/model-selection",
+      "releases": {
+        "v1.7.0": {
+          "MODEL_SELECTION.v1.7.0.zip": 5
+        },
+        "v1.6.0": {
+          "MODEL_SELECTION.addon.v1.6.0.zip": 828,
+          "MODEL_SELECTION.addon.v1.6.1.zip": 766,
+          "MODEL_SELECTION.addon.v1.6.2.zip": 3550
+        },
+        "v1.5.0": {
+          "MODEL_SELECTION.addon.v1.5.0.zip": 1664,
+          "MODEL_SELECTION.addon.v1.5.1.zip": 1301,
+          "MODEL_SELECTION.addon.v1.5.2.zip": 16708,
+          "MODEL_SELECTION.addon.v1.5.3.zip": 3727
+        },
+        "v1.4.0": {
+          "MODEL_SELECTION.addon.v1.4.0.zip": 185,
+          "MODEL_SELECTION.addon.v1.4.1.zip": 376,
+          "MODEL_SELECTION.addon.v1.4.2.zip": 9301
+        },
+        "v1.3.0": {
+          "MODEL_SELECTION.addon.v1.3.0.zip": 22,
+          "MODEL_SELECTION.addon.v1.3.1.zip": 287,
+          "MODEL_SELECTION.addon.v1.3.2.zip": 277,
+          "MODEL_SELECTION.addon.v1.3.3.zip": 269,
+          "MODEL_SELECTION.addon.v1.3.4.zip": 2205
+        },
+        "v1.2.0": {
+          "MODEL_SELECTION.addon.v1.2.0.zip": 66
+        },
+        "v1.1.0": {
+          "MODEL_SELECTION.addon.v1.1.0.zip": 459,
+          "MODEL_SELECTION.addon.v1.1.1.zip": 197,
+          "MODEL_SELECTION.addon.v1.1.2.zip": 16,
+          "MODEL_SELECTION.addon.v1.1.3.zip": 463
+        }
+      }
+    },
+    "NS": {
+      "repo": "BEAST2-Dev/nested-sampling",
+      "releases": {
+        "v1.3.1": {
+          "NS.v1.3.1.zip": 6
+        },
+        "v1.2.0": {
+          "NS.addon.v1.2.0.zip": 585,
+          "NS.package.v1.2.1.zip": 674,
+          "NS.package.v1.2.2.zip": 1172
+        },
+        "v1.1.0": {
+          "NS.addon.v1.1.0.zip": 30836
+        },
+        "v1.0.0": {
+          "NS.addon.v1.0.0.zip": 69,
+          "NS.addon.v1.0.1.zip": 315,
+          "NS.addon.v1.0.2.zip": 1185,
+          "NS.addon.v1.0.3.zip": 3073,
+          "NS.addon.v1.0.4.zip": 6933
+        },
+        "v0.1.0": {
+          "NS.addon.v0.1.0.zip": 26
+        },
+        "v0.0.1": {
+          "NS.addon.v0.0.1.zip": 26
+        }
+      }
+    },
+    "CoupledMCMC": {
+      "repo": "nicfel/CoupledMCMC",
+      "releases": {
+        "v1.3.0-beta1": {
+          "CoupledMCMC.v1.3.0.zip": 15
+        },
+        "v1.2.0": {
+          "CoupledMCMC.v1.2.0.zip": 722,
+          "CoupledMCMC.v1.2.1.zip": 945,
+          "CoupledMCMC.v1.2.2.zip": 1251
+        },
+        "v1.1.0": {
+          "CoupledMCMC.v1.1.0.zip": 49
+        },
+        "v1.0.2": {
+          "CoupledMCMC.v1.0.2.zip": 410
+        },
+        "v1.0.1": {
+          "CoupledMCMC.v1.0.1.zip": 500
+        },
+        "v1.0.0": {
+          "CoupledMCMC.v1.0.0.zip": 17
+        },
+        "v0.1.8": {
+          "CoupledMCMC.v0.1.8.zip": 342
+        },
+        "v0.1.7": {
+          "CoupledMCMC.v0.1.7.zip": 340
+        },
+        "v0.1.6": {
+          "CoupledMCMC.v0.1.6.zip": 148
+        },
+        "v0.1.5": {
+          "CoupledMCMC.v0.1.5.zip": 101
+        },
+        "v0.1.4": {
+          "CoupledMCMC.v0.1.4.zip": 77
+        },
+        "v0.1.3": {
+          "CoupledMCMC.v0.1.3.zip": 93
+        },
+        "v0.1.2": {
+          "CoupledMCMC.v0.1.2.zip": 90
+        },
+        "v0.1.1": {
+          "CoupledMCMC.v0.1.1.zip": 13
+        },
+        "v0.1.0": {
+          "CoupledMCMC.v0.1.0.zip": 28
+        },
+        "v0.0.1": {
+          "CoupledMCMC.v0.0.1.zip": 7
+        }
+      }
+    },
+    "MM": {
+      "repo": "CompEvol/morph-models",
+      "releases": {
+        "v1.3.0": {
+          "MM.v1.3.0.zip": 12
+        },
+        "v1.2.0": {
+          "MM.addon.v1.2.0.zip": 274,
+          "MM.addon.v1.2.1.zip": 4647
+        },
+        "untagged-74152ea8507b4e08d3ad": {
+          "MM.addon.v1.1.1.zip": 5531
+        },
+        "v1.1.0": {
+          "MM.addon.v1.1.0.zip": 294
+        },
+        "1.0.5": {
+          "MM.addon.v1.0.5.zip": 1872
+        },
+        "1.0.4": {
+          "MM.addon.v1.0.4.zip": 591
+        },
+        "v1.0.3": {
+          "MM.addon.v1.0.3.zip": 481
+        },
+        "v1.0.2": {
+          "MM.addon.v1.0.2.zip": 38
+        },
+        "v1.0.1": {
+          "MM.addon.v1.0.1.zip": 317
+        },
+        "pre-v1.0.0": {
+          "MM.addon.v1.0.0.zip": 78
+        }
+      }
+    },
+    "GEO_SPHERE": {
+      "repo": "BEAST2-Dev/beast-geo",
+      "releases": {
+        "v1.4.0": {
+          "GEO_SPHERE.addon.v1.4.0.zip": 522,
+          "GEO_SPHERE.package.v1.4.1.zip": 1054,
+          "GEO_SPHERE.package.v1.4.2.zip": 731
+        },
+        "v1.3.0": {
+          "GEO_SPHERE.addon.v1.3.0.zip": 995
+        },
+        "v1.2.0": {
+          "GEO_SPHERE.addon.v1.2.0.zip": 418,
+          "GEO_SPHERE.addon.v1.2.1.zip": 82,
+          "GEO_SPHERE.addon.v1.2.1.zip.old.zip": 35,
+          "GEO_SPHERE.addon.v1.2.1.zip.old2.zip": 20,
+          "GEO_SPHERE.addon.v1.2.2.zip": 787
+        },
+        "v1.1.0": {
+          "GEO_SPHERE.addon.v1.1.0.zip": 33,
+          "GEO_SPHERE.addon.v1.1.1.zip": 549,
+          "GEO_SPHERE.addon.v1.1.2.zip": 964
+        },
+        "v1.0.0": {
+          "GEO_SPHERE.addon.v1.0.0.zip": 35
+        },
+        "v0.3.0": {
+          "GEO_SPHERE.addon.v0.3.0.zip": 49,
+          "GEO_SPHERE.addon.v0.3.1.zip": 6,
+          "GEO_SPHERE.addon.v0.3.2.zip": 213
+        },
+        "v0.2.0": {
+          "GEO_SPHERE.addon.v0.2.0.zip": 48
+        },
+        "v0.0.6": {
+          "GEO_SPHERE.addon.v0.0.6.zip": 26,
+          "GEO_SPHERE.addon.v0.0.8.zip": 55,
+          "GEO_SPHERE.addon.v0.0.9.zip": 97,
+          "GEO_SPHERE.addon.v0.1.0.zip": 13,
+          "GEO_SPHERE.addon.v0.1.1.zip": 167,
+          "GEO_SPHERE.addon.v0.1.2.zip": 141,
+          "GEO_SPHERE.addon.v0.1.3.zip": 14,
+          "GEO_SPHERE.addon.v0.1.4.zip": 302
+        }
+      }
+    },
+    "BREAK_AWAY": {
+      "repo": "rbouckaert/break-away",
+      "releases": {
+        "v1.2.0": {
+          "BREAK_AWAY.addon.v1.2.0.zip": 1184
+        },
+        "v1.0.0": {
+          "BREAK_AWAY.addon.v1.0.0.zip": 1095
+        },
+        "v0.0.1": {
+          "BREAK_AWAY.addon.v0.0.1.zip": 39
+        }
+      }
+    },
+    "SSM": {
+      "repo": "BEAST2-Dev/substmodels",
+      "releases": {
+        "v1.3.0": {
+          "SSM.v1.3.0.zip": 5,
+          "SSM.v1.3.1.zip": 6
+        },
+        "v1.2.0": {
+          "SSM.v1.2.0.zip": 2468,
+          "SSM.v1.2.1.zip": 479,
+          "SSM.v1.2.2.zip": 1039
+        },
+        "v1.1.0": {
+          "SSM.v1.1.0.zip": 2332
+        },
+        "v1.0.1": {
+          "SSM.v1.0.1.zip": 790
+        },
+        "v1.0.0": {
+          "SSM.v1.0.0.zip": 187
+        },
+        "v0.0.3": {
+          "SSM.v0.0.3.zip": 9
+        },
+        "v0.0.2": {
+          "SSM.v0.0.2.zip": 6
+        }
+      }
+    },
+    "MGSM": {
+      "repo": "BEAST2-Dev/MGSM",
+      "releases": {
+        "v0.4.0": {
+          "MGSM.addon.v0.4.0.zip": 1210
+        },
+        "v0.3.0": {
+          "MGSM.addon.v0.3.0.zip": 1205
+        },
+        "v0.2.0": {
+          "MGSM.addon.v0.2.0.zip": 188,
+          "MGSM.addon.v0.2.1.zip": 900
+        },
+        "0.0.1": {
+          "MSGM.addon.v0.0.1.zip": 14,
+          "MSGM.addon.v0.0.2.zip": 310,
+          "MSGM.addon.v0.1.0.zip": 4,
+          "MSGM.addon.v0.1.1.zip": 7,
+          "MSGM.addon.v0.1.2.zip": 5,
+          "MSGM.addon.v0.1.3.zip": 426
+        }
+      }
+    },
+    "SA": {
+      "repo": "CompEvol/sampled-ancestors",
+      "releases": {
+        "v2.3.0-beta2": {
+          "SA.v2.3.0.zip": 13
+        },
+        "v2.2.0": {
+          "SA.v2.2.0.zip": 6
+        },
+        "v2.1.1": {
+          "SA.v2.1.1.zip": 24891
+        },
+        "v2.1.0": {
+          "SA.v2.1.0.zip": 3897
+        },
+        "v2.0.2": {
+          "SA.v2.0.2.zip": 3578
+        },
+        "v2.0.1": {
+          "SA.v2.0.1.zip": 2682
+        },
+        "2.0.0": {
+          "SA.v2.0.0.zip": 1009
+        },
+        "v1.1.7": {
+          "SA.addon.v1.1.7.zip": 2770
+        },
+        "v1.1.6": {
+          "SA.addon.v1.1.6.zip": 162
+        },
+        "v1.1.4": {
+          "SA.addon.v1.1.4.zip": 246,
+          "SA.addon.v1.1.5.zip": 519
+        },
+        "v1.1.3": {
+          "SA.addon.v1.1.3.zip": 970
+        }
+      }
+    },
+    "BDSKY": {
+      "repo": "BEAST2-Dev/bdsky",
+      "releases": {
+        "v1.5.1": {
+          "BDSKY.v1.5.1.zip": 2694
+        },
+        "v1.4.8": {
+          "BDSKY.v1.4.8.zip": 1979
+        },
+        "v1.5.0": {
+          "BDSKY.v1.5.0.zip": 3084
+        },
+        "v1.4.7": {
+          "BDSKY.v1.4.7.zip": 27
+        },
+        "v1.4.6": {
+          "BDSKY.v1.4.6.zip": 958
+        },
+        "1.4.5": {
+          "BDSKY.addon.v1.4.5.zip": 3969
+        },
+        "1.4.4": {
+          "BDSKY.addon.v1.4.4.zip": 299
+        },
+        "v1.4.3": {
+          "BDSKY.addon.v1.4.3.zip": 382
+        },
+        "1.4.2": {
+          "BDSKY.addon.1.4.2.zip": 232
+        },
+        "1.4.1": {
+          "BDSKY.addon.1.4.1.zip": 375
+        },
+        "1.4.0": {
+          "BDSKY.addon.1.4.0.zip": 432
+        },
+        "1.3.3": {
+          "BDSKY.addon.1.3.3.zip": 2208
+        },
+        "1.3.2": {
+          "BDSKY.addon.1.3.2.zip": 347
+        },
+        "1.3.1": {
+          "BDSKY.addon.1.3.1.zip": 37
+        },
+        "1.3.0": {
+          "BDSKY.addon.1.3.0.zip": 62
+        },
+        "1.2.2": {
+          "BDSKY.addon.1.2.2.zip": 1383
+        }
+      }
+    },
+    "feast": {
+      "repo": "tgvaughan/feast",
+      "releases": {
+        "v11.0.1": {
+          "feast.v11.0.1.zip": 19
+        },
+        "v11.0.0": {
+          "feast.v11.0.0.zip": 2
+        },
+        "v10.6.1": {
+          "feast.v10.6.1.zip": 725
+        },
+        "v10.6.0": {
+          "feast.v10.6.0.zip": 442
+        },
+        "v10.5.0": {
+          "feast.v10.5.0.zip": 453
+        },
+        "v10.4.0": {
+          "feast.v10.4.0.zip": 680
+        },
+        "v10.3.1": {
+          "feast.v10.3.1.zip": 299
+        },
+        "v10.3.0": {
+          "feast.v10.3.0.zip": 425
+        },
+        "v10.2.0": {
+          "feast.v10.2.0.zip": 234
+        },
+        "v10.1.0": {
+          "feast.v10.1.0.zip": 27
+        },
+        "v10.0.0": {
+          "feast.v10.0.0.zip": 113
+        },
+        "v9.8.5": {
+          "feast.v9.8.5.zip": 52
+        },
+        "v9.8.4": {
+          "feast.v9.8.4.zip": 64
+        },
+        "v9.8.3": {
+          "feast.v9.8.3.zip": 8
+        },
+        "v9.8.2": {
+          "feast.v9.8.2.zip": 28
+        },
+        "v9.8.1": {
+          "feast.v9.8.1.zip": 38
+        },
+        "v9.8.0": {
+          "feast.v9.8.0.zip": 30
+        },
+        "v9.7.1": {
+          "feast.v9.7.1.zip": 73
+        },
+        "v9.7.0": {
+          "feast.v9.7.0.zip": 44
+        },
+        "v8.4.0": {
+          "feast.v8.4.0.zip": 560
+        },
+        "v9.6.3": {
+          "feast.v9.6.3.zip": 160
+        },
+        "v9.6.2": {
+          "feast.v9.6.2.zip": 53
+        },
+        "v9.6.1": {
+          "feast.v9.6.1.zip": 3
+        },
+        "v9.6.0": {
+          "feast.v9.6.0.zip": 69
+        },
+        "v9.5.0": {
+          "feast.v9.5.0.zip": 19
+        },
+        "v9.4.0": {
+          "feast.v9.4.0.zip": 631
+        },
+        "v9.3.1": {
+          "feast.v9.3.1.zip": 99
+        },
+        "v9.3.0": {
+          "feast.v9.3.0.zip": 50
+        },
+        "v9.2.1": {
+          "feast.v9.2.1.zip": 178
+        },
+        "v8.3.1": {
+          "feast.v8.3.1.zip": 333
+        },
+        "v9.2.0": {
+          "feast.v9.2.0.zip": 273
+        },
+        "v8.3.0": {
+          "feast.v8.3.0.zip": 204
+        },
+        "v9.1.1": {
+          "feast.v9.1.1.zip": 35
+        },
+        "v8.2.0": {
+          "feast.v8.2.0.zip": 76
+        },
+        "v9.1.0": {
+          "feast.v9.1.0-jarsOnly.zip": 1,
+          "feast.v9.1.0.zip": 45
+        },
+        "v9.0.0": {
+          "feast.v9.0.0-jarsOnly.zip": 3,
+          "feast.v9.0.0.zip": 43
+        },
+        "v8.1.0": {
+          "feast.v8.1.0-jarsOnly.zip": 2,
+          "feast.v8.1.0.zip": 330
+        },
+        "v8.0.0": {
+          "feast.v8.0.0-jarsOnly.zip": 1,
+          "feast.v8.0.0.zip": 19
+        },
+        "v7.15.0": {
+          "feast.v7.15.0-jarsOnly.zip": 1,
+          "feast.v7.15.0.zip": 121
+        },
+        "v7.13.0": {
+          "feast.v7.13.0-jarsOnly.zip": 2,
+          "feast.v7.13.0.zip": 386
+        },
+        "v7.12.1": {
+          "feast.v7.12.1-jarsOnly.zip": 1,
+          "feast.v7.12.1.zip": 51
+        },
+        "v7.12.0": {
+          "feast.v7.12.0-jarsOnly.zip": 1,
+          "feast.v7.12.0.zip": 42
+        },
+        "v7.11.0": {
+          "feast.v7.11.0-jarsOnly.zip": 8,
+          "feast.v7.11.0.zip": 92
+        },
+        "v7.10.0": {
+          "feast.v7.10.0-jarsOnly.zip": 1,
+          "feast.v7.10.0.zip": 95
+        },
+        "v7.9.3": {
+          "feast.v7.9.3-jarsOnly.zip": 1,
+          "feast.v7.9.3.zip": 161
+        },
+        "v7.9.2": {
+          "feast.v7.9.2-jarsOnly.zip": 6,
+          "feast.v7.9.2.zip": 103
+        },
+        "v7.9.1": {
+          "feast.v7.9.1-jarsOnly.zip": 7,
+          "feast.v7.9.1.zip": 16
+        },
+        "v7.9.0": {
+          "feast.v7.9.0-jarsOnly.zip": 6,
+          "feast.v7.9.0.zip": 15
+        },
+        "v7.8.0": {
+          "feast.v7.8.0-jarsOnly.zip": 8,
+          "feast.v7.8.0.zip": 7
+        },
+        "v7.7.0": {
+          "feast.v7.7.0.zip": 8
+        },
+        "v7.6.0": {
+          "feast.v7.6.0-jarsOnly.zip": 7,
+          "feast.v7.6.0.zip": 7
+        },
+        "v7.5.3": {
+          "feast.v7.5.3.zip": 51
+        },
+        "v7.5.2": {
+          "feast.v7.5.2-jarsOnly.zip": 9,
+          "feast.v7.5.2.zip": 54
+        },
+        "v7.5.1": {
+          "feast.v7.5.1-jarsOnly.zip": 9,
+          "feast.v7.5.1.zip": 10
+        },
+        "v7.5.0": {
+          "feast.v7.5.0-jarsOnly.zip": 10,
+          "feast.v7.5.0.zip": 15
+        },
+        "v7.4.1": {
+          "feast.v7.4.1-jarsOnly.zip": 3,
+          "feast.v7.4.1.zip": 7
+        },
+        "v7.4.0": {
+          "feast.v7.4.0-jarsOnly.zip": 9,
+          "feast.v7.4.0.zip": 12
+        },
+        "v7.3.0": {
+          "feast.v7.3.0-jarsOnly.zip": 9,
+          "feast.v7.3.0.zip": 19
+        },
+        "v7.2.1": {
+          "feast.v7.2.1-jarsOnly.zip": 9,
+          "feast.v7.2.1.zip": 11
+        },
+        "v7.2.0": {
+          "feast.v7.2.0-jarsOnly.zip": 6,
+          "feast.v7.2.0.zip": 13
+        },
+        "v7.1.1": {
+          "feast.v7.1.1-jarsOnly.zip": 4,
+          "feast.v7.1.1.zip": 11
+        },
+        "v7.1.0": {
+          "feast.v7.1.0-jarsOnly.zip": 5,
+          "feast.v7.1.0.zip": 9
+        },
+        "v7.0.1": {
+          "feast.v7.0.1-jarsOnly.zip": 6,
+          "feast.v7.0.1.zip": 7
+        },
+        "v7.0.0": {
+          "feast.v7.0.0-jarsOnly.zip": 6,
+          "feast.v7.0.0.zip": 7
+        },
+        "v6.1.1": {
+          "feast.v6.1.1-jarsOnly.zip": 7,
+          "feast.v6.1.1.zip": 12
+        },
+        "v6.1.0": {
+          "feast.v6.1.0-jarsOnly.zip": 9,
+          "feast.v6.1.0.zip": 7
+        },
+        "v6.0.0": {
+          "feast.v6.0.0-jarsOnly.zip": 6,
+          "feast.v6.0.0.zip": 8
+        },
+        "v5.2.0": {
+          "feast.v5.2.0-jarsOnly.zip": 8,
+          "feast.v5.2.0.zip": 21
+        },
+        "v5.1.0": {
+          "feast.v5.1.0-jarsOnly.zip": 7,
+          "feast.v5.1.0.zip": 10
+        },
+        "v5.0.0": {
+          "feast.v5.0.0-jarsOnly.zip": 19,
+          "feast.v5.0.0.zip": 12
+        },
+        "v4.5.0": {
+          "feast.v4.5.0-jarsOnly.zip": 7,
+          "feast.v4.5.0.zip": 6
+        },
+        "v4.4.0": {
+          "feast.v4.4.0-jarsOnly.zip": 6,
+          "feast.v4.4.0.zip": 9
+        },
+        "v4.3.0": {
+          "feast.v4.3.0-jarsOnly.zip": 9,
+          "feast.v4.3.0.zip": 10
+        },
+        "v4.2.0": {
+          "feast.v4.2.0-jarsOnly.zip": 9,
+          "feast.v4.2.0.zip": 14
+        },
+        "v4.1.0": {
+          "feast.v4.1.0-jarsOnly.zip": 7,
+          "feast.v4.1.0.zip": 9
+        },
+        "v4.0.0": {
+          "feast.v4.0.0-jarsOnly.zip": 7,
+          "feast.v4.0.0.zip": 8
+        },
+        "v3.1.0": {
+          "feast.v3.1.0-jarsOnly.zip": 7,
+          "feast.v3.1.0.zip": 7
+        },
+        "v3.0.0": {
+          "feast.v3.0.0-jarsOnly.zip": 7,
+          "feast.v3.0.0.zip": 7
+        },
+        "v2.2.1": {
+          "feast.v2.2.1-jarsOnly.zip": 6,
+          "feast.v2.2.1.zip": 6
+        },
+        "v2.2.0": {
+          "feast.v2.2.0-jarsOnly.zip": 6,
+          "feast.v2.2.0.zip": 6
+        },
+        "v2.1.0": {
+          "feast.v2.1.0-jarsOnly.zip": 6,
+          "feast.v2.1.0.zip": 7
+        },
+        "v2.0.0": {
+          "feast.v2.0.0-jarsOnly.zip": 7,
+          "feast.v2.0.0.zip": 9
+        },
+        "v1.8.1": {
+          "feast.v1.8.1-jarsOnly.zip": 8,
+          "feast.v1.8.1.zip": 8
+        },
+        "v1.8.0": {
+          "feast.v1.8.0-jarsOnly.zip": 8,
+          "feast.v1.8.0.zip": 8
+        },
+        "v1.7.1": {
+          "feast.v1.7.1-jarsOnly.zip": 9,
+          "feast.v1.7.1.zip": 10
+        },
+        "v1.7.0": {
+          "feast.v1.7.0.zip": 9
+        },
+        "v1.6.0": {
+          "feast.v1.6.0-jarsOnly.zip": 6,
+          "feast.v1.6.0.zip": 10
+        },
+        "v1.5.1": {
+          "feast.v1.5.1-jarsOnly.zip": 9,
+          "feast.v1.5.1.zip": 12
+        },
+        "v1.5.0": {
+          "feast.v1.5.0-jarsOnly.zip": 6,
+          "feast.v1.5.0.zip": 34
+        },
+        "v1.4.0": {
+          "feast.v1.4.0.zip": 21
+        },
+        "v1.3.0": {
+          "feast.v1.3.0.zip": 18
+        },
+        "v1.2.0": {
+          "feast.v1.2.0.zip": 10
+        },
+        "1.1.0": {
+          "feast.v1.1.0.zip": 8
+        },
+        "v1.0.0": {
+          "feast.v1.0.0.zip": 9
+        }
+      }
+    },
+    "TiDeTree": {
+      "repo": "seidels/tidetree",
+      "releases": {
+        "v1.0.2": {
+          "tidetree.v1.0.2.zip": 12
+        },
+        "v1.0.1": {
+          "tidetree.v1.0.1.zip": 554
+        },
+        "v1.0.0": {
+          "tidetree.v1.0.0.zip": 13
+        },
+        "v1.0.0-alpha.1": {
+          "tidetree.v1.0.0-alpha.1.zip": 11
+        }
+      }
+    },
+    "MultiTypeTree": {
+      "repo": "tgvaughan/MultiTypeTree",
+      "releases": {
+        "v8.3.0": {
+          "MultiTypeTree.v8.3.0.zip": 809
+        },
+        "v8.2.0": {
+          "MultiTypeTree.v8.2.0.zip": 545
+        },
+        "v8.1.0": {
+          "MultiTypeTree.v8.1.0.zip": 1028
+        },
+        "v8.0.0": {
+          "MultiTypeTree.v8.0.0.zip": 1055
+        },
+        "v7.0.2": {
+          "MultiTypeTree.v7.0.2.zip": 1658
+        },
+        "v7.0.1": {
+          "MultiTypeTree.v7.0.1.zip": 1114
+        },
+        "v7.0.0": {
+          "MultiTypeTree.v7.0.0.zip": 1483
+        },
+        "v6.3.1": {
+          "MultiTypeTree.v6.3.1.zip": 778
+        },
+        "v7.0.0-pre": {
+          "MultiTypeTree.v7.0.0-pre.zip": 30
+        },
+        "v6.3.0": {
+          "MultiTypeTree.v6.3.0.zip": 733
+        },
+        "v6.2.1": {
+          "MultiTypeTree.v6.2.1.zip": 617
+        },
+        "v6.2.0": {
+          "MultiTypeTree.v6.2.0.zip": 185
+        },
+        "v6.1.0": {
+          "MultiTypeTree.v6.1.0.zip": 104
+        },
+        "v6.0.0": {
+          "MultiTypeTree.v6.0.0.zip": 63
+        },
+        "v5.5.0": {
+          "MultiTypeTree.v5.5.0.zip": 320
+        },
+        "v5.4.1": {
+          "MultiTypeTree.v5.4.1.zip": 69
+        },
+        "v5.4.0": {
+          "MultiTypeTree.v5.4.0.zip": 312
+        },
+        "v5.3.0": {
+          "MultiTypeTree.v5.3.0.zip": 351
+        },
+        "v5.2.3": {
+          "MultiTypeTree.v5.2.3.zip": 15
+        },
+        "v5.2.2": {
+          "MultiTypeTree.v5.2.2.zip": 30
+        },
+        "v5.2.1": {
+          "MultiTypeTree.v5.2.1.zip": 121
+        },
+        "v4.0.0": {
+          "MultiTypeTree.v4.0.0.zip": 61
+        },
+        "v3.0.0": {
+          "MultiTypeTree.v3.0.0.zip": 298
+        },
+        "v2.0.2": {
+          "MultiTypeTree.v2.0.2.zip": 156
+        },
+        "v2.0.1": {
+          "MultiTypeTree.v2.0.1.zip": 53
+        }
+      }
+    },
+    "MASTER": {
+      "repo": "tgvaughan/MASTER",
+      "releases": {
+        "v7.0.0": {
+          "MASTER.v7.0.0.zip": 2301
+        },
+        "v6.1.2": {
+          "MASTER-6.1.2.zip": 30,
+          "MASTER.package.v6.1.2.zip": 1641
+        },
+        "v6.1.1": {
+          "MASTER-6.1.1.zip": 17,
+          "MASTER.package.v6.1.1.zip": 1079
+        },
+        "v6.1.0": {
+          "MASTER-6.1.0.zip": 25,
+          "MASTER.package.v6.1.0.zip": 1194
+        },
+        "v6.0.1": {
+          "MASTER-6.0.1.zip": 11,
+          "MASTER.package.v6.0.1.zip": 138
+        },
+        "v6.0.0": {
+          "MASTER-6.0.0.zip": 13,
+          "MASTER.package.v6.0.0.zip": 317
+        },
+        "v5.1.1": {
+          "MASTER-5.1.1.zip": 25,
+          "MASTER.package.v5.1.1.zip": 664
+        },
+        "v5.1.0": {
+          "MASTER-5.1.0.zip": 12,
+          "MASTER.package.v5.1.0.zip": 86
+        },
+        "v5.0.2": {
+          "MASTER-5.0.2.zip": 22,
+          "MASTER.package.v5.0.2.zip": 285
+        },
+        "v5.0.1": {
+          "MASTER-5.0.1.zip": 11,
+          "MASTER.package.v5.0.1.zip": 23
+        },
+        "v5.0.0": {
+          "MASTER-5.0.0.zip": 18,
+          "MASTER.package.v5.0.0.zip": 127
+        },
+        "v4.1.3": {
+          "MASTER-4.1.3.zip": 24,
+          "MASTER.package.v4.1.3.zip": 347
+        },
+        "v4.1.2": {
+          "MASTER-4.1.2.zip": 12,
+          "MASTER.package.v4.1.2.zip": 16
+        },
+        "v4.1.1": {
+          "MASTER-4.1.1.zip": 20,
+          "MASTER.package.v4.1.1.zip": 239
+        },
+        "v4.1.0": {
+          "MASTER-4.1.0.zip": 13,
+          "MASTER.package.v4.1.0.zip": 43
+        },
+        "v4.0.0": {
+          "MASTER-4.0.0.zip": 9,
+          "MASTER.package.v4.0.0.zip": 13
+        },
+        "v3.0.0": {
+          "MASTER-3.0.0.zip": 13,
+          "MASTER.package.v3.0.0.zip": 77
+        },
+        "v2.0.0": {
+          "MASTER-2.0.0.zip": 30,
+          "MASTER.package.v2.0.0.zip": 254
+        },
+        "v1.10.0": {
+          "MASTER-1.10.0.zip": 23,
+          "MASTER.package.v1.10.0.zip": 75
+        },
+        "v1.9.0": {
+          "MASTER-1.9.0.zip": 12,
+          "MASTER.package.v1.9.0.zip": 18
+        },
+        "v1.8.0": {
+          "MASTER-1.8.0.zip": 11,
+          "MASTER.package.v1.8.0.zip": 15
+        },
+        "v1.7.1": {
+          "MASTER-1.7.1.zip": 13,
+          "MASTER.package.v1.7.1.zip": 59
+        },
+        "v1.6.0": {
+          "MASTER-1.6.0.zip": 16,
+          "MASTER.package.v1.6.0.zip": 101
+        },
+        "v1.5.2": {
+          "MASTER-1.5.2.zip": 16,
+          "MASTER.addon.v1.5.2.zip": 32
+        },
+        "v1.4.1": {
+          "MASTER-1.4.1.zip": 24,
+          "MASTER.addon.v1.4.1.zip": 142
+        },
+        "v1.3.0": {
+          "MASTER-1.3.0.zip": 13
+        },
+        "v1.2.0": {
+          "MASTER-1.2.0.zip": 12
+        },
+        "v1.1.1": {
+          "MASTER-1.1.1.zip": 12
+        }
+      }
+    },
+    "ReMASTER": {
+      "repo": "tgvaughan/remaster",
+      "releases": {
+        "v3.0.1": {
+          "remaster.v3.0.1.zip": 5
+        },
+        "v3.0.0": {
+          "remaster.v3.0.0.zip": 0
+        },
+        "v2.7.4": {
+          "remaster.v2.7.4.zip": 210
+        },
+        "v2.7.3": {
+          "remaster.v2.7.3.zip": 146
+        },
+        "v2.7.2": {
+          "remaster.v2.7.2.zip": 504
+        },
+        "v2.7.1": {
+          "remaster.v2.7.1.zip": 12
+        },
+        "v2.7.0": {
+          "remaster.v2.7.0.zip": 94
+        },
+        "v2.6.2": {
+          "remaster.v2.6.2.zip": 146
+        },
+        "v2.6.1": {
+          "remaster.v2.6.1.zip": 6
+        },
+        "v2.6.0": {
+          "remaster.v2.6.0.zip": 19
+        },
+        "v2.5.1": {
+          "remaster.v2.5.1.zip": 90
+        },
+        "v2.5.0": {
+          "remaster.v2.5.0.zip": 76
+        },
+        "v2.4.0": {
+          "remaster.v2.4.0.zip": 39
+        },
+        "v2.3.3": {
+          "remaster.v2.3.3.zip": 60
+        },
+        "v2.3.2": {
+          "remaster.v2.3.2.zip": 39
+        },
+        "v2.3.1": {
+          "remaster.v2.3.1.zip": 5
+        },
+        "v2.3.0": {
+          "remaster.v2.3.0.zip": 19
+        },
+        "v2.2.0": {
+          "remaster.v2.2.0.zip": 12
+        },
+        "v2.1.0": {
+          "remaster.v2.1.0.zip": 4
+        },
+        "v2.0.0": {
+          "remaster.v2.0.0.zip": 2
+        },
+        "v1.0.0": {
+          "remaster.v1.0.0.zip": 23
+        },
+        "v0.0.3": {
+          "remaster.v0.0.3.zip": 5
+        },
+        "v0.0.2": {
+          "remaster.v0.0.2.zip": 3
+        },
+        "v0.0.1": {
+          "remaster.v0.0.1.zip": 6
+        }
+      }
+    },
+    "Mascot": {
+      "repo": "nicfel/Mascot",
+      "releases": {
+        "v3.1.0-beta1": {
+          "Mascot.v3.1.0.zip": 11
+        },
+        "v3.0.8": {
+          "Mascot.v3.0.8.zip": 37
+        },
+        "v3.0.7": {
+          "Mascot.v3.0.7.zip": 1592
+        },
+        "v3.0.6": {
+          "Mascot.v3.0.6.zip": 107
+        },
+        "v3.0.5": {
+          "Mascot.v3.0.5.zip": 15
+        },
+        "v3.0.4": {
+          "Mascot.v3.0.4.zip": 69
+        },
+        "v3.0.3": {
+          "Mascot.v3.0.3.zip": 41
+        },
+        "v3.0.2": {
+          "Mascot.v3.0.2.zip": 28
+        },
+        "v3.0.1": {
+          "Mascot.v3.1.0.zip": 13
+        },
+        "v3.0.0": {
+          "Mascot.v3.0.0.zip": 976
+        },
+        "v2.2.0": {
+          "Mascot.v2.2.0.zip": 22
+        },
+        "v2.1.3": {
+          "Mascot.v2.1.3.zip": 23
+        },
+        "v2.1.2": {
+          "Mascot.v2.1.2.zip": 333
+        },
+        "v2.1.1": {
+          "Mascot.v2.1.1.zip": 27
+        },
+        "v2.0.1": {
+          "Mascot.v2.0.1.zip": 32
+        },
+        "v2.0.0": {
+          "Mascot.v2.0.0.zip": 65
+        },
+        "v1.2.2": {
+          "Mascot.v1.2.2.zip": 1504
+        },
+        "v.1.2.1": {
+          "Mascot.v1.2.1.zip": 56
+        },
+        "v1.1.2": {
+          "Mascot.v1.1.2.zip": 248
+        },
+        "v1.1.1": {
+          "Mascot.v1.1.1.zip": 217
+        },
+        "v1.1.0": {
+          "Mascot.v1.1.0.zip": 86
+        },
+        "v1.0.3": {
+          "Mascot.v1.0.3.zip": 7
+        },
+        "v1.0.2": {
+          "Mascot.v1.0.2.zip": 240
+        },
+        "v1.0.1": {
+          "Mascot.v1.0.1.zip": 62
+        },
+        "v1.0.0": {
+          "Mascot.v1.0.0.zip": 80
+        },
+        "v0.0.6": {
+          "Mascot.v0.0.6.zip": 13
+        },
+        "v0.0.5": {
+          "Mascot.v0.0.5.zip": 390
+        },
+        "v0.0.4": {
+          "Mascot.v0.0.4.zip": 202
+        },
+        "v0.0.3": {
+          "Mascot.v0.0.3.zip": 100
+        },
+        "v0.0.2": {
+          "Mascot.v0.0.2.zip": 32
+        },
+        "v0.0.1": {
+          "Mascot.v0.0.1.zip": 16
+        }
+      }
+    },
+    "Recombination": {
+      "repo": "nicfel/Recombination",
+      "releases": {
+        "v1.0.1": {
+          "Recombination.v1.0.1.zip": 1121
+        },
+        "v1.0.0": {
+          "Recombination.v1.0.0.zip": 199
+        },
+        "v0.1.0": {
+          "Recombination.v0.1.0.zip": 8
+        },
+        "v0.0.2": {
+          "Recombination.v0.0.2.zip": 13
+        },
+        "v0.0.1": {
+          "Recombination.v0.0.1.zip": 3
+        }
+      }
+    },
+    "CoalRe": {
+      "repo": "nicfel/CoalRe",
+      "releases": {
+        "v3.0.3": {
+          "CoalRe.v3.0.3.zip": 28
+        },
+        "v2.7.1": {
+          "CoalRe.v2.7.1.zip": 6
+        },
+        "v2.6.3": {
+          "CoalRe.v2.6.3.zip": 26
+        },
+        "v2.4.0": {
+          "CoalRe.v2.4.0.zip": 3
+        },
+        "v2.2.1": {
+          "CoalRe.v2.2.1.zip": 5
+        },
+        "v2.0.0": {
+          "CoalRe.v2.0.0.zip": 5
+        },
+        "v1.0.4": {
+          "CoalRe.v1.0.4.zip": 1084
+        },
+        "v1.0.3": {
+          "CoalRe.v1.0.3.zip": 342
+        },
+        "v1.0.2": {
+          "CoalRe.v1.0.2.zip": 49
+        },
+        "v1.0.1": {
+          "CoalRe.v1.0.1.zip": 119
+        },
+        "v1.0.0": {
+          "CoalRe.v1.0.0.zip": 11
+        },
+        "v0.0.7": {
+          "CoalRe.v0.0.7.zip": 17
+        },
+        "v0.0.6": {
+          "CoalRe.v0.0.6.zip": 7
+        },
+        "v0.0.5": {
+          "CoalRe.v0.0.5.zip": 256
+        },
+        "v0.0.4": {
+          "CoalRe.v0.0.4.zip": 431
+        },
+        "v0.0.3": {
+          "CoalRe.v0.0.3.zip": 12
+        },
+        "v0.0.2": {
+          "CoalRe.v0.0.2.zip": 11
+        }
+      }
+    },
+    "CodonSubstModels": {
+      "repo": "BEAST2-Dev/codonsubstmodels",
+      "releases": {
+        "v2.0.0": {
+          "CodonSubstModels.v2.0.0.zip": 1156,
+          "CodonSubstModels.v2.0.1.zip": 426
+        },
+        "v1.1.3": {
+          "CodonSubstModels.v1.1.3.zip": 982
+        },
+        "v1.1.2": {
+          "CodonSubstModels.v1.1.2.zip": 226
+        },
+        "v1.1.1": {
+          "CodonSubstModels.v1.1.1.zip": 186
+        },
+        "v1.1.0": {
+          "CodonSubstModels.v1.1.0.zip": 350
+        }
+      }
+    },
+    "timtam": {
+      "repo": "aezarebski/timtam2",
+      "releases": {
+        "v0.4.1": {
+          "timtam.v0.4.1.zip": 37
+        },
+        "v0.4.0": {
+          "timtam.v0.4.0.zip": 993
+        },
+        "v0.3.1": {
+          "timtam.v0.3.1.zip": 292
+        },
+        "v0.3.0": {
+          "timtam.v0.3.0.zip": 4
+        },
+        "v0.2.1": {
+          "timtam.v0.2.1.zip": 8
+        },
+        "v0.2.0": {
+          "timtam.v0.2.0.zip": 13
+        },
+        "v0.1.1": {
+          "timtam.v0.1.1.zip": 12
+        },
+        "v0.1.0": {
+          "timtam.v0.1.0.zip": 8
+        }
+      }
+    },
+    "BEASTvntr": {
+      "repo": "arjun-1/BEASTvntr",
+      "releases": {
+        "v0.2.0": {
+          "BEASTvntr.addon.v0.2.0.zip": 1016
+        },
+        "v0.1.4pre": {
+          "BEASTvntr.addon.v0.1.4.zip": 5
+        },
+        "v0.1.3": {
+          "BEASTvntr.addon.v0.1.3.zip": 956
+        },
+        "v0.1.2": {
+          "BEASTvntr.addon.v0.1.2.zip": 242
+        },
+        "v0.1.1": {
+          "BEASTvntr.addon.v0.1.1.zip": 701
+        },
+        "v0.1.0": {
+          "BEASTvntr.addon.v0.1.0.zip": 233
+        },
+        "v0.0.2": {
+          "BEASTvntr.addon.v0.0.2.zip": 5
+        },
+        "v0.0.1": {
+          "BEASTvntr.addon.v0.0.1.zip": 13
+        }
+      }
+    },
+    "PIQMEE": {
+      "repo": "boskovav/piqmee",
+      "releases": {
+        "v1.1.0": {
+          "PIQMEE.v1.1.0.zip": 1174
+        },
+        "1.0.2": {
+          "PIQMEE.v1.0.2.zip": 135
+        },
+        "1.0.1": {
+          "PIQMEE.v1.0.1.zip": 52
+        },
+        "1.0.0": {
+          "PIQMEE.v1.0.0.zip": 112
+        },
+        "v0.0.3": {
+          "PIQMEE.v0.0.3.zip": 12
+        }
+      }
+    },
+    "EpiInf": {
+      "repo": "tgvaughan/epiinf",
+      "releases": {
+        "v8.0.1": {
+          "EpiInf.v8.0.1.zip": 4
+        },
+        "v8.0.0": {
+          "EpiInf.v8.0.0.zip": 1013
+        },
+        "v7.5.2": {
+          "EpiInf.v7.5.2.zip": 659
+        },
+        "v7.5.1": {
+          "EpiInf.v7.5.1.zip": 108
+        },
+        "v7.5.0": {
+          "EpiInf.v7.5.0.zip": 111
+        },
+        "v7.4.0": {
+          "EpiInf.v7.4.0.zip": 78
+        },
+        "v7.3.0": {
+          "EpiInf.v7.3.0.zip": 13
+        },
+        "v7.2.0": {
+          "EpiInf.v7.2.0.zip": 360
+        },
+        "v7.1.5": {
+          "EpiInf.v7.1.5.zip": 221
+        },
+        "v7.1.4": {
+          "EpiInf.v7.1.4.zip": 138
+        },
+        "v7.1.3": {
+          "EpiInf.v7.1.3.zip": 8
+        },
+        "v7.1.2": {
+          "EpiInf.v7.1.2.zip": 8
+        },
+        "v7.1.1": {
+          "EpiInf.v7.1.1.zip": 348
+        },
+        "v7.1.0": {
+          "EpiInf.v7.1.0.zip": 11
+        },
+        "v7.0.2": {
+          "EpiInf.v7.0.2.zip": 118
+        },
+        "v7.0.1": {
+          "EpiInf.v7.0.1.zip": 18
+        },
+        "v7.0.0": {
+          "EpiInf.v7.0.0.zip": 80
+        },
+        "v6.0.0": {
+          "EpiInf.v6.0.0.zip": 363
+        },
+        "v6.0.0-pre": {
+          "EpiInf.v6.0.0-pre.zip": 7
+        },
+        "v5.0.1": {
+          "EpiInf.v5.0.1.zip": 148
+        },
+        "v5.0.0": {
+          "EpiInf.v5.0.0.zip": 9
+        },
+        "v4.0.1": {
+          "EpiInf.v4.0.1.zip": 10
+        },
+        "v4.0.0": {
+          "EpiInf.v4.0.0.zip": 8
+        },
+        "v3.2.1": {
+          "EpiInf.v3.2.1.zip": 12
+        },
+        "v3.2.0": {
+          "EpiInf.v3.2.0.zip": 9
+        },
+        "v3.1.0": {
+          "EpiInf.v3.1.0.zip": 15
+        },
+        "v3.0.0": {
+          "EpiInf.v3.0.0.zip": 9
+        },
+        "v2.1.0": {
+          "EpiInf.v2.1.0.zip": 9
+        },
+        "v2.0.1": {
+          "EpiInf.v2.0.1.zip": 7
+        },
+        "v2.0.0": {
+          "EpiInf.v2.0.0.zip": 11
+        },
+        "v1.1.0": {
+          "EpiInf.v1.1.0.zip": 9
+        },
+        "v1.0.0": {
+          "EpiInf.v1.0.0.zip": 7
+        },
+        "v1.0.0-pre": {
+          "EpiInf.v1.0.0-pre.zip": 11
+        }
+      }
+    },
+    "FastRelaxedClockLogNormal": {
+      "repo": "Rong419/ConstantDistanceOperator",
+      "releases": {
+        "v1.2.0": {
+          "FastRelaxedClockLogNormal.addon.v1.2.0.zip": 2474
+        },
+        "v1.1.0": {
+          "FastRelaxedClockLogNormal.addon.v1.1.0.zip": 207,
+          "FastRelaxedClockLogNormal.addon.v1.1.1.zip": 68
+        },
+        "V1.0.0": {
+          "FastRelaxedClockLogNormal.addon.v1.0.0.zip": 170
+        },
+        "v0.0.5": {
+          "FastRelaxedClockLogNormal.addon.v0.0.5.zip": 13
+        },
+        "v0.0.4": {
+          "FastRelaxedClockLogNormal.addon.v0.0.4.zip": 7
+        },
+        "v0.0.3": {
+          "FastRelaxedClockLogNormal.addon.v0.0.3.zip": 9
+        },
+        "v0.0.2": {
+          "FastRelaxedClockLogNormal.addon.v0.0.2.zip": 7
+        },
+        "v0.0.1": {
+          "FastRelaxedClockLogNormal.addon.v0.0.1.zip": 8
+        }
+      }
+    },
+    "bacter": {
+      "repo": "tgvaughan/bacter",
+      "releases": {
+        "v3.0.1": {
+          "bacter.v3.0.1.zip": 1200
+        },
+        "v3.0.0": {
+          "bacter.v3.0.0.zip": 178
+        },
+        "v2.2.5": {
+          "bacter.v2.2.5.zip": 625
+        },
+        "v2.2.4": {
+          "bacter.v2.2.4.zip": 21
+        },
+        "v2.2.3": {
+          "bacter.v2.2.3.zip": 869
+        },
+        "v2.2.2": {
+          "bacter.v2.2.2.zip": 9
+        },
+        "v2.2.1": {
+          "bacter.v2.2.1.zip": 4031
+        },
+        "v2.2.0": {
+          "bacter.v2.2.0.zip": 983
+        },
+        "v2.1.1": {
+          "bacter.v2.1.1.zip": 79
+        },
+        "v2.1.0": {
+          "bacter.v2.1.0.zip": 71
+        },
+        "v2.0.1": {
+          "bacter.v2.0.1.zip": 32
+        },
+        "v2.0.0": {
+          "bacter.v2.0.0.zip": 24
+        },
+        "v1.2.3": {
+          "bacter.v1.2.3.zip": 433
+        },
+        "v1.2.2": {
+          "bacter.v1.2.2.zip": 122
+        },
+        "v1.2.1": {
+          "bacter.v1.2.1.zip": 389
+        },
+        "v1.2.0": {
+          "bacter.v1.2.0.zip": 83
+        },
+        "v1.1.1": {
+          "bacter.v1.1.1.zip": 52
+        },
+        "v1.1.0": {
+          "bacter.v1.1.0.zip": 113
+        },
+        "v1.0.1": {
+          "bacter.v1.0.1.zip": 137
+        },
+        "v1.0.0": {
+          "bacter.v1.0.0.zip": 53
+        },
+        "v1.0.0-pre6": {
+          "bacter.v1.0.0-pre6.zip": 257
+        },
+        "v1.0.0-pre5": {
+          "bacter.v1.0.0-pre5.zip": 153
+        },
+        "v1.0.0-pre4": {
+          "bacter.v1.0.0-pre4.zip": 86
+        },
+        "v1.0.0-pre3": {
+          "bacter.v1.0.0-pre3.zip": 30
+        },
+        "v1.0.0-pre2": {
+          "bacter.v1.0.0-pre2.zip": 84
+        },
+        "v1.0.0-pre": {
+          "bacter.v1.0.0-pre.zip": 51
+        }
+      }
+    },
+    "StarBEAST2": {
+      "repo": "genomescale/starbeast2",
+      "releases": {
+        "v1.0.0": {
+          "StarBEAST2-tutorial-data.zip": 94,
+          "StarBEAST2-tutorial-example-output.zip": 28,
+          "StarBEAST2-tutorial-example-xml-files.zip": 21,
+          "StarBEAST2.v1.0.0.zip": 3136
+        },
+        "v0.15.13": {
+          "StarBEAST2.v0.15.13.zip": 61
+        },
+        "v0.15.11": {
+          "StarBEAST2.zip": 299
+        },
+        "v0.15.10": {
+          "StarBEAST2-tutorial.zip": 394,
+          "StarBEAST2.zip": 7
+        },
+        "v0.15.9": {
+          "StarBEAST2-tutorial.zip": 24,
+          "StarBEAST2.zip": 9
+        },
+        "v0.15.7": {
+          "StarBEAST2.zip": 19
+        },
+        "v0.15.5": {
+          "StarBEAST2.zip": 3364
+        },
+        "v0.15.2": {
+          "StarBEAST2.zip": 1191
+        },
+        "v0.15.1": {
+          "StarBEAST2.zip": 709
+        },
+        "v0.15.0": {
+          "StarBEAST2.zip": 223
+        },
+        "v0.14.1": {
+          "StarBEAST2-tutorial.zip": 42,
+          "StarBEAST2.zip": 261
+        },
+        "v0.14.0": {
+          "StarBEAST2-tutorial.zip": 869,
+          "StarBEAST2.zip": 1154
+        },
+        "v0.13.5": {
+          "StarBEAST2.zip": 1008
+        },
+        "v0.13.4": {
+          "StarBEAST2.zip": 21
+        },
+        "v0.13.3": {
+          "StarBEAST2.zip": 113
+        },
+        "v0.13.2": {
+          "StarBEAST2.zip": 184
+        },
+        "v0.13.1": {
+          "StarBEAST2.zip": 291
+        },
+        "v0.13.0": {
+          "starbeast2.zip": 116
+        },
+        "v0.12.1": {
+          "starbeast2.zip": 172
+        },
+        "v0.12.0": {
+          "starbeast2.zip": 125
+        },
+        "v0.11.0": {
+          "starbeast2.zip": 52
+        },
+        "v0.10.0": {
+          "starbeast2.zip": 39
+        },
+        "v0.9.0": {
+          "starbeast2.zip": 40
+        },
+        "v0.8.0": {
+          "starbeast2.zip": 37
+        },
+        "v0.7.2": {
+          "starbeast2.zip": 130
+        },
+        "v0.6.1": {
+          "starbeast2.zip": 10
+        },
+        "v0.3.0": {
+          "starbeast2.zip": 7
+        },
+        "v0.1.0": {
+          "starbeast2.zip": 17
+        }
+      }
+    },
+    "bdtree": {
+      "repo": "fkmendes/bdtree",
+      "releases": {
+        "v.0.0.2": {
+          "bdtree.v0.0.2.zip": 544
+        },
+        "v0.0.1": {
+          "bdtree.v0.0.1.zip": 1537
+        }
+      }
+    },
+    "bdmm": {
+      "repo": "denisekuehnert/bdmm",
+      "releases": {
+        "v2.0.0": {
+          "BDMM.v2.0.0.zip": 2026
+        },
+        "v1.0.2": {
+          "BDMM.v1.0.2.zip": 1005
+        },
+        "v1.0.1": {
+          "BDMM.v1.0.1.zip": 42
+        },
+        "v1.0": {
+          "BDMM.v1.0.zip": 710
+        },
+        "0.3.5": {
+          "BDMM.v0.3.5.zip": 516
+        },
+        "0.3.4": {
+          "BDMM.v0.3.4.zip": 11
+        },
+        "0.3.3": {
+          "BDMM.v0.3.3.zip": 834
+        },
+        "0.3.2": {
+          "BDMM.v0.3.2.zip": 84
+        },
+        "0.3.1": {
+          "BDMM.v0.3.1.zip": 190
+        },
+        "0.3.0": {
+          "BDMM.addon.0.3.0.zip": 58
+        },
+        "0.2.0": {
+          "BDMM.addon.0.2.0.zip": 804
+        },
+        "0.1.1": {
+          "BDMM.addon.0.1.1.zip": 327
+        },
+        "0.1.0": {
+          "BDMM.addon.v0.1.0.zip": 48
+        }
+      }
+    },
+    "PhyDyn": {
+      "repo": "mrc-ide/PhyDyn",
+      "releases": {
+        "v1.4.0": {
+          "PhyDyn.v1.4.0.zip": 1265
+        },
+        "v1.3.8": {
+          "PhyDyn.v1.3.8.zip": 13
+        },
+        "v1.3.7": {
+          "PhyDyn.v1.3.7.zip": 7
+        },
+        "v1.3.6": {
+          "PhyDyn.v1.3.6.zip": 29
+        },
+        "v1.3.5": {
+          "PhyDyn.v1.3.5.zip": 352
+        },
+        "v1.3.4": {
+          "PhyDyn.v1.3.4.zip": 107
+        },
+        "v1.3.3": {
+          "PhyDyn.v1.3.3.zip": 362
+        },
+        "v1.3.2": {
+          "PhyDyn.v1.3.2.zip": 170
+        },
+        "v1.3.1": {
+          "PhyDyn.v1.3.1.zip": 160
+        },
+        "v1.3.0": {
+          "PhyDyn.v1.3.0.zip": 187
+        },
+        "v1.2.2": {
+          "PhyDyn.v1.2.2.zip": 101
+        },
+        "v1.2.1": {
+          "PhyDyn.v1.2.1.zip": 140
+        },
+        "v1.2.0": {
+          "PhyDyn.v1.2.0.BEASTv2.4.7.zip": 8,
+          "PhyDyn.v1.2.0.zip": 102
+        },
+        "v1.1.0": {
+          "PhyDyn.v1.1.0.zip": 79
+        }
+      }
+    },
+    "CA": {
+      "repo": "BEAST2-Dev/cladeage",
+      "releases": {
+        "v2.1.0": {
+          "CA.addon.v2.1.0.zip": 1613
+        },
+        "v.2.0.0": {
+          "CA.addon.v2.0.0.zip": 1082
+        },
+        "v1.3.0": {
+          "CA.addon.v1.3.0.zip": 1063
+        },
+        "v1.2.0": {
+          "CA.addon.v1.2.0.zip": 134,
+          "CA.addon.v1.2.1.zip": 1364
+        },
+        "v1.1.0": {
+          "CA.addon.v1.1.0.zip": 577
+        }
+      }
+    },
+    "phylodynamics": {
+      "repo": "BEAST2-Dev/phylodynamics",
+      "releases": {
+        "v1.5.0": {
+          "phylodynamics.addon.v1.5.0.zip": 143
+        },
+        "v1.4.0": {
+          "phylodynamics.addon.v1.4.0.zip": 1345
+        },
+        "1.3.0": {
+          "phylodynamics.addon.1.3.0.zip": 2132
+        },
+        "1.2.0": {
+          "phylodynamics.addon.1.2.0.zip": 518,
+          "phylodynamics.addon.1.2.1.zip": 914
+        },
+        "1.1.2": {
+          "phylodynamics.addon.1.1.2.zip": 600
+        }
+      }
+    },
+    "PopFunc": {
+      "repo": "LinguaPhylo/PopFunc",
+      "releases": {
+        "v0.0.1": {
+          "pop.v0.0.1.zip": 74
+        }
+      }
+    },
+    "phylonco": {
+      "repo": "bioDS/beast-phylonco",
+      "releases": {
+        "v1.2.1-patch": {
+          "phylonco-beast-1.2.1.zip": 134
+        },
+        "v1.2.1": {
+          "phylonco-beast-1.2.0.zip": 9,
+          "phylonco-lphy-1.2.0-examples.zip": 11,
+          "phylonco-lphybeast-1.2.1.zip": 388
+        },
+        "v1.2.0": {
+          "phylonco-beast-1.2.0.zip": 456,
+          "phylonco-lphy-1.2.0-examples.zip": 30,
+          "phylonco-lphybeast-1.2.0.zip": 49
+        },
+        "v1.0.1": {
+          "phylonco-lphy-examples.zip": 12,
+          "phylonco-lphybeast-1.0.1.zip": 473
+        },
+        "v1.0.0": {
+          "phylonco-lphy-examples.zip": 20,
+          "phylonco-lphybeast-1.0.0.zip": 116
+        },
+        "v0.0.7-pre": {
+          "phylonco-addon-0.0.7.zip": 216
+        },
+        "v0.0.6": {
+          "phylonco.addon.v0.0.6.zip": 12
+        },
+        "v0.0.5-pre": {
+          "phylonco.addon.v0.0.5.zip": 6
+        },
+        "v.0.0.4": {
+          "phylonco.addon.v0.0.4.zip": 7
+        }
+      }
+    },
+    "lphybeast": {
+      "repo": "LinguaPhylo/LPhyBeast",
+      "releases": {
+        "1.3.0": {
+          "lphybeast-1.3.0.zip": 414
+        },
+        "1.2.1": {
+          "lphybeast-1.2.1.zip": 285
+        },
+        "1.2.0": {
+          "lphybeast-1.2.0.zip": 71,
+          "lphybeast-ext-1.0.0.zip": 531
+        },
+        "0.0.1": {
+          "LPhyBEAST.v0.0.1.zip": 10
+        }
+      }
+    },
+    "contacTrees": {
+      "repo": "NicoNeureiter/contacTrees",
+      "releases": {
+        "v2.0.0": {
+          "contacTrees.v2.0.0.zip": 4
+        },
+        "v1.2.0": {
+          "contactrees.addon.v1.2.0.zip": 184
+        },
+        "v1.1.0": {
+          "contactrees.v1.1.0.zip.org.zip": 6,
+          "contactrees.v1.1.0.zip.zip": 6
+        }
+      }
+    },
+    "FixedTreeAnalysis": {
+      "repo": "rbouckaert/FixedTreeAnalysis",
+      "releases": {
+        "v0.0.2": {
+          "FixedTreeAnalysis.pacakge.v0.0.2.zip": 1452
+        },
+        "v0.0.1": {
+          "FixedTreeAnalysis.addon.v0.0.1.zip": 54
+        }
+      }
+    },
+    "CCD": {
+      "repo": "CompEvol/CCD",
+      "releases": {
+        "v1.2.0": {
+          "CCD.v1.2.0.zip": 26
+        },
+        "v1.1.0": {
+          "CCD.package.v1.1.0.zip": 8
+        },
+        "v1.0.4": {
+          "CCD.package.v1.0.4.zip": 5
+        },
+        "v1.0.3": {
+          "CCD.package.v1.0.3.zip": 10598
+        },
+        "v1.0.2": {
+          "CCD.package.v1.0.2.zip": 613
+        },
+        "v1.0.1": {
+          "CCD.package.v1.0.1.zip": 1640
+        },
+        "v1.0.0": {
+          "CCD.package.v1.0.0.zip": 1741
+        },
+        "v0.0.1": {
+          "CCD.package.v0.0.1.zip": 11,
+          "CCD.package.v0.0.2.zip": 12,
+          "CCD.package.v0.0.3.zip": 9,
+          "CCD.package.v0.0.4.zip": 41
+        }
+      }
+    },
+    "FLC": {
+      "repo": "4ment/flc",
+      "releases": {
+        "v1.2.0": {
+          "flc.v1.2.0.zip": 572
+        },
+        "v1.1.0": {
+          "flc.v1.1.0.zip": 1015
+        },
+        "v1.0.0": {
+          "flc.v1.0.0.zip": 142
+        }
+      }
+    },
+    "CubeVB": {
+      "repo": "rbouckaert/cubevb",
+      "releases": {
+        "v1.0.0": {
+          "CubeVB.v1.0.0.zip": 6,
+          "CubeVB.v1.0.1.zip": 2,
+          "CubeVB.v1.0.2.zip": 389
+        }
+      }
+    },
+    "FreeRateModel": {
+      "repo": "BEAST2-Dev/FreeRateModel",
+      "releases": {
+        "v1.0.0": {
+          "FreeRateModel.package.v1.0.0.zip": 263
+        }
+      }
+    },
+    "BDMM-Prime": {
+      "repo": "tgvaughan/BDMM-Prime",
+      "releases": {
+        "v2.7.2": {
+          "BDMM-Prime.v2.7.2.zip": 264
+        },
+        "v3.0.0": {
+          "bdmm-prime.v3.0.0.zip": 8
+        },
+        "v2.7.1": {
+          "BDMM-Prime.v2.7.1.zip": 128
+        },
+        "v2.7.0": {
+          "BDMM-Prime.v2.7.0.zip": 76
+        },
+        "v2.6.3": {
+          "BDMM-Prime.v2.6.3.zip": 61
+        },
+        "v2.6.2": {
+          "BDMM-Prime.v2.6.2.zip": 17
+        },
+        "v2.6.1": {
+          "BDMM-Prime.v2.6.1.zip": 10
+        },
+        "v2.6.0": {
+          "BDMM-Prime.v2.6.0.zip": 16
+        },
+        "v2.5.0": {
+          "BDMM-Prime.v2.5.0.zip": 16
+        },
+        "v2.4.1": {
+          "BDMM-Prime.v2.4.1.zip": 85
+        },
+        "v2.4.0": {
+          "BDMM-Prime.v2.4.0.zip": 147
+        },
+        "v2.3.0": {
+          "BDMM-Prime.v2.3.0.zip": 70
+        },
+        "v2.2.4": {
+          "BDMM-Prime.v2.2.4.zip": 50
+        },
+        "v2.2.3": {
+          "BDMM-Prime.v2.2.3.zip": 12
+        },
+        "v2.2.2": {
+          "BDMM-Prime.v2.2.2.zip": 72
+        },
+        "v2.2.1": {
+          "BDMM-Prime.v2.2.1.zip": 24
+        },
+        "v2.2.0": {
+          "BDMM-Prime.v2.2.0.zip": 10
+        },
+        "v2.1.0": {
+          "BDMM-Prime.v2.1.0.zip": 13
+        },
+        "v2.0.1": {
+          "BDMM-Prime.v2.0.1.zip": 9
+        },
+        "v2.0.0": {
+          "BDMM-Prime.v2.0.0.zip": 7
+        },
+        "v1.1.0": {
+          "BDMM-Prime.v1.1.0.zip": 6
+        },
+        "v1.0.1": {
+          "BDMM-Prime.v1.0.1.zip": 51
+        },
+        "v1.0.0": {
+          "BDMM-Prime.v1.0.0.zip": 18
+        },
+        "v1.0.0-pre": {
+          "BDMM-Prime.v1.0.0-pre.zip": 14
+        },
+        "v0.0.33": {
+          "BDMM-Prime.v0.0.33.zip": 78
+        },
+        "v0.0.32": {
+          "BDMM-Prime.v0.0.32.zip": 32
+        },
+        "v0.0.31": {
+          "BDMM-Prime.v0.0.31.zip": 10
+        },
+        "v0.0.30": {
+          "BDMM-Prime.v0.0.30.zip": 62
+        },
+        "v0.0.29": {
+          "BDMM-Prime.v0.0.29.zip": 6
+        },
+        "v0.0.28": {
+          "BDMM-Prime.v0.0.28.zip": 19
+        },
+        "v0.0.27": {
+          "BDMM-Prime.v0.0.27.zip": 68
+        },
+        "v0.0.26": {
+          "BDMM-Prime.v0.0.26.zip": 30
+        },
+        "v0.0.25": {
+          "BDMM-Prime.v0.0.25.zip": 15
+        },
+        "v0.0.24": {
+          "BDMM-Prime.v0.0.24.zip": 21
+        },
+        "v0.0.23": {
+          "BDMM-Prime.v0.0.23.zip": 14
+        },
+        "v0.0.22": {
+          "BDMM-Prime.v0.0.22.zip": 19
+        },
+        "v0.0.21": {
+          "BDMM-Prime.v0.0.21.zip": 25
+        },
+        "v0.0.20": {
+          "BDMM-Prime.v0.0.20.zip": 17
+        },
+        "v0.0.19": {
+          "BDMM-Prime.v0.0.19.zip": 26
+        },
+        "v0.0.18": {
+          "BDMM-Prime.v0.0.18.zip": 13
+        },
+        "v0.0.17": {
+          "BDMM-Prime.v0.0.17.zip": 48
+        },
+        "v0.0.16": {
+          "BDMM-Prime.v0.0.16.zip": 40
+        },
+        "v0.0.15": {
+          "BDMM-Prime.v0.0.15.zip": 9
+        },
+        "v0.0.14": {
+          "BDMM-Prime.v0.0.14.zip": 13
+        },
+        "v0.0.13": {
+          "BDMM-Prime.v0.0.13.zip": 11
+        },
+        "v0.0.12": {
+          "BDMM-Prime.v0.0.12.zip": 46
+        },
+        "v0.0.11": {
+          "BDMM-Prime.v0.0.11.zip": 96
+        },
+        "v0.0.10": {
+          "BDMM-Prime.v0.0.10.zip": 16
+        },
+        "v0.0.9": {
+          "BDMM-Prime.v0.0.9.zip": 23
+        },
+        "v0.0.8": {
+          "BDMM-Prime.v0.0.8.zip": 9
+        },
+        "v0.0.7": {
+          "BDMM-Prime.v0.0.7.zip": 14
+        },
+        "v0.0.5": {
+          "BDMM-Prime.v0.0.5.zip": 8
+        },
+        "v0.0.4": {
+          "BDMM-Prime.v0.0.4.zip": 9
+        },
+        "v0.0.3": {
+          "BDMM-Prime.v0.0.3.zip": 16
+        },
+        "v0.0.2": {
+          "BDMM-Prime.v0.0.2.zip": 12
+        },
+        "v0.0.1": {
+          "BDMM-Prime.v0.0.1.zip": 13
+        }
+      }
+    },
+    "ASM": {
+      "repo": "rbouckaert/asm",
+      "releases": {
+        "v0.0.1": {
+          "ASM.package.v0.0.1.zip": 131
+        }
+      }
+    },
+    "AlmostDistributions": {
+      "repo": "rbouckaert/AlmostDistributions",
+      "releases": {
+        "v0.2.0": {
+          "AlmostDistributions.addon.v0.2.0.zip": 77,
+          "AlmostDistributions.package.v0.2.1.zip": 44
+        },
+        "v0.1.1": {
+          "AlmostDistributions.addon.v0.1.1.zip": 10
+        },
+        "v0.1.0": {
+          "AlmostDistribution.addon.v0.1.0.zip": 27
+        },
+        "v0.0.1": {
+          "AlmostDistributions.v0.0.2.zip": 26,
+          "AlmostDistributions.v0.0.4.zip": 19,
+          "AlmostDistributions.v0.0.5.zip": 31,
+          "AlmostDistributions.v0.0.6.zip": 60
+        }
+      }
+    },
+    "Experimenter": {
+      "repo": "christiaanjs/beast-validation",
+      "releases": {
+        "v0.2.0": {
+          "Experimenter.addon.v0.2.0.zip": 18
+        },
+        "v0.0.1": {
+          "Experimenter.addon.v0.0.1.zip": 10
+        }
+      }
+    },
+    "IndelDollo": {
+      "repo": "jordandouglas/IndelDollo",
+      "releases": {
+        "0.0.1": {
+          "IndelDollo.addon.v0.0.1.zip": 27
+        }
+      }
+    },
+    "CorrelatedTrait": {
+      "repo": "rbouckaert/CorrelatedTrait",
+      "releases": {
+        "v0.0.5": {
+          "CorrelatedTrait.package.v0.0.5.zip": 22
+        },
+        "v0.0.1": {
+          "TreeSetAnalyser.addon.v0.0.1.zip": 55,
+          "TreeSetAnalyser.addon.v0.0.2.zip": 17,
+          "TreeSetAnalyser.addon.v0.0.3.zip": 68,
+          "TreeSetAnalyser.addon.v0.0.4.zip": 95
+        }
+      }
+    },
+    "HetMM": {
+      "repo": "jordandouglas/HetMM",
+      "releases": {
+        "v0.0.1": {
+          "HetMM.addon.v0.0.1.zip": 17
+        }
+      }
+    },
+    "beastmap": {
+      "repo": "jordandouglas/BeastMap",
+      "releases": {
+        "v0.0.3": {
+          "beastmap.package.v0.0.3.zip": 31
+        },
+        "v0.0.2": {
+          "beastmap.package.v0.0.2.zip": 4
+        },
+        "v0.0.1": {
+          "beastmap.package.v0.0.1.zip": 4
+        }
+      }
+    },
+    "FoldBeast": {
+      "repo": "jordandouglas/FoldBeast",
+      "releases": {
+        "v0.0.2": {
+          "FoldBeast.package.v0.0.2.zip": 33
+        },
+        "v0.0.1": {
+          "FoldBeast.package.v0.0.1.zip": 14
+        }
+      }
+    },
+    "BREATH": {
+      "repo": "rbouckaert/transmission",
+      "releases": {
+        "v0.0.7": {
+          "BREATH.v0.0.7.zip": 18
+        },
+        "v0.0.6": {
+          "BREATH.v0.0.6.zip": 30
+        },
+        "v0.0.5": {
+          "BREATH.v0.0.5.defunct.zip": 7,
+          "BREATH.v0.0.5.zip": 6
+        },
+        "v0.0.4": {
+          "BREATH.v0.0.4.zip": 16
+        },
+        "v0.0.2": {
+          "BREATH.v0.0.2.zip": 11
+        },
+        "v0.0.1": {
+          "BREATH.v0.0.1.zip": 180
+        }
+      }
+    },
+    "5rf": {
+      "repo": "rbouckaert/5rf",
+      "releases": {
+        "v0.0.1": {
+          "5rf.package.v0.0.1.zip": 18,
+          "5rf.package.v0.0.2.zip": 13
+        }
+      }
+    },
+    "RBS": {
+      "repo": "BEAST2-Dev/rb-beast",
+      "releases": {
+        "v1.5.0": {
+          "RBS.package.v1.5.0.zip": 25,
+          "RBS.package.v1.5.1.zip": 5,
+          "RBS.package.v1.5.2.zip": 18
+        },
+        "v1.4.0": {
+          "RBS.addon.v1.4.0.zip": 677
+        },
+        "v1.3.0": {
+          "RBS.addon.v1.3.0.zip": 66,
+          "RBS.addon.v1.3.1.zip": 1065
+        },
+        "v1.2.0": {
+          "RBS.addon.v1.2.0.zip": 11,
+          "RBS.addon.v1.2.1.zip": 7,
+          "RBS.addon.v1.2.2.zip": 13,
+          "RBS.addon.v1.2.3.zip": 21,
+          "RBS.addon.v1.2.4.zip": 161,
+          "RBS.addon.v1.2.5.zip": 330
+        }
+      }
+    },
+    "rootfreqs": {
+      "repo": "rbouckaert/rootfreqs",
+      "releases": {
+        "v0.0.2": {
+          "rootfreqs.package.v0.0.2.zip": 100
+        }
+      }
+    },
+    "EpochClockModel": {
+      "repo": "rbouckaert/EpochClockModel",
+      "releases": {
+        "v0.0.2": {
+          "EpochClockModel.v0.0.2.zip": 48
+        },
+        "v0.0.1": {
+          "EpochClockModel.v0.0.1.zip": 29
+        }
+      }
+    },
+    "TyCHE": {
+      "repo": "hoehnlab/tyche",
+      "releases": {
+        "v0.0.11": {
+          "TyCHE.v0.0.11.zip": 13
+        },
+        "v0.0.10": {
+          "TyCHE.v0.0.10.zip": 69
+        },
+        "v0.0.9": {
+          "TyCHE.v0.0.9.zip": 7
+        },
+        "v0.0.8": {
+          "TyCHE.v0.0.8.zip": 6
+        },
+        "v0.0.7": {
+          "TyCHE.v0.0.7.zip": 20
+        },
+        "v0.0.6": {
+          "TyCHE.v0.0.6.zip": 7
+        },
+        "v0.0.5": {
+          "TyCHE.v0.0.5.zip": 13
+        },
+        "v0.0.3": {
+          "TyCHE.v0.0.3.zip": 43
+        },
+        "v0.0.2": {
+          "TyCHE.v0.0.2.zip": 0
+        },
+        "v0.0.1": {
+          "TyCHE.v0.0.1.zip": 10
+        },
+        "v0.0.1-beta.1": {
+          "TyCHE.v0.0.1-beta.1.zip": 2
+        },
+        "v0.0.1-beta": {
+          "TyCHE.v0.0.1-beta.zip": 2
+        },
+        "v0.0.0-alpha.4": {
+          "TypeLinked.zip": 2
+        },
+        "v0.0.0-alpha.3": {
+          "TypeLinked.zip": 3
+        },
+        "v0.0.0-alpha.2": {
+          "examples.zip": 0,
+          "TypeLinked.zip": 5
+        },
+        "v0.0.0-alpha.1": {
+          "examples.zip": 3,
+          "TypeLinked.zip": 3
+        },
+        "v0.0.0-alpha": {
+          "TypeLinked.zip": 0
+        }
+      }
+    },
+    "TargetedBeast": {
+      "repo": "nicfel/targetedbeast",
+      "releases": {
+        "v2.0.0": {
+          "TargetedBeast.v2.0.0.zip": 9
+        },
+        "v1.1.0": {
+          "TargetedBeast.v1.1.0.zip": 12
+        },
+        "v.1.0.0_includingbug": {
+          "TargetedBeast.v1.0.0.zip": 128
+        },
+        "v0.8.0": {
+          "TargetedBeast.v0.8.0.zip": 3
+        },
+        "v0.6.0": {
+          "TargetedBeast.v0.6.0.zip": 0
+        },
+        "v0.2.0": {
+          "TargetedBeast.v0.2.0.zip": 0
+        }
+      }
+    },
+    "BEAST2Lang": {
+      "repo": "CompEvol/beast2lang",
+      "releases": {
+        "0.0.1": {
+          "BEAST2Lang.v0.0.1.zip": 16
+        }
+      }
+    },
+    "BEASTBooster": {
+      "repo": "rbouckaert/beastbooster",
+      "releases": {
+        "v0.0.2": {
+          "BEASTBooster.v0.0.2.zip": 14
+        },
+        "v0.0.1": {
+          "BEASTBooster.addon.v0.0.1.zip": 26,
+          "online.addon.v0.0.1.zip": 20
+        }
+      }
+    },
+    "online": {
+      "repo": "rbouckaert/online",
+      "releases": {
+        "v0.0.2": {
+          "online.package.v0.0.2.zip": 5
+        },
+        "v0.0.1": {
+          "online.addon.v0.0.1.zip": 18
+        }
+      }
+    },
+    "PhyloPotts": {
+      "repo": "rbouckaert/potts",
+      "releases": {
+        "v0.0.1": {
+          "PhyloPotts.v0.0.1.zip": 1
+        }
+      }
+    }
+  }
+}

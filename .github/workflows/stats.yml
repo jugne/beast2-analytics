@@ -1,0 +1,38 @@
+name: BEAST2 download stats
+
+on:
+  schedule:
+    - cron: "0 7 1 * *"      # 07:00 UTC on the 1st of each month
+  workflow_dispatch:          # "Run workflow" button for manual runs
+
+permissions:
+  contents: write
+
+jobs:
+  stats:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Take monthly snapshot (skips if one exists this month)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python beast2_release_stats.py --output-html /dev/null --output-csv /dev/null
+
+      - name: Build report
+        run: |
+          python beast2_release_stats.py --report --cban-dir .cban \
+            --output-html docs/index.html \
+            --output-csv docs/beast2_download_stats.csv
+
+      - name: Commit results
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add beast2_snapshots docs
+          git diff --cached --quiet || git commit -m "Stats update $(date +%Y-%m-%d)"
+          git push
