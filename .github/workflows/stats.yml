@@ -12,6 +12,13 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
+
+# Never let two runs build/deploy at the same time
+concurrency:
+  group: stats-and-pages
+  cancel-in-progress: false
 
 jobs:
   stats:
@@ -46,3 +53,19 @@ jobs:
           git add beast2_snapshots docs
           git diff --cached --quiet || git commit -m "Stats update $(date +%Y-%m-%d)"
           git push
+
+      - name: Upload site for Pages
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: docs
+
+  deploy:
+    needs: stats
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
