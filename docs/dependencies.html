@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BEAST2 Package Dependencies</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<style>
+  :root {
+    color-scheme: light;
+    --bg: #f5f5f4; --surface: #fcfcfb; --border: #e4e3df;
+    --text: #0b0b0b; --text-2: #52514e; --muted: #8a8984;
+    --link: #b9b8b2; --link-hi: #0b0b0b;
+    --core: #52514e; --library: #2a78d6; --leaf: #eb6834;
+    --up: #4a3aa7; --down: #008300;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --bg: #121211; --surface: #1a1a19; --border: #2e2e2c;
+      --text: #ffffff; --text-2: #c3c2b7; --muted: #8a8984;
+      --link: #4a4a47; --link-hi: #ffffff;
+      --core: #c3c2b7; --library: #3987e5; --leaf: #d95926;
+      --up: #9085e9; --down: #1baf7a;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --bg: #121211; --surface: #1a1a19; --border: #2e2e2c;
+    --text: #ffffff; --text-2: #c3c2b7; --muted: #8a8984;
+    --link: #4a4a47; --link-hi: #ffffff;
+    --core: #c3c2b7; --library: #3987e5; --leaf: #d95926;
+    --up: #9085e9; --down: #1baf7a;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+         background: var(--bg); color: var(--text); padding: 20px; }
+  h1 { font-size: 24px; margin-bottom: 6px; }
+  .info { color: var(--text-2); font-size: 13px; margin-bottom: 14px; max-width: 900px; line-height: 1.5; }
+  .toolbar { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; margin-bottom: 12px; font-size: 13px; }
+  .toolbar input[type=text] { padding: 7px 10px; width: 220px; border: 1px solid var(--border);
+         border-radius: 4px; background: var(--surface); color: var(--text); font-size: 13px; }
+  .toolbar label { display: flex; align-items: center; gap: 5px; color: var(--text-2); cursor: pointer; }
+  .toolbar select, .toolbar button { padding: 6px 10px; border: 1px solid var(--border); border-radius: 4px;
+         background: var(--surface); color: var(--text); font-size: 13px; cursor: pointer; }
+  .layout { display: grid; grid-template-columns: 1fr 320px; gap: 16px; }
+  @media (max-width: 900px) { .layout { grid-template-columns: 1fr; } }
+  .canvas { background: var(--surface); border: 1px solid var(--border); border-radius: 8px;
+         position: relative; height: 78vh; min-height: 480px; overflow: hidden; }
+  svg { width: 100%; height: 100%; display: block; cursor: grab; }
+  .legend { position: absolute; left: 12px; bottom: 10px; font-size: 12px; color: var(--text-2);
+         display: flex; gap: 14px; background: var(--surface); padding: 4px 8px; border-radius: 4px; }
+  .legend span { display: inline-flex; align-items: center; gap: 5px; }
+  .dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+  .hint { position: absolute; right: 12px; bottom: 10px; font-size: 12px; color: var(--muted); }
+  .panel { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 16px;
+         font-size: 13px; height: 78vh; min-height: 480px; overflow-y: auto; }
+  .panel h2 { font-size: 18px; margin-bottom: 2px; }
+  .panel .ver { color: var(--muted); font-size: 12px; margin-bottom: 8px; }
+  .panel p { color: var(--text-2); line-height: 1.45; margin-bottom: 10px; }
+  .panel h3 { font-size: 12px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted);
+         margin: 14px 0 6px; }
+  .panel ul { list-style: none; }
+  .panel li { padding: 3px 0; display: flex; justify-content: space-between; gap: 8px; }
+  .panel li a { color: var(--text); text-decoration: none; cursor: pointer; border-bottom: 1px dotted var(--muted); }
+  .panel .req { color: var(--muted); font-size: 12px; white-space: nowrap; }
+  .panel .stat { display: flex; flex-wrap: wrap; gap: 10px 18px; margin: 6px 0 4px; }
+  .panel .stat b { display: block; font-size: 18px; }
+  .panel .stat span { color: var(--muted); font-size: 12px; }
+  .panel a.ext { color: var(--library); }
+  .empty { color: var(--muted); }
+  .node circle { stroke: var(--surface); stroke-width: 2px; cursor: pointer; }
+  .node text { font-size: 11px; fill: var(--text-2); pointer-events: none;
+         paint-order: stroke; stroke: var(--surface); stroke-width: 3px; stroke-linejoin: round; }
+  .node.core text { font-weight: 600; fill: var(--text); }
+  .link { stroke: var(--link); stroke-width: 1.2px; fill: none; }
+  .dim { opacity: 0.12; }
+  .link.up { stroke: var(--up); stroke-width: 2px; opacity: 1; }
+  .link.down { stroke: var(--down); stroke-width: 2px; opacity: 1; }
+  .node.sel circle { stroke: var(--text); stroke-width: 3px; }
+  .node.match circle { stroke: var(--text); stroke-width: 2.5px; }
+  .tooltip { position: absolute; pointer-events: none; background: var(--text); color: var(--surface);
+         font-size: 12px; padding: 5px 8px; border-radius: 4px; opacity: 0; white-space: nowrap; }
+  details { margin-top: 16px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 10px 14px; }
+  summary { cursor: pointer; font-size: 14px; }
+  table { border-collapse: collapse; font-size: 12px; margin-top: 10px; width: 100%; }
+  th, td { text-align: left; padding: 5px 8px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  th { color: var(--text-2); }
+</style>
+</head>
+<body>
+<h1>BEAST2 Package Dependencies</h1>
+<p class="info"><a href="index.html" style="color:var(--library)">&larr; Download statistics</a></p>
+<p class="info">
+  88 packages in CBAN (latest listed version of each), 230 dependencies, of which
+  65 are on packages other than BEAST.base / BEAST.app. Arrows point from a package to what it depends on.
+  Generated 2026-10-08 from the CBAN registry.
+</p>
+
+<div class="toolbar">
+  <input type="text" id="search" placeholder="Find package...">
+  <label><input type="checkbox" id="showCore"> Show links to BEAST.base / BEAST.app</label>
+  <label><input type="checkbox" id="hideIsolated" checked> Hide packages with only core dependencies</label>
+  <label>Node size
+    <select id="sizeBy">
+      <option value="dependents">Number of dependents</option>
+      <option value="downloads">All-time downloads</option>
+    </select>
+  </label>
+  <button id="downloadSvg">Download SVG</button>
+</div>
+
+<div class="layout">
+  <div class="canvas" id="canvas">
+    <svg id="graph"></svg>
+    <div class="legend">
+      <span><i class="dot" style="background:var(--core)"></i>Core</span>
+      <span><i class="dot" style="background:var(--library)"></i>Depended on by others</span>
+      <span><i class="dot" style="background:var(--leaf)"></i>No dependents</span>
+    </div>
+    <div class="hint">Click a package · drag to move · scroll to zoom</div>
+    <div class="tooltip" id="tooltip"></div>
+  </div>
+  <div class="panel" id="panel"><p class="empty">Click a package to see what it depends on (violet) and what depends on it (green), including indirect dependencies.</p></div>
+</div>
+
+<details>
+  <summary>Table view</summary>
+  <table id="table"><thead><tr><th>Package</th><th>Version</th><th>Depends on</th><th>Required by</th></tr></thead><tbody></tbody></table>
+</details>
+
+<script>
+const DATA = {"nodes": [{"id": "5rf", "kind": "leaf", "version": "0.0.2", "description": "Rate Class Root Frequency Model", "url": "https://github.com/rbouckaert/5rf/", "dependents": 0, "downloads": 31}, {"id": "ASM", "kind": "leaf", "version": "0.0.1", "description": "Automatic stopping MCMC", "url": "https://github.com/rbouckaert/asm", "dependents": 0, "downloads": 131}, {"id": "AlmostDistributions", "kind": "leaf", "version": "0.2.1", "description": "Almost-distributions", "url": "https://github.com/rbouckaert/AlmostDistributions", "dependents": 0, "downloads": 294}, {"id": "BADTRIP", "kind": "leaf", "version": "2.0.0", "description": "Infer transmission time for non-haplotype data and epi data", "url": "https://bitbucket.org/nicofmay/badtrip", "dependents": 0, "downloads": null}, {"id": "BASTA", "kind": "leaf", "version": "4.0.0", "description": "Bayesian structured coalescent approximation", "url": "https://bitbucket.org/nicofmay/basta-bayesian-structured-coalescent-approximation", "dependents": 0, "downloads": null}, {"id": "BDMM-Prime", "kind": "leaf", "version": "2.7.2", "description": "Linear birth-death phylodynamics", "url": "https://tgvaughan.github.io/BDMM-Prime", "dependents": 0, "downloads": 2022}, {"id": "BDSKY", "kind": "library", "version": "1.5.1", "description": "birth death skyline - handles serially sampled tips, piecewise constant rate changes through time and sampled ancestors", "url": "https://github.com/BEAST2-Dev/bdsky/", "dependents": 2, "downloads": 18468}, {"id": "BEAST.app", "kind": "core", "version": "2.7.8", "description": "BEAST base applications", "url": "http://beast2.org", "dependents": 80, "downloads": null}, {"id": "BEAST.base", "kind": "core", "version": "2.7.8", "description": "BEAST base", "url": "http://beast2.org", "dependents": 85, "downloads": 260861}, {"id": "BEAST2Lang", "kind": "leaf", "version": "0.0.1", "description": "Run a Beast2 model using the definition language", "url": "https://github.com/CompEvol/beast2lang/", "dependents": 0, "downloads": 16}, {"id": "BEASTBooster", "kind": "library", "version": "0.0.2", "description": "BEAST Booster", "url": "https://github.com/rbouckaert/beastbooster", "dependents": 1, "downloads": 60}, {"id": "BEASTLabs", "kind": "library", "version": "2.0.3", "description": "BEAST utilities, such as Script, multi monophyletic constraints", "url": "https://github.com/BEAST2-Dev/BEASTLabs/", "dependents": 20, "downloads": 90792}, {"id": "BEAST_CLASSIC", "kind": "library", "version": "1.6.4", "description": "BEAST classes ported from BEAST 1 in wrappers", "url": "https://github.com/BEAST2-Dev/beast-classic/", "dependents": 3, "downloads": 13723}, {"id": "BEASTvntr", "kind": "leaf", "version": "0.2.0", "description": "Variable Number of Tandem Repeat data, such as microsattelites", "url": "https://github.com/arjun-1/BEASTvntr", "dependents": 0, "downloads": 3171}, {"id": "BICEPS", "kind": "library", "version": "1.1.2", "description": "Bayesian Integrated Coalescent Epoch PlotS + Yule Skyline", "url": "https://github.com/rbouckaert/biceps/", "dependents": 2, "downloads": 3047}, {"id": "BREAK_AWAY", "kind": "leaf", "version": "1.2.0", "description": "break-away model of phylogegraphy", "url": "https://github.com/rbouckaert/break-away", "dependents": 0, "downloads": 2318}, {"id": "BREATH", "kind": "leaf", "version": "0.0.7", "description": "Bayesian Reconstruction and Evolutionary Analysis of Transmission Histories", "url": "https://github.com/rbouckaert/transmission", "dependents": 0, "downloads": 268}, {"id": "Babel", "kind": "library", "version": "0.4.2", "description": "BABEL = BEAST analysis backing effective linguistics", "url": "https://github.com/rbouckaert/Babel", "dependents": 1, "downloads": 11816}, {"id": "CA", "kind": "leaf", "version": "2.1.0", "description": "Bayesian estimation of clade ages based on probabilities of fossil sampling", "url": "https://github.com/BEAST2-Dev/cladeage", "dependents": 0, "downloads": 5833}, {"id": "CCD", "kind": "library", "version": "1.0.3", "description": "Better tree distribution and point estimates, computation of entropy, rogues and more.", "url": "https://github.com/CompEvol/CCD", "dependents": 1, "downloads": 14704}, {"id": "ClaDS", "kind": "leaf", "version": "2.3.0", "description": "Implementation of the ClaDS birth-death tree prior with sampled ancestors", "url": "https://bitbucket.org/bjoelle/clads/", "dependents": 0, "downloads": null}, {"id": "CoalRe", "kind": "leaf", "version": "1.0.4", "description": "Inference of Recombination networks", "url": "https://github.com/nicfel/CoalRe/", "dependents": 0, "downloads": 2412}, {"id": "CodonSubstModels", "kind": "library", "version": "2.0.1", "description": "Codon substitution models for DNA", "url": "https://github.com/BEAST2-Dev/codonsubstmodels", "dependents": 1, "downloads": 3326}, {"id": "CorrelatedTrait", "kind": "leaf", "version": "0.0.5", "description": "Analysis for a fixed tree or fixed tree set", "url": "https://github.com/rbouckaert/CorrelatedTrait", "dependents": 0, "downloads": 257}, {"id": "CoupledMCMC", "kind": "library", "version": "1.2.2", "description": "Adaptive coupled MCMC (adaptive parallel tempering or MC3)", "url": "https://github.com/nicfel/CoupledMCMC/", "dependents": 1, "downloads": 5148}, {"id": "CubeVB", "kind": "leaf", "version": "1.0.2", "description": "Variational Bayes on a cube", "url": "https://github.com/rbouckaert/cubevb", "dependents": 0, "downloads": 397}, {"id": "DENIM", "kind": "leaf", "version": "1.1.1", "description": "Divergence Estimation Notwithstanding ILS and Migration", "url": "http://indriid.com/software.html", "dependents": 0, "downloads": null}, {"id": "EpiInf", "kind": "leaf", "version": "8.0.0", "description": "BD/SIR/SIS epidemic trajectory inference.", "url": "http://tgvaughan.github.io/EpiInf", "dependents": 0, "downloads": 3940}, {"id": "EpochClockModel", "kind": "leaf", "version": "0.0.2", "description": "Add clock models that have different mean rates at different epochs", "url": "https://github.com/rbouckaert/EpochClockModel", "dependents": 0, "downloads": 77}, {"id": "Experimenter", "kind": "leaf", "version": "0.2.0", "description": "Experimenter", "url": "https://github.com/christiaanjs/beast-validation/", "dependents": 0, "downloads": 28}, {"id": "FLC", "kind": "leaf", "version": "1.2.0", "description": "Flexible local clock model", "url": "https://github.com/4ment/flc", "dependents": 0, "downloads": 1729}, {"id": "FastRelaxedClockLogNormal", "kind": "leaf", "version": "1.2.0", "description": "Relaxed clock that works well with large data", "url": "https://github.com/Rong419/ConstantDistanceOperator", "dependents": 0, "downloads": 2963}, {"id": "FixedTreeAnalysis", "kind": "leaf", "version": "0.0.2", "description": "Analysis for a fixed tree or fixed tree set", "url": "https://github.com/rbouckaert/FixedTreeAnalysis/", "dependents": 0, "downloads": 1506}, {"id": "FoldBeast", "kind": "leaf", "version": "0.0.2", "description": "3Di characters in phylogenetics", "url": "https://github.com/jordandouglas/FoldBeast/", "dependents": 0, "downloads": 47}, {"id": "FreeRateModel", "kind": "leaf", "version": "1.0.0", "description": "Non-parametric heterogeneous site model", "url": "https://github.com/BEAST2-Dev/FreeRateModel", "dependents": 0, "downloads": 263}, {"id": "GEO_SPHERE", "kind": "library", "version": "1.4.2", "description": "Whole world phylogeography", "url": "https://github.com/BEAST2-Dev/beast-geo", "dependents": 1, "downloads": 7356}, {"id": "HetMM", "kind": "leaf", "version": "0.0.1", "description": "Heterogeneous Michaelis-Menten model", "url": "https://github.com/jordandouglas/HetMM", "dependents": 0, "downloads": 17}, {"id": "IndelDollo", "kind": "leaf", "version": "0.0.1", "description": "Mutations, insertions, and deletions", "url": "https://github.com/jordandouglas/IndelDollo/", "dependents": 0, "downloads": 27}, {"id": "LPhyBeastExt", "kind": "leaf", "version": "1.0.0", "description": "An extension of LPhyBEAST.", "url": "https://github.com/LinguaPhylo/LPhyBeastExt", "dependents": 0, "downloads": null}, {"id": "MASTER", "kind": "library", "version": "7.0.0", "description": "Stochastic population dynamics simulation", "url": "http://tgvaughan.github.io/MASTER", "dependents": 1, "downloads": 9743}, {"id": "MGSM", "kind": "leaf", "version": "0.4.0", "description": "Multi-gamma and relaxed gamma site models", "url": "https://github.com/BEAST2-Dev/MGSM/wiki", "dependents": 0, "downloads": 4269}, {"id": "MM", "kind": "library", "version": "1.2.1", "description": "Enables models of morphological chatacter evolution", "url": "https://github.com/CompEvol/morph-models", "dependents": 4, "downloads": 14135}, {"id": "MODEL_SELECTION", "kind": "library", "version": "1.6.2", "description": "Select models through path sampling/stepping stone analysis", "url": "https://github.com/BEAST2-Dev/model-selection", "dependents": 1, "downloads": 42672}, {"id": "MSBD", "kind": "leaf", "version": "2.0.6", "description": "MSBD multi-type birth-death tree prior with sampled ancestors", "url": "https://bitbucket.org/bjoelle/msbd/", "dependents": 0, "downloads": null}, {"id": "Mascot", "kind": "library", "version": "3.0.7", "description": "Marginal approximation of the structured coalescent", "url": "https://github.com/nicfel/Mascot/", "dependents": 1, "downloads": 6644}, {"id": "MultiTypeTree", "kind": "library", "version": "8.3.0", "description": "Structured coalescent inference.", "url": "https://tgvaughan.github.io/MultiTypeTree", "dependents": 1, "downloads": 11988}, {"id": "NS", "kind": "leaf", "version": "1.2.2", "description": "Nested sampling for model selection and posterior inference", "url": "https://github.com/BEAST2-Dev/nested-sampling/wiki", "dependents": 0, "downloads": 44900}, {"id": "OBAMA", "kind": "library", "version": "1.1.1", "description": "OBAMA for Bayesian Amino-acid Model Averaging", "url": "https://github.com/rbouckaert/obama/", "dependents": 1, "downloads": 2339}, {"id": "ORC", "kind": "library", "version": "1.2.1", "description": "Optimised Relaxed Clock model", "url": "https://github.com/jordandouglas/ORC/", "dependents": 3, "downloads": 35042}, {"id": "PIQMEE", "kind": "leaf", "version": "1.0.0", "description": "Birth-death skyline-based method efficiently dealing with duplicate sequences", "url": "https://github.com/boskovav/piqmee", "dependents": 0, "downloads": 1485}, {"id": "PhyDyn", "kind": "leaf", "version": "1.4.0", "description": "PhyDyn: Epidemiological modelling with BEAST", "url": "https://github.com/mrc-ide/PhyDyn", "dependents": 0, "downloads": 3082}, {"id": "PhyloPotts", "kind": "leaf", "version": "0.0.1", "description": "PhyloPotts model", "url": "https://github.com/rbouckaert/potts", "dependents": 0, "downloads": 1}, {"id": "PoMo", "kind": "leaf", "version": "1.1.1", "description": "PoMo, a substitution model that separates mutation and drift processes", "url": "https://bitbucket.org/nicofmay/pomo-beast", "dependents": 0, "downloads": null}, {"id": "PopFunc", "kind": "leaf", "version": "0.0.1", "description": "A package for Bayesian model averaging of parametric coalescent models in phylodynamic inference.", "url": "https://github.com/LinguaPhylo/PopFunc", "dependents": 0, "downloads": 74}, {"id": "RBS", "kind": "leaf", "version": "1.5.2", "description": "AutoPartition and Reverisble Jump Based substitution model", "url": "https://github.com/BEAST2-Dev/rb-beast/", "dependents": 0, "downloads": 2399}, {"id": "ReMASTER", "kind": "leaf", "version": "2.7.4", "description": "Phylodynamic simulation system", "url": "https://tgvaughan.github.io/remaster", "dependents": 0, "downloads": 1525}, {"id": "Recombination", "kind": "leaf", "version": "1.0.1", "description": "Inference of Recombination networks", "url": "https://github.com/nicfel/Recombination/", "dependents": 0, "downloads": 1344}, {"id": "SA", "kind": "library", "version": "2.1.1", "description": "Sampled ancestor trees", "url": "https://github.com/CompEvol/sampled-ancestors", "dependents": 6, "downloads": 40743}, {"id": "SCOTTI", "kind": "leaf", "version": "3.0.0", "description": "Structured COalescent Transmission Tree Inference", "url": "https://bitbucket.org/nicofmay/scotti", "dependents": 0, "downloads": null}, {"id": "SNAPP", "kind": "library", "version": "1.6.1", "description": "SNP and AFLP Phylogenies", "url": "http://beast2.org/snapp/", "dependents": 1, "downloads": 17330}, {"id": "SSM", "kind": "library", "version": "1.2.2", "description": "Standard Nucleotide Substitution Models", "url": "https://github.com/BEAST2-Dev/substmodels/", "dependents": 1, "downloads": 7321}, {"id": "STACEY", "kind": "leaf", "version": "1.3.1", "description": "Species delimitation and species tree estimation", "url": "http://indriid.com/software.html", "dependents": 0, "downloads": null}, {"id": "SpeciesNetwork", "kind": "leaf", "version": "1.0.0", "description": "Multispecies network coalescent (MSNC) inference of introgression and hybridization", "url": "https://github.com/zhangchicool/speciesnetwork", "dependents": 0, "downloads": 2288}, {"id": "StarBEAST2", "kind": "leaf", "version": "1.0.0", "description": "Multispecies coalescent inference using multi-locus and fossil data", "url": "https://github.com/genomescale/starbeast2", "dependents": 0, "downloads": 14267}, {"id": "TargetedBeast", "kind": "leaf", "version": "1.0.0", "description": "Targeted MCMC operators for Improving the Scalability of Bayesian Phylodynamic Inference", "url": "https://github.com/nicfel/targetedbeast/", "dependents": 0, "downloads": 152}, {"id": "TiDeTree", "kind": "leaf", "version": "1.0.1", "description": "Estimating single-cell trees from lineage tracing data", "url": "https://github.com/seidels/tidetree", "dependents": 0, "downloads": 590}, {"id": "TreeStat2", "kind": "leaf", "version": "0.2.0", "description": "Utility for calculating tree statistics from tree log file", "url": "https://github.com/alexeid/TreeStat2/", "dependents": 0, "downloads": 3943}, {"id": "TyCHE", "kind": "leaf", "version": "0.0.11", "description": "Type-linked Clocks for Heterogenous Evolution", "url": "https://tyche.readthedocs.io", "dependents": 0, "downloads": 208}, {"id": "bModelTest", "kind": "library", "version": "1.3.3", "description": "Bayesian model test for nucleotide subst models, gamma rate heterogeneity and invariant sites", "url": "https://github.com/BEAST2-Dev/bModelTest/wiki", "dependents": 2, "downloads": 16793}, {"id": "bacter", "kind": "leaf", "version": "3.0.1", "description": "Bacterial ARG inference.", "url": "https://tgvaughan.github.io/bacter", "dependents": 0, "downloads": 10165}, {"id": "bdmm", "kind": "leaf", "version": "2.0.0", "description": "Multitype birth-death model (aka birth-death-migration model)", "url": "https://github.com/denisekuehnert/bdmm", "dependents": 0, "downloads": 6655}, {"id": "bdtree", "kind": "library", "version": "0.0.2", "description": "Birth-death sequential sampling", "url": "https://github.com/fkmendes/bdtree", "dependents": 1, "downloads": 2081}, {"id": "beastmap", "kind": "leaf", "version": "0.0.3", "description": "Stochastic mapping and ancestral sequence/state reconstruction", "url": "https://github.com/jordandouglas/BeastMap/", "dependents": 0, "downloads": 39}, {"id": "contacTrees", "kind": "leaf", "version": "1.2.0", "description": "Phylogenetic model with horizontal transfer for linguistics", "url": "https://github.com/NicoNeureiter/contacTrees", "dependents": 0, "downloads": 200}, {"id": "contraband", "kind": "leaf", "version": "1.0.2", "description": "Scalable brownian models for continuous trait evolution", "url": "https://github.com/fkmendes/contraband", "dependents": 0, "downloads": 452}, {"id": "feast", "kind": "library", "version": "10.6.1", "description": "Flexible BEAST 2 XML extension package.", "url": "https://tgvaughan.github.io/feast", "dependents": 5, "downloads": 8918}, {"id": "gammaspike", "kind": "leaf", "version": "1.2.0", "description": "A clock model that captures and tests for punctuated evolution", "url": "https://github.com/jordandouglas/GammaSpikeModel", "dependents": 0, "downloads": 611}, {"id": "lphybeast", "kind": "library", "version": "1.3.0", "description": "A command-line program that takes an LPhy model specification including a data block,                     and produces a BEAST 2 XML input file.", "url": "https://github.com/LinguaPhylo/LPhyBeast", "dependents": 2, "downloads": 1311}, {"id": "online", "kind": "leaf", "version": "0.0.2", "description": "Online and faster parallel phylogenetics", "url": "https://github.com/rbouckaert/online", "dependents": 0, "downloads": 23}, {"id": "phylodynamics", "kind": "leaf", "version": "1.5.0", "description": "BDSIR and Stochastic Coalescent", "url": "https://github.com/BEAST2-Dev/phylodynamics", "dependents": 0, "downloads": 5652}, {"id": "phylonco", "kind": "library", "version": "1.2.1", "description": "A package for single cell cancer evolution.", "url": "https://github.com/bioDS/beast-phylonco", "dependents": 1, "downloads": 1939}, {"id": "phylonco.lphybeast", "kind": "leaf", "version": "1.2.1", "description": "A LPhyBEAST extension for phylonco (requires: LPhy and phylonco-lphy).", "url": "https://github.com/bioDS/beast-phylonco", "dependents": 0, "downloads": null}, {"id": "resub", "kind": "leaf", "version": "1.0.0", "description": "Refinement expansion substitution model", "url": "https://github.com/jordandouglas/resub", "dependents": 0, "downloads": 215}, {"id": "rootfreqs", "kind": "leaf", "version": "0.0.2", "description": "Allows root frequencies to be specified per site.", "url": "https://github.com/rbouckaert/rootfreqs", "dependents": 0, "downloads": 100}, {"id": "snapper", "kind": "leaf", "version": "1.1.5", "description": "Diffusion based SNP and AFLP Phylogenies", "url": "https://github.com/rbouckaert/snapper", "dependents": 0, "downloads": 4037}, {"id": "speedemon", "kind": "leaf", "version": "1.1.0", "description": "Fast species delimitation under the multispecies coalescent", "url": "https://github.com/rbouckaert/speedemon", "dependents": 0, "downloads": 1948}, {"id": "starbeast3", "kind": "library", "version": "1.2.1", "description": "StarBeast3 multispecies coalescent using advanced MCMC operators", "url": "https://github.com/rbouckaert/starbeast3", "dependents": 1, "downloads": 34480}, {"id": "timtam", "kind": "leaf", "version": "0.4.0", "description": "Distribution for birth-death models with occurrence data and population size estimation.", "url": "https://aezarebski.github.io/timtam/index.html", "dependents": 0, "downloads": 1367}], "links": [{"source": "BEAST.app", "target": "BEAST.base", "atleast": "2.7.8", "atmost": "2.7.9"}, {"source": "BEASTLabs", "target": "BEAST.base", "atleast": "2.7.0", "atmost": "2.7.9"}, {"source": "BEASTLabs", "target": "BEAST.app", "atleast": "2.7.0", "atmost": ""}, {"source": "bModelTest", "target": "BEAST.base", "atleast": "2.7.0", "atmost": "2.7.9"}, {"source": "bModelTest", "target": "BEAST.app", "atleast": "2.7.0", "atmost": ""}, {"source": "OBAMA", "target": "BEAST.base", "atleast": "2.7.0", "atmost": "2.7.9"}, {"source": "OBAMA", "target": "BEAST.app", "atleast": "2.7.0", "atmost": ""}, {"source": "OBAMA", "target": "bModelTest", "atleast": "1.3.0", "atmost": ""}, {"source": "BICEPS", "target": "BEAST.base", "atleast": "2.7.0", "atmost": ""}, {"source": "BICEPS", "target": "BEAST.app", "atleast": "2.7.0", "atmost": ""}, {"source": "ORC", "target": "BEAST.base", "atleast": "2.7.5", "atmost": ""}, {"source": "ORC", "target": "BEAST.app", "atleast": "2.7.5", "atmost": ""}, {"source": "ORC", "target": "BEASTLabs", "atleast": "2.0.0", "atmost": ""}, {"source": "speedemon", "target": "BEAST.base", "atleast": "2.7.0", "atmost": ""}, {"source": "speedemon", "target": "BEAST.app", "atleast": "2.7.0", "atmost": ""}, {"source": "speedemon", "target": "BEASTLabs", "atleast": "2.0.0", "atmost": ""}, {"source": "speedemon", "target": "ORC", "atleast": "1.1.0", "atmost": ""}, {"source": "speedemon", "target": "BICEPS", "atleast": "1.1.0", "atmost": ""}, {"source": "gammaspike", "target": "BEAST.base", "atleast": "2.7.7", "atmost": ""}, {"source": "gammaspike", "target": "BEAST.app", "atleast": "2.7.7", "atmost": ""}, {"source": "gammaspike", "target": "SA", "atleast": "2.1.1", "atmost": ""}, {"source": "resub", "target": "BEAST.base", "atleast": "2.7.8", "atmost": ""}, {"source": "contraband", "target": "BEAST.base", "atleast": "2.7.0", "atmost": ""}, {"source": "contraband", "target": "BEAST.app", "atleast": "2.7.0", "atmost": ""}, {"source": "Babel", "target": "BEAST.base", "atleast": "2.7.0", "atmost": ""}, {"source": "Babel", "target": "BEAST.app", "atleast": "2.7.0", "atmost": ""}, {"source": "Babel", "target": "BEASTLabs", "atleast": "2.0.0", "atmost": ""}, {"source": "BEAST_CLASSIC", "target": "BEAST.base", "atleast": "2.7.0", "atmost": ""}, {"source": "BEAST_CLASSIC", "target": "BEAST.app", "atleast": "2.7.0", "atmost": ""}, {"source": "SNAPP", "target": "BEAST.base", "atleast": "2.7.0", "atmost": ""}, {"source": "SNAPP", "target": "BEAST.app", "atleast": "2.7.0", "atmost": ""}, {"source": "SNAPP", "target": "BEASTLabs", "atleast": "2.0.0", "atmost": ""}, {"source": "snapper", "target": "BEAST.base", "atleast": "2.7.5", "atmost": ""}, {"source": "snapper", "target": "BEAST.app", "atleast": "2.7.5", "atmost": ""}, {"source": "snapper", "target": "SNAPP", "atleast": "1.6.0", "atmost": ""}, {"source": "TreeStat2", "target": "BEAST.base", "atleast": "2.7.7", "atmost": ""}, {"source": "TreeStat2", "target": "BEAST.app", "atleast": "2.7.7", "atmost": ""}, {"source": "TreeStat2", "target": "CCD", "atleast": "1.0.1", "atmost": ""}, {"source": "starbeast3", "target": "BEAST.base", "atleast": "2.7.3", "atmost": ""}, {"source": "starbeast3", "target": "BEAST.app", "atleast": "2.7.3", "atmost": ""}, {"source": "starbeast3", "target": "BEASTLabs", "atleast": "2.0.0", "atmost": ""}, {"source": "starbeast3", "target": "SA", "atleast": "2.1.0", "atmost": ""}, {"source": "starbeast3", "target": "ORC", "atleast": "1.2.0", "atmost": ""}, {"source": "SpeciesNetwork", "target": "BEAST.base", "atleast": "2.7.3", "atmost": ""}, {"source": "SpeciesNetwork", "target": "BEAST.app", "atleast": "2.7.3", "atmost": ""}, {"source": "MODEL_SELECTION", "target": "BEAST.base", "atleast": "2.7.5", "atmost": ""}, {"source": "MODEL_SELECTION", "target": "BEAST.app", "atleast": "2.7.5", "atmost": ""}, {"source": "NS", "target": "BEAST.base", "atleast": "2.7.5", "atmost": ""}, {"source": "NS", "target": "BEAST.app", "atleast": "2.7.5", "atmost": ""}, {"source": "NS", "target": "MODEL_SELECTION", "atleast": "1.6.0", "atmost": ""}, {"source": "CoupledMCMC", "target": "BEAST.base", "atleast": "2.7.5", "atmost": ""}, {"source": "CoupledMCMC", "target": "BEAST.app", "atleast": "2.7.5", "atmost": ""}, {"source": "MM", "target": "BEAST.base", "atleast": "2.7.0", "atmost": ""}, {"source": "MM", "target": "BEAST.app", "atleast": "2.7.0", "atmost": ""}, {"source": "GEO_SPHERE", "target": "BEAST.base", "atleast": "2.7.0", "atmost": ""}, {"source": "GEO_SPHERE", "target": "BEAST.app", "atleast": "2.7.0", "atmost": ""}, {"source": "GEO_SPHERE", "target": "BEASTLabs", "atleast": "2.0.0", "atmost": ""}, {"source": "BREAK_AWAY", "target": "BEAST.base", "atleast": "2.7.0", "atmost": ""}, {"source": "BREAK_AWAY", "target": "BEAST.app", "atleast": "2.7.0", "atmost": ""}, {"source": "BREAK_AWAY", "target": "BEASTLabs", "atleast": "2.0.0", "atmost": ""}, {"source": "BREAK_AWAY", "target": "GEO_SPHERE", "atleast": "1.4.0", "atmost": ""}, {"source": "SSM", "target": "BEAST.base", "atleast": "2.7.0", "atmost": ""}, {"source": "SSM", "target": "BEAST.app", "atleast": "2.7.0", "atmost": ""}, {"source": "MGSM", "target": "BEAST.base", "atleast": "2.7.0", "atmost": ""}, {"source": "MGSM", "target": "BEAST.app", "atleast": "2.7.0", "atmost": ""}, {"source": "SA", "target": "BEAST.base", "atleast": "2.7.0", "atmost": ""}, {"source": "SA", "target": "BEAST.app", "atleast": "2.7.0", "atmost": ""}, {"source": "SA", "target": "BEASTLabs", "atleast": "2.0.0", "atmost": ""}, {"source": "BDSKY", "target": "BEAST.base", "atleast": "2.7.0", "atmost": ""}, {"source": "BDSKY", "target": "BEAST.app", "atleast": "2.7.0", "atmost": ""}, {"source": "STACEY", "target": "BEAST.base", "atleast": "2.7.0", "atmost": ""}, {"source": "STACEY", "target": "BEAST.app", "atleast": "2.7.0", "atmost": ""}, {"source": "DENIM", "target": "BEAST.base", "atleast": "2.7.0", "atmost": ""}, {"source": "DENIM", "target": "BEAST.app", "atleast": "2.7.0", "atmost": ""}, {"source": "feast", "target": "BEAST.base", "atleast": "2.7.0", "atmost": "2.7.9"}, {"source": "feast", "target": "BEAST.app", "atleast": "2.7.0", "atmost": "2.7.9"}, {"source": "TiDeTree", "target": "BEAST.base", "atleast": "2.7.0", "atmost": ""}, {"source": "TiDeTree", "target": "BEAST.app", "atleast": "2.7.0", "atmost": ""}, {"source": "TiDeTree", "target": "feast", "atleast": "10.0.0", "atmost": ""}, {"source": "ClaDS", "target": "BEAST.base", "atleast": "2.7.5", "atmost": "2.7.9"}, {"source": "ClaDS", "target": "BEAST.app", "atleast": "2.7.5", "atmost": "2.7.9"}, {"source": "MSBD", "target": "BEAST.base", "atleast": "2.7.2", "atmost": "2.7.9"}, {"source": "MSBD", "target": "BEAST.app", "atleast": "2.7.2", "atmost": "2.7.9"}, {"source": "MSBD", "target": "MM", "atleast": "1.2.0", "atmost": ""}, {"source": "MultiTypeTree", "target": "BEAST.base", "atleast": "2.7.2", "atmost": ""}, {"source": "MultiTypeTree", "target": "BEAST.app", "atleast": "2.7.2", "atmost": ""}, {"source": "MASTER", "target": "BEAST.base", "atleast": "2.7.2", "atmost": ""}, {"source": "MASTER", "target": "BEAST.app", "atleast": "2.7.2", "atmost": ""}, {"source": "ReMASTER", "target": "BEAST.base", "atleast": "2.7.0", "atmost": "2.7.9"}, {"source": "ReMASTER", "target": "BEAST.app", "atleast": "2.7.0", "atmost": "2.7.9"}, {"source": "Mascot", "target": "BEAST.base", "atleast": "2.7.2", "atmost": ""}, {"source": "Mascot", "target": "BEAST.app", "atleast": "2.7.2", "atmost": ""}, {"source": "Recombination", "target": "BEAST.base", "atleast": "2.7.2", "atmost": ""}, {"source": "Recombination", "target": "BEAST.app", "atleast": "2.7.2", "atmost": ""}, {"source": "CoalRe", "target": "BEAST.base", "atleast": "2.7.2", "atmost": ""}, {"source": "CoalRe", "target": "BEAST.app", "atleast": "2.7.2", "atmost": ""}, {"source": "CodonSubstModels", "target": "BEAST.base", "atleast": "2.7.2", "atmost": ""}, {"source": "CodonSubstModels", "target": "BEAST.app", "atleast": "2.7.2", "atmost": ""}, {"source": "timtam", "target": "BEAST.base", "atleast": "2.7.2", "atmost": ""}, {"source": "timtam", "target": "BEAST.app", "atleast": "2.7.2", "atmost": ""}, {"source": "BEASTvntr", "target": "BEAST.base", "atleast": "2.7.1", "atmost": ""}, {"source": "BEASTvntr", "target": "BEAST.app", "atleast": "2.7.1", "atmost": ""}, {"source": "PIQMEE", "target": "BEAST.base", "atleast": "2.7.1", "atmost": ""}, {"source": "PIQMEE", "target": "BEAST.app", "atleast": "2.7.1", "atmost": ""}, {"source": "PIQMEE", "target": "BDSKY", "atleast": "1.5.0", "atmost": ""}, {"source": "EpiInf", "target": "BEAST.base", "atleast": "2.7.1", "atmost": "2.7.9"}, {"source": "EpiInf", "target": "BEAST.app", "atleast": "2.7.1", "atmost": ""}, {"source": "EpiInf", "target": "SA", "atleast": "2.1.0", "atmost": ""}, {"source": "EpiInf", "target": "feast", "atleast": "9.0.0", "atmost": ""}, {"source": "FastRelaxedClockLogNormal", "target": "BEAST.base", "atleast": "2.7.2", "atmost": ""}, {"source": "FastRelaxedClockLogNormal", "target": "BEAST.app", "atleast": "2.7.2", "atmost": ""}, {"source": "bacter", "target": "BEAST.base", "atleast": "2.7.2", "atmost": ""}, {"source": "bacter", "target": "BEAST.app", "atleast": "2.7.2", "atmost": ""}, {"source": "bacter", "target": "feast", "atleast": "9.0.0", "atmost": ""}, {"source": "StarBEAST2", "target": "BEAST.base", "atleast": "2.7.3", "atmost": ""}, {"source": "StarBEAST2", "target": "BEAST.app", "atleast": "2.7.3", "atmost": ""}, {"source": "StarBEAST2", "target": "SA", "atleast": "2.1.0", "atmost": ""}, {"source": "StarBEAST2", "target": "MM", "atleast": "1.2.1", "atmost": ""}, {"source": "bdtree", "target": "BEAST.base", "atleast": "2.7.3", "atmost": ""}, {"source": "bdtree", "target": "BEAST.app", "atleast": "2.7.3", "atmost": ""}, {"source": "bdmm", "target": "BEAST.base", "atleast": "2.7.2", "atmost": ""}, {"source": "bdmm", "target": "BEAST.app", "atleast": "2.7.2", "atmost": ""}, {"source": "bdmm", "target": "MultiTypeTree", "atleast": "8.0.0", "atmost": ""}, {"source": "bdmm", "target": "MASTER", "atleast": "7.0.0", "atmost": ""}, {"source": "SCOTTI", "target": "BEAST.base", "atleast": "2.7.2", "atmost": ""}, {"source": "SCOTTI", "target": "BEAST.app", "atleast": "2.7.2", "atmost": ""}, {"source": "BASTA", "target": "BEAST.base", "atleast": "2.7.2", "atmost": ""}, {"source": "BASTA", "target": "BEAST.app", "atleast": "2.7.2", "atmost": ""}, {"source": "BADTRIP", "target": "BEAST.base", "atleast": "2.7.2", "atmost": ""}, {"source": "PhyDyn", "target": "BEAST.base", "atleast": "2.7.2", "atmost": ""}, {"source": "PhyDyn", "target": "BEAST.app", "atleast": "2.7.2", "atmost": ""}, {"source": "CA", "target": "BEAST.base", "atleast": "2.7.3", "atmost": ""}, {"source": "CA", "target": "BEAST.app", "atleast": "2.7.3", "atmost": ""}, {"source": "phylodynamics", "target": "BEAST.base", "atleast": "2.7.0", "atmost": ""}, {"source": "phylodynamics", "target": "BDSKY", "atleast": "1.5.0", "atmost": ""}, {"source": "PopFunc", "target": "BEAST.base", "atleast": "2.7.6", "atmost": ""}, {"source": "PopFunc", "target": "BEAST.app", "atleast": "2.7.6", "atmost": ""}, {"source": "PopFunc", "target": "BEASTLabs", "atleast": "2.0.2", "atmost": ""}, {"source": "phylonco", "target": "BEAST.base", "atleast": "2.7.6", "atmost": ""}, {"source": "phylonco", "target": "BEAST.app", "atleast": "2.7.6", "atmost": ""}, {"source": "phylonco", "target": "BEASTLabs", "atleast": "2.0.2", "atmost": ""}, {"source": "phylonco.lphybeast", "target": "phylonco", "atleast": "1.2.0", "atmost": ""}, {"source": "phylonco.lphybeast", "target": "lphybeast", "atleast": "1.2.1", "atmost": ""}, {"source": "lphybeast", "target": "BEAST.base", "atleast": "2.7.8", "atmost": ""}, {"source": "lphybeast", "target": "BEAST.app", "atleast": "2.7.8", "atmost": ""}, {"source": "lphybeast", "target": "BEASTLabs", "atleast": "2.0.3", "atmost": ""}, {"source": "lphybeast", "target": "BEAST_CLASSIC", "atleast": "1.6.4", "atmost": ""}, {"source": "lphybeast", "target": "feast", "atleast": "10.5.0", "atmost": ""}, {"source": "lphybeast", "target": "SSM", "atleast": "1.2.0", "atmost": ""}, {"source": "lphybeast", "target": "ORC", "atleast": "1.2.0", "atmost": ""}, {"source": "lphybeast", "target": "bdtree", "atleast": "0.0.1", "atmost": ""}, {"source": "lphybeast", "target": "CoupledMCMC", "atleast": "1.2.2", "atmost": ""}, {"source": "LPhyBeastExt", "target": "lphybeast", "atleast": "1.2.0", "atmost": ""}, {"source": "LPhyBeastExt", "target": "Mascot", "atleast": "3.0.0", "atmost": ""}, {"source": "LPhyBeastExt", "target": "MM", "atleast": "1.2.1", "atmost": ""}, {"source": "LPhyBeastExt", "target": "SA", "atleast": "2.1.0", "atmost": ""}, {"source": "contacTrees", "target": "BEAST.base", "atleast": "2.7.0", "atmost": ""}, {"source": "contacTrees", "target": "BEAST.app", "atleast": "2.7.0", "atmost": ""}, {"source": "contacTrees", "target": "feast", "atleast": "9.0.0", "atmost": ""}, {"source": "contacTrees", "target": "BEASTLabs", "atleast": "2.0.0", "atmost": ""}, {"source": "contacTrees", "target": "BICEPS", "atleast": "1.1.0", "atmost": ""}, {"source": "PoMo", "target": "BEAST.base", "atleast": "2.7.0", "atmost": ""}, {"source": "PoMo", "target": "BEAST.app", "atleast": "2.7.0", "atmost": ""}, {"source": "FixedTreeAnalysis", "target": "BEAST.base", "atleast": "2.7.4", "atmost": ""}, {"source": "FixedTreeAnalysis", "target": "BEAST.app", "atleast": "2.7.4", "atmost": ""}, {"source": "CCD", "target": "BEAST.base", "atleast": "2.7.7", "atmost": ""}, {"source": "CCD", "target": "BEAST.app", "atleast": "2.7.7", "atmost": ""}, {"source": "FLC", "target": "BEAST.base", "atleast": "2.7.4", "atmost": ""}, {"source": "FLC", "target": "BEAST.app", "atleast": "2.7.4", "atmost": ""}, {"source": "CubeVB", "target": "BEAST.base", "atleast": "2.7.0", "atmost": ""}, {"source": "CubeVB", "target": "BEAST.app", "atleast": "2.7.0", "atmost": ""}, {"source": "CubeVB", "target": "BEASTLabs", "atleast": "2.0.0", "atmost": ""}, {"source": "FreeRateModel", "target": "BEAST.base", "atleast": "2.7.0", "atmost": ""}, {"source": "FreeRateModel", "target": "BEAST.app", "atleast": "2.7.0", "atmost": ""}, {"source": "BDMM-Prime", "target": "BEAST.base", "atleast": "2.7.0", "atmost": "2.7.9"}, {"source": "BDMM-Prime", "target": "BEAST.app", "atleast": "2.7.0", "atmost": "2.7.9"}, {"source": "BDMM-Prime", "target": "SA", "atleast": "2.1.0", "atmost": "2.1.9"}, {"source": "ASM", "target": "BEAST.base", "atleast": "2.7.5", "atmost": ""}, {"source": "ASM", "target": "BEAST.app", "atleast": "2.7.5", "atmost": ""}, {"source": "ASM", "target": "BEASTLabs", "atleast": "2.0.0", "atmost": ""}, {"source": "AlmostDistributions", "target": "BEAST.base", "atleast": "2.7.0", "atmost": ""}, {"source": "AlmostDistributions", "target": "BEASTLabs", "atleast": "2.0.0", "atmost": ""}, {"source": "Experimenter", "target": "BEAST.base", "atleast": "2.7.0", "atmost": ""}, {"source": "Experimenter", "target": "BEAST.app", "atleast": "2.7.0", "atmost": ""}, {"source": "Experimenter", "target": "BEASTLabs", "atleast": "2.0.0", "atmost": ""}, {"source": "IndelDollo", "target": "BEAST.base", "atleast": "2.7.3", "atmost": ""}, {"source": "IndelDollo", "target": "BEAST.app", "atleast": "2.7.3", "atmost": ""}, {"source": "CorrelatedTrait", "target": "BEAST.base", "atleast": "2.7.4", "atmost": ""}, {"source": "CorrelatedTrait", "target": "BEAST.app", "atleast": "2.7.4", "atmost": ""}, {"source": "CorrelatedTrait", "target": "BEASTLabs", "atleast": "2.0.0", "atmost": ""}, {"source": "CorrelatedTrait", "target": "BEAST_CLASSIC", "atleast": "1.6.1", "atmost": ""}, {"source": "CorrelatedTrait", "target": "Babel", "atleast": "0.4.1", "atmost": ""}, {"source": "HetMM", "target": "BEAST.base", "atleast": "2.7.5", "atmost": ""}, {"source": "HetMM", "target": "BEAST.app", "atleast": "2.7.5", "atmost": ""}, {"source": "beastmap", "target": "BEAST.base", "atleast": "2.7.8", "atmost": ""}, {"source": "beastmap", "target": "BEAST.app", "atleast": "2.7.8", "atmost": ""}, {"source": "beastmap", "target": "CodonSubstModels", "atleast": "2.0.1", "atmost": ""}, {"source": "beastmap", "target": "starbeast3", "atleast": "1.2.1", "atmost": ""}, {"source": "beastmap", "target": "MM", "atleast": "1.2.0", "atmost": ""}, {"source": "FoldBeast", "target": "BEAST.base", "atleast": "2.7.7", "atmost": ""}, {"source": "FoldBeast", "target": "BEAST.app", "atleast": "2.7.7", "atmost": ""}, {"source": "FoldBeast", "target": "bModelTest", "atleast": "1.3.0", "atmost": ""}, {"source": "FoldBeast", "target": "OBAMA", "atleast": "1.1.1", "atmost": ""}, {"source": "BREATH", "target": "BEAST.base", "atleast": "2.7.6", "atmost": ""}, {"source": "BREATH", "target": "BEAST.app", "atleast": "2.7.6", "atmost": ""}, {"source": "5rf", "target": "BEAST.base", "atleast": "2.7.0", "atmost": ""}, {"source": "5rf", "target": "BEAST.app", "atleast": "2.7.0", "atmost": ""}, {"source": "RBS", "target": "BEAST.base", "atleast": "2.7.0", "atmost": ""}, {"source": "RBS", "target": "BEAST.app", "atleast": "2.7.0", "atmost": ""}, {"source": "rootfreqs", "target": "BEAST.base", "atleast": "2.7.0", "atmost": ""}, {"source": "rootfreqs", "target": "BEAST.app", "atleast": "2.7.0", "atmost": ""}, {"source": "EpochClockModel", "target": "BEAST.base", "atleast": "2.7.0", "atmost": ""}, {"source": "EpochClockModel", "target": "BEAST.app", "atleast": "2.7.0", "atmost": ""}, {"source": "TyCHE", "target": "BEAST.base", "atleast": "2.7.0", "atmost": ""}, {"source": "TyCHE", "target": "BEAST.app", "atleast": "2.7.0", "atmost": ""}, {"source": "TyCHE", "target": "BEAST_CLASSIC", "atleast": "1.6.3", "atmost": ""}, {"source": "TargetedBeast", "target": "BEAST.base", "atleast": "2.7.2", "atmost": ""}, {"source": "TargetedBeast", "target": "BEAST.app", "atleast": "2.7.2", "atmost": ""}, {"source": "BEAST2Lang", "target": "BEAST.base", "atleast": "2.7.8", "atmost": ""}, {"source": "BEAST2Lang", "target": "BEAST.app", "atleast": "2.7.8", "atmost": ""}, {"source": "BEAST2Lang", "target": "BEASTLabs", "atleast": "2.0.3", "atmost": ""}, {"source": "BEASTBooster", "target": "BEAST.base", "atleast": "2.7.8", "atmost": ""}, {"source": "BEASTBooster", "target": "BEAST.app", "atleast": "2.7.8", "atmost": ""}, {"source": "BEASTBooster", "target": "BEASTLabs", "atleast": "2.0.3", "atmost": ""}, {"source": "online", "target": "BEAST.base", "atleast": "2.7.8", "atmost": ""}, {"source": "online", "target": "BEAST.app", "atleast": "2.7.8", "atmost": ""}, {"source": "online", "target": "BEASTLabs", "atleast": "2.0.3", "atmost": ""}, {"source": "online", "target": "BEASTBooster", "atleast": "0.0.2", "atmost": ""}, {"source": "PhyloPotts", "target": "BEAST.base", "atleast": "2.7.0", "atmost": ""}, {"source": "PhyloPotts", "target": "BEAST.app", "atleast": "2.7.0", "atmost": ""}]};
+const CORE = new Set(["BEAST.base", "BEAST.app"]);
+const HAS_DOWNLOADS = true;
+
+if (!HAS_DOWNLOADS) document.querySelector('#sizeBy option[value=downloads]').disabled = true;
+
+const byId = new Map(DATA.nodes.map(n => [n.id, n]));
+const out = new Map(DATA.nodes.map(n => [n.id, []]));   // id -> links it depends on
+const inc = new Map(DATA.nodes.map(n => [n.id, []]));   // id -> links depending on it
+DATA.links.forEach(l => { out.get(l.source).push(l); inc.get(l.target).push(l); });
+
+function closure(start, adj, key) {
+  const seen = new Set(), stack = [start];
+  while (stack.length) {
+    const id = stack.pop();
+    adj.get(id).forEach(l => { const nx = l[key]; if (!seen.has(nx)) { seen.add(nx); stack.push(nx); } });
+  }
+  return seen;
+}
+
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const fmt = n => n == null ? '–' : n.toLocaleString('en-US');
+const req = l => [l.atleast && '≥ ' + l.atleast, l.atmost && '≤ ' + l.atmost].filter(Boolean).join(', ');
+
+// ---------- table view ----------
+document.querySelector('#table tbody').innerHTML = DATA.nodes.map(n =>
+  `<tr><td>${esc(n.id)}</td><td>${esc(n.version)}</td>
+   <td>${out.get(n.id).map(l => esc(l.target)).join(', ')}</td>
+   <td>${inc.get(n.id).map(l => esc(l.source)).join(', ')}</td></tr>`).join('');
+
+// ---------- graph ----------
+const svg = d3.select('#graph');
+const root = svg.append('g');
+const defs = svg.append('defs');
+[['arrow', 'var(--link)'], ['arrow-up', 'var(--up)'], ['arrow-down', 'var(--down)']].forEach(([id, col]) =>
+  defs.append('marker').attr('id', id).attr('viewBox', '0 -4 8 8').attr('refX', 8).attr('refY', 0)
+    .attr('markerWidth', 7).attr('markerHeight', 7).attr('orient', 'auto')
+    .append('path').attr('d', 'M0,-4L8,0L0,4').style('fill', col));
+
+const zoom = d3.zoom().scaleExtent([0.2, 5]).on('zoom', e => root.attr('transform', e.transform));
+svg.call(zoom);
+
+function fitView() {
+  const ns = nodeSel.data();
+  if (!ns.length) return;
+  const { width, height } = document.getElementById('canvas').getBoundingClientRect();
+  const x0 = d3.min(ns, d => d.x) - 30, x1 = d3.max(ns, d => d.x) + 120;   // room for labels
+  const y0 = d3.min(ns, d => d.y) - 30, y1 = d3.max(ns, d => d.y) + 40;   // and the legend
+  const k = Math.min(1.6, 0.95 * Math.min(width / (x1 - x0), height / (y1 - y0)));
+  svg.transition().duration(500).call(zoom.transform,
+    d3.zoomIdentity.translate(width / 2, height / 2).scale(k).translate(-(x0 + x1) / 2, -(y0 + y1) / 2));
+}
+
+const linkG = root.append('g'), nodeG = root.append('g');
+let sim, nodeSel, linkSel, visLinks = [], selected = null;
+
+function radius(n) {
+  const mode = document.getElementById('sizeBy').value;
+  if (mode === 'downloads' && HAS_DOWNLOADS) return 4 + Math.sqrt((n.downloads || 0) / 40);
+  return CORE.has(n.id) ? 16 : 5 + 2.2 * Math.sqrt(n.dependents);
+}
+
+function render() {
+  const showCore = document.getElementById('showCore').checked;
+  const hideIso = document.getElementById('hideIsolated').checked;
+
+  visLinks = DATA.links.filter(l => showCore || !CORE.has(l.target));
+  const linked = new Set();
+  visLinks.forEach(l => { linked.add(l.source); linked.add(l.target); });
+  const visNodes = DATA.nodes.filter(n =>
+    (showCore || !CORE.has(n.id) || linked.has(n.id)) && (!hideIso || linked.has(n.id) || (showCore && CORE.has(n.id))));
+  const visIds = new Set(visNodes.map(n => n.id));
+  visLinks = visLinks.filter(l => visIds.has(l.source) && visIds.has(l.target))
+                     .map(l => ({...l, s: l.source, t: l.target}));
+
+  const { width, height } = document.getElementById('canvas').getBoundingClientRect();
+  if (sim) sim.stop();
+  sim = d3.forceSimulation(visNodes)
+    .force('link', d3.forceLink(visLinks).id(d => d.id)
+           .distance(l => CORE.has(l.t) ? 160 : 90).strength(l => CORE.has(l.t) ? 0.05 : 0.4))
+    .force('charge', d3.forceManyBody().strength(-380))
+    .force('collide', d3.forceCollide(d => radius(d) + 22))
+    .force('x', d3.forceX(width / 2).strength(0.04))
+    .force('y', d3.forceY(height / 2).strength(0.06));
+
+  linkSel = linkG.selectAll('path').data(visLinks, l => l.s + '>' + l.t)
+    .join('path').attr('class', 'link').attr('marker-end', 'url(#arrow)');
+
+  nodeSel = nodeG.selectAll('g.node').data(visNodes, d => d.id)
+    .join(enter => {
+      const g = enter.append('g');
+      g.append('circle');
+      g.append('text').attr('dy', '0.35em');
+      return g;
+    })
+    .attr('class', d => 'node ' + d.kind)
+    .on('click', (e, d) => { e.stopPropagation(); select(d.id); })
+    .on('mousemove', (e, d) => {
+      const r = document.getElementById('canvas').getBoundingClientRect();
+      const tip = document.getElementById('tooltip');
+      tip.innerHTML = `<b>${esc(d.id)}</b> ${esc(d.version)} · ${d.dependents} dependents` +
+        (d.downloads != null ? ` · ${fmt(d.downloads)} downloads` : '');
+      tip.style.left = (e.clientX - r.left + 12) + 'px';
+      tip.style.top = (e.clientY - r.top + 12) + 'px';
+      tip.style.opacity = 1;
+    })
+    .on('mouseleave', () => document.getElementById('tooltip').style.opacity = 0)
+    .call(d3.drag()
+      .on('start', (e, d) => { if (!e.active) sim.alphaTarget(0.3).restart(); d.fx = d.x; d.fy = d.y; })
+      .on('drag', (e, d) => { d.fx = e.x; d.fy = e.y; })
+      .on('end', (e, d) => { if (!e.active) sim.alphaTarget(0); d.fx = null; d.fy = null; }));
+
+  nodeSel.select('circle').attr('r', radius).style('fill', d => `var(--${d.kind})`);
+  nodeSel.select('text').text(d => d.id).attr('x', d => radius(d) + 4);
+
+  sim.on('end', fitView);
+  sim.on('tick', () => {
+    linkSel.attr('d', l => {
+      const s = l.source, t = l.target, dx = t.x - s.x, dy = t.y - s.y, dist = Math.hypot(dx, dy) || 1;
+      const rt = radius(t) + 3;
+      return `M${s.x},${s.y}L${t.x - dx / dist * rt},${t.y - dy / dist * rt}`;
+    });
+    nodeSel.attr('transform', d => `translate(${d.x},${d.y})`);
+  });
+
+  if (selected && !visIds.has(selected)) selected = null;
+  highlight();
+}
+
+function highlight() {
+  if (!selected) {
+    nodeSel.classed('dim', false).classed('sel', false);
+    linkSel.classed('dim', false).classed('up', false).classed('down', false).attr('marker-end', 'url(#arrow)');
+    return;
+  }
+  const up = closure(selected, out, 'target');      // everything it needs
+  const down = closure(selected, inc, 'source');    // everything that needs it
+  const keep = new Set([selected, ...up, ...down]);
+  nodeSel.classed('dim', d => !keep.has(d.id)).classed('sel', d => d.id === selected);
+  linkSel
+    .classed('up', l => (l.s === selected || up.has(l.s)) && up.has(l.t))
+    .classed('down', l => (l.t === selected || down.has(l.t)) && down.has(l.s))
+    .classed('dim', l => !(((l.s === selected || up.has(l.s)) && up.has(l.t)) ||
+                           ((l.t === selected || down.has(l.t)) && down.has(l.s))))
+    .attr('marker-end', function () {
+      return this.classList.contains('up') ? 'url(#arrow-up)'
+           : this.classList.contains('down') ? 'url(#arrow-down)' : 'url(#arrow)';
+    });
+}
+
+function select(id) {
+  selected = id;
+  highlight();
+  const n = byId.get(id);
+  const up = closure(id, out, 'target'), down = closure(id, inc, 'source');
+  const direct = out.get(id), directIn = inc.get(id);
+  const indirectUp = [...up].filter(x => !direct.some(l => l.target === x)).sort();
+  const indirectDown = [...down].filter(x => !directIn.some(l => l.source === x)).sort();
+  const item = (name, extra) => `<li><a data-id="${esc(name)}">${esc(name)}</a><span class="req">${esc(extra || '')}</span></li>`;
+  const list = (arr) => arr.length ? `<ul>${arr.join('')}</ul>` : '<p class="empty">None</p>';
+  document.getElementById('panel').innerHTML = `
+    <h2>${esc(n.id)}</h2><div class="ver">version ${esc(n.version)}</div>
+    ${n.description ? `<p>${esc(n.description)}</p>` : ''}
+    ${n.url ? `<p><a class="ext" href="${esc(n.url)}" target="_blank" rel="noopener">${esc(n.url.replace(/^https?:\/\//, ''))}</a></p>` : ''}
+    <div class="stat">
+      <div><b>${direct.length}</b><span>depends on</span></div>
+      <div><b>${directIn.length}</b><span>direct dependents</span></div>
+      <div><b>${down.size}</b><span>all dependents</span></div>
+      ${n.downloads != null ? `<div><b>${fmt(n.downloads)}</b><span>downloads</span></div>` : ''}
+    </div>
+    <h3>Depends on</h3>${list(direct.map(l => item(l.target, req(l))))}
+    ${indirectUp.length ? `<h3>Indirectly depends on</h3>${list(indirectUp.map(x => item(x)))}` : ''}
+    <h3>Required by</h3>${list(directIn.slice().sort((a, b) => a.source.localeCompare(b.source)).map(l => item(l.source, req(l))))}
+    ${indirectDown.length ? `<h3>Indirectly required by</h3>${list(indirectDown.map(x => item(x)))}` : ''}`;
+  document.querySelectorAll('#panel a[data-id]').forEach(a => a.onclick = () => {
+    const target = a.dataset.id;
+    if (!nodeSel.data().some(d => d.id === target)) {   // make hidden nodes visible
+      document.getElementById('hideIsolated').checked = false;
+      if (CORE.has(target)) document.getElementById('showCore').checked = true;
+      render();
+    }
+    select(target);
+  });
+}
+
+svg.on('click', () => {
+  selected = null; highlight();
+  document.getElementById('panel').innerHTML = '<p class="empty">Click a package to see what it depends on (violet) and what depends on it (green), including indirect dependencies.</p>';
+});
+
+document.getElementById('showCore').onchange = render;
+document.getElementById('hideIsolated').onchange = render;
+document.getElementById('sizeBy').onchange = () => {
+  nodeSel.select('circle').attr('r', radius);
+  nodeSel.select('text').attr('x', d => radius(d) + 4);
+  sim.force('collide', d3.forceCollide(d => radius(d) + 22)).alpha(0.3).restart();
+};
+document.getElementById('search').oninput = e => {
+  const q = e.target.value.trim().toLowerCase();
+  nodeSel.classed('match', d => q && d.id.toLowerCase().includes(q));
+  const exact = nodeSel.data().find(d => d.id.toLowerCase() === q);
+  if (exact) select(exact.id);
+};
+
+document.getElementById('downloadSvg').onclick = () => {
+  const node = document.getElementById('graph');
+  const clone = node.cloneNode(true);
+  const { width, height } = node.getBoundingClientRect();
+  clone.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
+  clone.setAttribute('width', width); clone.setAttribute('height', height);
+  // inline resolved colours so the file stands alone
+  const cs = getComputedStyle(document.documentElement);
+  const vars = ['--surface', '--text', '--text-2', '--link', '--core', '--library', '--leaf', '--up', '--down'];
+  let css = '', vals = vars.map(v => `${v}:${cs.getPropertyValue(v)}`).join(';');
+  for (const sheet of document.styleSheets) for (const r of sheet.cssRules)
+    if (/^\.(node|link|dim)/.test(r.selectorText || '')) css += r.cssText + '\n';
+  const style = document.createElementNS('http://www.w3.org/2000/svg', 'style');
+  style.textContent = `svg{${vals};font-family:-apple-system,Segoe UI,Roboto,sans-serif;background:${cs.getPropertyValue('--surface')}}\n${css}`;
+  clone.insertBefore(style, clone.firstChild);
+  const blob = new Blob([new XMLSerializer().serializeToString(clone)], { type: 'image/svg+xml' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob); a.download = 'beast2_dependencies.svg'; a.click();
+};
+
+render();
+</script>
+</body>
+</html>
