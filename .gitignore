@@ -1,1 +1,3 @@
 .cban/
+__pycache__/
+docs/*

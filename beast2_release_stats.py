@@ -26,6 +26,8 @@ from urllib.error import HTTPError, URLError
 from xml.etree import ElementTree
 from urllib.parse import urlparse
 
+from beast2_site import NAV_CSS, nav_html
+
 
 CBAN_URLS = [
     "https://raw.githubusercontent.com/CompEvol/CBAN/master/packages2.7.xml",
@@ -535,6 +537,7 @@ def generate_html(stats, filename, snapshots, is_delta=True, cban_added=None):
         snapshot_info = "1 snapshot (cumulative totals only)"
         mode_desc = "Cumulative download totals (run again later to get per-period deltas)"
 
+    nav_css = NAV_CSS
     html = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -584,12 +587,13 @@ def generate_html(stats, filename, snapshots, is_delta=True, cban_added=None):
         table.main > thead th {{ position: relative; }}
         th.num .sort-arrow {{ position: absolute; margin-left: 6px; top: 50%; transform: translateY(-50%); }}
         .summary {{ margin-bottom: 20px; color: #555; }}
+{nav_css}
         .note {{ background: #fff3cd; border: 1px solid #ffc107; border-radius: 6px; padding: 12px 16px; margin-bottom: 20px; font-size: 13px; }}
     </style>
 </head>
 <body>
+    {nav_html("index.html")}
     <h1>BEAST2 Package Download Statistics</h1>
-    <p class="info"><a href="dependencies.html">Package dependency network &rarr;</a></p>
     <p class="subtitle">{mode_desc}</p>
     <p class="info">Data: {snapshot_info}</p>
     {f"<p class='info'>The first snapshot of each package is used as its baseline: those downloads count towards <em>All-time</em> but not <em>Tracked</em>. Packages labelled <span class='badge'>from …</span> were first seen after {_fmt(global_start)}; dotted numbers are partial years (hover for the date).</p>" if is_delta else ""}

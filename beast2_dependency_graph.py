@@ -20,6 +20,8 @@ from datetime import datetime
 from urllib.request import urlopen
 from xml.etree import ElementTree
 
+from beast2_site import NAV_CSS, nav_html
+
 CBAN_URLS = [
     "https://raw.githubusercontent.com/CompEvol/CBAN/master/packages2.7.xml",
     "https://raw.githubusercontent.com/CompEvol/CBAN/master/packages-extra-2.7.xml",
@@ -110,6 +112,8 @@ def generate_html(graph, filename, sources):
         "__N_PACKAGES__": str(len(graph["nodes"])),
         "__N_LINKS__": str(len(graph["links"])),
         "__N_NONCORE__": str(n_nonCore),
+        "__NAV_CSS__": NAV_CSS,
+        "__NAV__": nav_html("dependencies.html"),
     }.items():
         html = html.replace(key, val)
     os.makedirs(os.path.dirname(os.path.abspath(filename)), exist_ok=True)
@@ -206,11 +210,12 @@ HTML_TEMPLATE = r"""<!DOCTYPE html>
   table { border-collapse: collapse; font-size: 12px; margin-top: 10px; width: 100%; }
   th, td { text-align: left; padding: 5px 8px; border-bottom: 1px solid var(--border); vertical-align: top; }
   th { color: var(--text-2); }
+__NAV_CSS__
 </style>
 </head>
 <body>
+__NAV__
 <h1>BEAST2 Package Dependencies</h1>
-<p class="info"><a href="index.html" style="color:var(--library)">&larr; Download statistics</a></p>
 <p class="info">
   __N_PACKAGES__ packages in CBAN (latest listed version of each), __N_LINKS__ dependencies, of which
   __N_NONCORE__ are on packages other than BEAST.base / BEAST.app. Arrows point from a package to what it depends on.
