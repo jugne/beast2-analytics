@@ -24,11 +24,15 @@ jobs:
         run: python beast2_release_stats.py --output-html /dev/null --output-csv /dev/null
 
       - name: Build report
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           mkdir -p docs
-          python beast2_release_stats.py --report --cban-dir .cban \
+          python beast2_release_stats.py --report --backfill-dates --cban-dir .cban \
             --output-html docs/index.html \
             --output-csv docs/beast2_download_stats.csv
+      - name: Build dependency network
+        run: python beast2_dependency_graph.py --output docs/dependencies.html
 
       - name: Commit results
         run: |
