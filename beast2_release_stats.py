@@ -43,7 +43,7 @@ def get_headers(token):
     return headers
 
 
-def api_get(url, token):
+def api_get(url, token, _retries=0):
     """Make a GitHub API GET request with rate limit handling."""
     headers = get_headers(token)
     req = Request(url, headers=headers)
@@ -67,12 +67,13 @@ def api_get(url, token):
     except HTTPError as e:
         if e.code == 404:
             return None, None
-        if e.code == 403:
+        if e.code in (403, 429) and _retries < 3 and (
+                e.headers.get("X-RateLimit-Remaining") == "0" or e.headers.get("Retry-After")):
             reset_time = int(e.headers.get("X-RateLimit-Reset", 0))
-            wait = max(0, reset_time - int(time.time())) + 2
+            wait = int(e.headers.get("Retry-After") or max(0, reset_time - int(time.time()))) + 2
             print(f"  Rate limited. Waiting {wait}s...")
             time.sleep(wait)
-            return api_get(url, token)
+            return api_get(url, token, _retries + 1)
         print(f"  HTTP {e.code} for {url}")
         return None, None
     except URLError as e:
@@ -192,6 +193,38 @@ def load_snapshots(snapshots_dir):
             with open(filepath) as f:
                 snapshots.append(json.load(f))
     return snapshots
+
+
+def backfill_release_dates(snapshots_dir, token):
+    """Add release dates to the latest snapshot for packages that don't have them yet.
+
+    Snapshots taken before release dates were recorded lack them. Release dates
+    never change, so this only needs the API once per package; afterwards it
+    makes no calls at all.
+    """
+    files = sorted(f for f in os.listdir(snapshots_dir)
+                   if f.startswith("snapshot_") and f.endswith(".json")) if os.path.isdir(snapshots_dir) else []
+    if not files:
+        return
+    path = os.path.join(snapshots_dir, files[-1])
+    with open(path) as f:
+        snap = json.load(f)
+
+    missing = [pkg for pkg, info in snap["data"].items()
+               if set(info["releases"]) - set(info.get("published", {}))]
+    if not missing:
+        return
+    print(f"Backfilling release dates for {len(missing)} package(s) in {files[-1]}")
+    for pkg in missing:
+        info = snap["data"][pkg]
+        published = info.setdefault("published", {})
+        for release in get_all_releases(info["repo"], token):
+            tag = release.get("tag_name")
+            if tag in info["releases"] and release.get("published_at"):
+                published[tag] = release["published_at"][:10]
+        time.sleep(0.1)
+    with open(path, "w") as f:
+        json.dump(snap, f, indent=2)
 
 
 def tracking_starts(snapshots):
@@ -390,6 +423,12 @@ def generate_html(stats, filename, snapshots, is_delta=True, cban_added=None):
     else:
         periods = [{"end": "cumulative", "label": "Cumulative"}]
 
+    # Release dates: union over all snapshots (they never change)
+    all_published = defaultdict(dict)
+    for snap in snapshots:
+        for pkg, info in snap["data"].items():
+            all_published[pkg].update(info.get("published", {}))
+
     # Per-package detail data for the expandable rows
     details = {}
     for pkg in sorted_packages:
@@ -398,13 +437,13 @@ def generate_html(stats, filename, snapshots, is_delta=True, cban_added=None):
         start = starts.get(pkg, global_start)
         # None = period ended before/at this package's baseline snapshot (not tracked)
         tracked_mask = [not is_delta or p["end"] > start for p in periods]
-        published = latest.get(pkg, {}).get("published", {})
+        published = all_published.get(pkg, {})
         for tag in sorted(tags, key=_version_key, reverse=True):
             per_period = [pkg_ver_period[pkg][tag].get(p["end"], 0) if ok else None
                           for p, ok in zip(periods, tracked_mask)]
             versions.append({
                 "tag": tag,
-                "published": published.get(tag, ""),
+                "published": _fmt(published[tag]) if tag in published else "",
                 "alltime": alltime_ver.get(pkg, {}).get(tag, 0),
                 "tracked": sum(x or 0 for x in per_period),
                 "periods": per_period,
@@ -479,7 +518,8 @@ def generate_html(stats, filename, snapshots, is_delta=True, cban_added=None):
         )
 
     def _th(label, idx):
-        return f"<th onclick=\"sortTable({idx})\">{label} <span class=\"sort-arrow\">&#9650;&#9660;</span></th>"
+        cls = " class='num'" if idx > 0 else ""
+        return f"<th{cls} onclick=\"sortTable({idx})\">{label} <span class=\"sort-arrow\">&#9650;&#9660;</span></th>"
 
     year_headers = "".join(_th(y, i + 2) for i, y in enumerate(years_sorted))
     extra_headers = _th("All-time", 2 + len(years_sorted)) + _th("Versions", 3 + len(years_sorted))
@@ -517,7 +557,7 @@ def generate_html(stats, filename, snapshots, is_delta=True, cban_added=None):
         table.main > thead th {{ background: #4e79a7; color: white; padding: 10px 12px; text-align: left; cursor: pointer; user-select: none; white-space: nowrap; }}
         table.main > thead th:hover {{ background: #3d6a99; }}
         td {{ padding: 8px 12px; border-bottom: 1px solid #eee; }}
-        td.num, th.num {{ text-align: right; font-variant-numeric: tabular-nums; }}
+        td.num, th.num, table.main > thead th.num {{ text-align: center; font-variant-numeric: tabular-nums; }}
         .summary-row {{ cursor: pointer; }}
         .summary-row:hover {{ background: #f0f7ff; }}
         .pkg-name {{ font-weight: 500; }}
@@ -530,22 +570,26 @@ def generate_html(stats, filename, snapshots, is_delta=True, cban_added=None):
         .detail-meta {{ font-size: 13px; color: #666; margin-bottom: 8px; }}
         .detail-meta a {{ color: #4e79a7; }}
         table.versions {{ border-collapse: collapse; font-size: 13px; background: white; border: 1px solid #e3e3e3; }}
-        table.versions th {{ background: #eef3f9; color: #333; padding: 6px 10px; text-align: right; font-weight: 600; white-space: nowrap; }}
+        table.versions th {{ background: #eef3f9; color: #333; padding: 6px 10px; text-align: center; font-weight: 600; white-space: nowrap; }}
         table.versions th:first-child, table.versions td:first-child {{ text-align: left; }}
         table.versions td {{ padding: 5px 10px; border-bottom: 1px solid #f0f0f0; }}
         table.versions tr.total td {{ font-weight: 600; border-top: 2px solid #ddd; }}
         td.zero, td.na {{ color: #ccc; }}
+        td.date {{ color: #666; white-space: nowrap; }}
         td.partial {{ text-decoration: underline dotted #999; text-underline-offset: 3px; cursor: help; }}
         .badge {{ display: inline-block; margin-left: 8px; padding: 1px 7px; font-size: 11px; font-weight: 500; color: #8a5a00; background: #fff3cd; border: 1px solid #f0d58a; border-radius: 10px; cursor: help; vertical-align: 1px; }}
         .badge.new {{ color: #2d6a2d; background: #e6f4e6; border-color: #b6dcb6; }}
         .bar {{ display: inline-block; height: 8px; background: #4e79a7; border-radius: 2px; vertical-align: middle; margin-right: 6px; }}
         .sort-arrow {{ margin-left: 4px; font-size: 10px; }}
+        table.main > thead th {{ position: relative; }}
+        th.num .sort-arrow {{ position: absolute; margin-left: 6px; top: 50%; transform: translateY(-50%); }}
         .summary {{ margin-bottom: 20px; color: #555; }}
         .note {{ background: #fff3cd; border: 1px solid #ffc107; border-radius: 6px; padding: 12px 16px; margin-bottom: 20px; font-size: 13px; }}
     </style>
 </head>
 <body>
     <h1>BEAST2 Package Download Statistics</h1>
+    <p class="info"><a href="dependencies.html">Package dependency network &rarr;</a></p>
     <p class="subtitle">{mode_desc}</p>
     <p class="info">Data: {snapshot_info}</p>
     {f"<p class='info'>The first snapshot of each package is used as its baseline: those downloads count towards <em>All-time</em> but not <em>Tracked</em>. Packages labelled <span class='badge'>from …</span> were first seen after {_fmt(global_start)}; dotted numbers are partial years (hover for the date).</p>" if is_delta else ""}
@@ -616,7 +660,7 @@ def generate_html(stats, filename, snapshots, is_delta=True, cban_added=None):
                 + PERIODS.map(p => `<th>${{esc(p.label)}}</th>`).join('')
                 + '<th>All-time</th></tr>';
             const rows = d.versions.map(v =>
-                `<tr><td>${{esc(v.tag)}}</td><td class="num">${{esc(v.published || '')}}</td>`
+                `<tr><td>${{esc(v.tag)}}</td><td class="num date">${{esc(v.published || '–')}}</td>`
                 + `<td class="num"><span class="bar" style="width:${{Math.round(60 * v.tracked / maxTracked)}}px"></span>${{fmt(v.tracked)}}</td>`
                 + v.periods.map(cell).join('')
                 + cell(v.alltime) + '</tr>'
@@ -712,6 +756,8 @@ Examples:
     parser.add_argument("--cban-dir", default=None,
                         help="Local clone of CompEvol/CBAN (created if missing) used to look up "
                              "when each package was added to CBAN. Omit to skip.")
+    parser.add_argument("--backfill-dates", action="store_true",
+                        help="Fetch missing release dates into the latest snapshot (one-off; needs GITHUB_TOKEN)")
     parser.add_argument("--force", action="store_true",
                         help="Take a snapshot even if one exists for this month")
     args = parser.parse_args()
@@ -750,6 +796,9 @@ Examples:
             sys.exit(1)
 
         save_snapshot(snapshot, args.snapshots_dir)
+
+    if args.backfill_dates:
+        backfill_release_dates(args.snapshots_dir, token)
 
     # Load all snapshots and generate report
     snapshots = load_snapshots(args.snapshots_dir)
