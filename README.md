@@ -1,2 +1,5 @@
 # beast2-analytics
-Analyse download statistics for BEAST2 and its packages.
+
+This repository hosts a webpage that displays:
+1. Download statistics for BEAT2 and its packages.
+2. Package dependency network.
