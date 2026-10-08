@@ -47,12 +47,27 @@
         table.main > thead th { position: relative; }
         th.num .sort-arrow { position: absolute; margin-left: 6px; top: 50%; transform: translateY(-50%); }
         .summary { margin-bottom: 20px; color: #555; }
+
+    .site-header { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+        gap: 8px 24px; margin: -20px -20px 20px; padding: 0 20px;
+        background: var(--surface, #fff); border-bottom: 1px solid var(--border, #e0e0e0); }
+    .site-header .brand { font-size: 15px; font-weight: 600; color: var(--text, #333);
+        text-decoration: none; padding: 14px 0; white-space: nowrap; }
+    .site-header .brand span { color: var(--muted, #888); font-weight: 400; }
+    .site-nav { display: flex; gap: 4px; }
+    .site-nav a { display: block; padding: 14px 14px 12px; font-size: 14px; color: var(--text-2, #555);
+        text-decoration: none; border-bottom: 2px solid transparent; white-space: nowrap; }
+    .site-nav a:hover { color: var(--text, #111); border-bottom-color: var(--border, #ccc); }
+    .site-nav a[aria-current="page"] { color: var(--library, #4e79a7); font-weight: 600;
+        border-bottom-color: var(--library, #4e79a7); }
+    @media (max-width: 600px) { .site-header { justify-content: flex-start; } .site-header .brand { padding-bottom: 0; } }
+
         .note { background: #fff3cd; border: 1px solid #ffc107; border-radius: 6px; padding: 12px 16px; margin-bottom: 20px; font-size: 13px; }
     </style>
 </head>
 <body>
+    <header class="site-header"><a class="brand" href="index.html">BEAST2 Package Analytics</a><nav class="site-nav"><a href="index.html" aria-current="page">Download statistics</a><a href="dependencies.html">Dependency network</a></nav></header>
     <h1>BEAST2 Package Download Statistics</h1>
-    <p class="info"><a href="dependencies.html">Package dependency network &rarr;</a></p>
     <p class="subtitle">Downloads per year (computed from snapshot deltas)</p>
     <p class="info">Data: 6 snapshots from 2026-01-23 to 2026-10-07</p>
     <p class='info'>The first snapshot of each package is used as its baseline: those downloads count towards <em>All-time</em> but not <em>Tracked</em>. Packages labelled <span class='badge'>from …</span> were first seen after 23 Jan 2026; dotted numbers are partial years (hover for the date).</p>
