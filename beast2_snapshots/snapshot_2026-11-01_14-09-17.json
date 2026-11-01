@@ -1,0 +1,3905 @@
+{
+  "timestamp": "2026-11-01_14-09-17",
+  "data": {
+    "BEAST.base": {
+      "repo": "CompEvol/beast2",
+      "releases": {
+        "v2.7.8": {
+          "BEAST.app.package.v2.7.8.zip": 12119,
+          "BEAST.base.package.v2.7.8.zip": 12122
+        },
+        "v2.7.7": {
+          "BEAST.app.package.v2.7.7.zip": 2846,
+          "BEAST.base.package.v2.7.7.zip": 2321,
+          "BEAST.v2.7.7.Windows.zip": 25975
+        },
+        "v2.7.6": {
+          "BEAST.app.package.v2.7.6.zip": 2154,
+          "BEAST.base.package.v2.7.6.zip": 1908,
+          "BEAST.v2.7.6.Windows.zip": 7117
+        },
+        "v2.7.5": {
+          "BEAST.app.package.v2.7.5.zip": 1883,
+          "BEAST.base.package.v2.7.5.zip": 1613,
+          "BEAST.v2.7.5.Windows.zip": 4773
+        },
+        "v2.7.4": {
+          "BEAST.app.package.v2.7.4.zip": 1135,
+          "BEAST.base.package.v2.7.4.zip": 910,
+          "BEAST.v2.7.4.Windows.zip": 3485
+        },
+        "v2.7.3": {
+          "BEAST.app.addon.v2.7.3.zip": 878,
+          "BEAST.base.addon.v2.7.3.zip": 574,
+          "BEAST.v2.7.3.Windows.zip": 3100
+        },
+        "2.7.2": {
+          "BEAST.app.addon.v2.7.2.zip": 1669,
+          "BEAST.base.addon.v2.7.2.zip": 1678
+        },
+        "v2.7.1": {
+          "BEAST.v2.7.1.Windows.zip": 3007
+        },
+        "v2.7.0": {
+          "BEAST.v2.7.0.Windows.zip": 1206
+        },
+        "v2.6.7": {
+          "BEAST.package.v2.6.7.zip": 389,
+          "BEAST.v2.6.7.Windows.zip": 3083,
+          "BEAST_with_JRE.v2.6.7.Windows.zip": 3041
+        },
+        "v2.6.6": {
+          "BEAST.v2.6.6.Windows.zip": 3454,
+          "BEAST_with_JRE.v2.6.6.Windows.zip": 4129
+        },
+        "v2.6.5": {
+          "BEAST.package.v2.6.5.zip": 282
+        },
+        "v2.6.4": {
+          "BEAST.v2.6.4.Windows.zip": 1746,
+          "BEAST_with_JRE.v2.6.4.Windows.zip": 1976
+        },
+        "v2.6.3": {
+          "BEAST.package.v2.6.3.zip": 1507,
+          "BEAST.v2.6.3.Windows.zip": 4847,
+          "BEAST_with_JRE.v2.6.3.Windows.zip": 5436
+        },
+        "v2.6.2": {
+          "BEAST.package.v2.6.2.zip": 1286,
+          "BEAST.v2.6.2.Windows.zip": 3303,
+          "BEAST_with_JRE.v2.6.2.Windows.zip": 3301
+        },
+        "v2.6.1": {
+          "BEAST.package.v2.6.1.zip": 12338
+        },
+        "v2.6.0": {
+          "BEAST.v2.6.0.Windows.zip": 8744,
+          "BEAST_with_JRE.v2.6.0.Windows.zip": 498,
+          "BEAST_with_JRE2.v2.6.0.Windows.zip": 4715
+        },
+        "v2.5.2": {
+          "BEAST.v2.5.2.Windows.zip": 4059,
+          "BEAST_with_jre.v2.5.2.Windows.zip": 4091
+        },
+        "v2.5.1": {
+          "BEAST.package.v2.5.1.zip": 244,
+          "BEAST.v2.5.1.Windows.zip": 3941,
+          "BEAST_with_JRE.v2.5.1.Windows.zip": 3555
+        },
+        "v2.5.0": {
+          "BEAST.v2.5.0.Windows.zip": 3326,
+          "BEAST_with_JRE.v2.5.0.Windows.zip": 2597
+        },
+        "v2.4.8": {
+          "BEAST.v2.4.8.addon.zip": 826,
+          "BEAST.v2.4.8.Windows.zip": 4722,
+          "BEAST_with_JRE.v2.4.2.Windows.zip": 228
+        },
+        "v2.4.7": {
+          "BEAST.addon.v2.4.7.zip": 423,
+          "BEAST.v2.4.7.Windows.zip": 5789
+        },
+        "v2.4.6": {
+          "BEAST.addon.v2.4.6.zip": 234,
+          "BEAST.v2.4.6.Windows.zip": 2068
+        },
+        "v2.4.5": {
+          "BEAST.addon.v2.4.5.zip": 223,
+          "BEAST.v2.4.5.Windows.zip": 2978
+        },
+        "v2.4.4": {
+          "BEAST.addon.v2.4.4.zip": 206,
+          "BEAST.v2.4.4.Windows.zip": 2019
+        },
+        "v2.4.3": {
+          "BEAST.addon.v2.4.3.zip": 247,
+          "BEAST.v2.4.3.Windows.zip": 1942
+        },
+        "v2.4.2": {
+          "BEAST.addon.v2.4.2.zip": 93,
+          "BEAST.v2.4.2.Windows.zip": 1423
+        },
+        "v2.4.1": {
+          "BEAST.addon.v2.4.1.zip": 129,
+          "BEAST.v2.4.1.Windows.zip": 973
+        },
+        "v2.4.0": {
+          "beast.package.2.4.0.zip": 54,
+          "BEAST.v2.4.0.Windows.zip": 1443
+        },
+        "2.3.3pre": {
+          "BEAST.v2.3.3pre3.Windows.zip": 178
+        },
+        "v2.3.2": {
+          "BEAST.v2.3.2.Windows.zip": 1789
+        },
+        "v2.3.1": {
+          "BEAST.v2.3.1.Windows.zip": 1698
+        },
+        "v2.3.0": {
+          "BEAST.v2.3.0.Windows.zip": 1862
+        },
+        "v2.2.1": {
+          "BEAST.v2.2.1.Windows.zip": 2038
+        },
+        "V2.2.0": {
+          "BEAST.v2.2.0.Windows.repackaged.zip": 134,
+          "BEAST.v2.2.0.Windows.zip": 1480
+        },
+        "v2.1.3": {
+          "BEAST.v2.1.3.zip": 10460
+        },
+        "v2.1.2": {
+          "BEAST.v2.1.2.zip": 19274
+        },
+        "v2.1.1": {
+          "BEAST.v2.1.1.zip": 19485
+        },
+        "v2.1.0": {
+          "BEAST.v2.1.0.Windows.zip": 169
+        },
+        "v2.0.2": {
+          "BEAST.v2.0.2.Windows.zip": 409
+        }
+      },
+      "published": {
+        "v2.7.8": "2025-06-17",
+        "v2.7.7": "2024-06-10",
+        "v2.7.6": "2023-10-08",
+        "v2.7.5": "2023-06-15",
+        "v2.7.4": "2023-03-19",
+        "v2.7.3": "2022-12-04",
+        "2.7.2": "2022-10-30",
+        "v2.7.1": "2022-09-26",
+        "v2.7.0": "2022-06-23",
+        "v2.6.7": "2022-03-07",
+        "v2.6.6": "2021-07-29",
+        "v2.6.5": "2021-06-02",
+        "v2.6.4": "2021-02-04",
+        "v2.6.3": "2020-05-22",
+        "v2.6.2": "2020-01-15",
+        "v2.6.1": "2019-07-29",
+        "v2.6.0": "2019-05-22",
+        "v2.5.2": "2019-01-28",
+        "v2.5.1": "2018-08-20",
+        "v2.5.0": "2018-03-14",
+        "v2.4.8": "2017-07-21",
+        "v2.4.7": "2017-07-10",
+        "v2.4.6": "2017-04-26",
+        "v2.4.5": "2017-01-15",
+        "v2.4.4": "2016-10-24",
+        "v2.4.3": "2016-08-07",
+        "v2.4.2": "2016-06-08",
+        "v2.4.1": "2016-03-21",
+        "v2.4.0": "2016-02-23",
+        "2.3.3pre": "2016-01-13",
+        "v2.3.2": "2015-11-26",
+        "v2.3.1": "2015-09-01",
+        "v2.3.0": "2015-05-13",
+        "v2.2.1": "2015-03-17",
+        "V2.2.0": "2015-01-26",
+        "v2.1.3": "2014-05-05",
+        "v2.1.2": "2014-03-24",
+        "v2.1.1": "2014-02-09",
+        "v2.1.0": "2014-01-28",
+        "v2.0.2": "2014-01-28"
+      }
+    },
+    "BEASTLabs": {
+      "repo": "BEAST2-Dev/BEASTLabs",
+      "releases": {
+        "v2.1.1": {
+          "BEASTLabs.v2.1.1.zip": 3
+        },
+        "v2.1.0-beta1": {
+          "BEASTLabs.v2.1.0.zip": 30
+        },
+        "v2.0.0": {
+          "BEASTlabs.addon.v2.0.0.zip": 9107,
+          "BEASTlabs.package.v2.0.1.zip": 762,
+          "BEASTlabs.package.v2.0.2.zip": 15476,
+          "BEASTLabs.package.v2.0.3.zip": 11905
+        },
+        "v1.9.0": {
+          "BEASTlabs.addon.v1.9.0.zip": 11897,
+          "BEASTlabs.addon.v1.9.1.zip": 6727,
+          "BEASTlabs.addon.v1.9.2.zip": 5169,
+          "BEASTlabs.addon.v1.9.3.zip": 333,
+          "BEASTlabs.addon.v1.9.4.zip": 2255,
+          "BEASTlabs.addon.v1.9.5.zip": 3320
+        },
+        "v1.8.0": {
+          "BEASTlabs.addon.v1.8.0.zip": 2325,
+          "BEASTlabs.addon.v1.8.1.zip": 3346,
+          "BEASTlabs.addon.v1.8.2.zip": 9116,
+          "BEASTlabs.addon.v1.8.2pre.zip": 11
+        },
+        "v1.7.0": {
+          "BEASTlabs.addon.v1.7.0.zip": 1701,
+          "BEASTlabs.addon.v1.7.1.zip": 4579
+        },
+        "v1.6.0": {
+          "BEASTlabs.addon.v1.6.0.zip": 332
+        },
+        "v1.5.0": {
+          "BEASTlabs.addon.v1.5.0.zip": 203,
+          "BEASTlabs.addon.v1.5.1.zip": 24,
+          "BEASTlabs.addon.v1.5.2.zip": 108,
+          "BEASTlabs.addon.v1.5.3.zip": 577
+        },
+        "v1.4.0": {
+          "BEASTlabs.addon.v1.4.0.zip": 68
+        },
+        "v1.3.0": {
+          "BEASTlabs.addon.v1.3.0.zip": 103,
+          "BEASTlabs.addon.v1.3.1.zip": 791,
+          "BEASTlabs.addon.v1.3.2.zip": 533,
+          "BEASTlabs.addon.v1.3.3.zip": 123,
+          "BEASTlabs.addon.v1.3.4.zip": 9,
+          "BEASTlabs.addon.v1.3.5.zip": 612
+        }
+      },
+      "published": {
+        "v2.1.1": "2026-10-22",
+        "v2.1.0-beta1": "2026-04-09",
+        "v2.0.0": "2022-07-19",
+        "v1.9.0": "2019-06-11",
+        "v1.8.0": "2018-03-20",
+        "v1.7.0": "2016-09-25",
+        "v1.6.0": "2016-08-21",
+        "v1.5.0": "2016-03-28",
+        "v1.4.0": "2016-02-24",
+        "v1.3.0": "2015-05-24"
+      }
+    },
+    "bModelTest": {
+      "repo": "BEAST2-Dev/bModelTest",
+      "releases": {
+        "v1.4.0": {
+          "BMT.v1.4.0.zip": 12
+        },
+        "v1.3.3": {
+          "bModelTest.addon.v1.3.3.zip": 6278
+        },
+        "v.1.3.2": {
+          "bModelTest.addon.v1.3.2.zip": 636
+        },
+        "v1.3.0": {
+          "bModelTest.addon.v1.3.0.zip": 223,
+          "bModelTest.addon.v1.3.1.zip": 70
+        },
+        "v1.2.0": {
+          "bModelTest.addon.v1.2.0.zip": 210,
+          "bModelTest.addon.v1.2.1.zip": 2836
+        },
+        "v1.1.0": {
+          "bModelTest.addon.v1.1.0.zip": 445,
+          "bModelTest.addon.v1.1.1.zip": 106,
+          "bModelTest.addon.v1.1.2.zip": 2068
+        },
+        "v1.0.0": {
+          "bModelTest.addon.v1.0.0.zip": 124,
+          "bModelTest.addon.v1.0.1.zip": 33,
+          "bModelTest.addon.v1.0.2.zip": 101,
+          "bModelTest.addon.v1.0.3.zip": 390,
+          "bModelTest.addon.v1.0.4.zip": 1717
+        },
+        "v0.3.0": {
+          "bModelTest.addon.v0.3.0.zip": 76,
+          "bModelTest.addon.v0.3.1.zip": 102,
+          "bModelTest.addon.v0.3.2.zip": 370,
+          "bModelTest.addon.v0.3.3.zip": 215
+        },
+        "v0.2.0": {
+          "bModelTest.addon.v0.2.0.zip": 65
+        },
+        "0.0.1": {
+          "bModelTest.addon.v0.0.1.zip": 19,
+          "bModelTest.addon.v0.0.2.zip": 156,
+          "bModelTest.addon.v0.1.0.zip": 21,
+          "bModelTest.addon.v0.1.1.zip": 271,
+          "bModelTest.addon.v0.1.2.zip": 13,
+          "bModelTest.addon.v0.1.3.zip": 440
+        }
+      },
+      "published": {
+        "v1.4.0": "2026-08-04",
+        "v1.3.3": "2023-01-22",
+        "v.1.3.2": "2022-10-20",
+        "v1.3.0": "2022-07-19",
+        "v1.2.0": "2019-06-24",
+        "v1.1.0": "2018-03-21",
+        "v1.0.0": "2016-12-12",
+        "v0.3.0": "2016-03-28",
+        "v0.2.0": "2016-02-24",
+        "0.0.1": "2015-04-08"
+      }
+    },
+    "OBAMA": {
+      "repo": "rbouckaert/obama",
+      "releases": {
+        "v1.1.2": {
+          "OBAMA.v1.1.2.zip": 6
+        },
+        "v.1.1.1": {
+          "OBAMA.addon.v1.1.1.zip": 1528
+        },
+        "v1.1.0": {
+          "OBAMA.addon.v1.1.0.zip": 83
+        },
+        "v0.2.0": {
+          "OBAMA.addon.v0.2.0.zip": 677
+        },
+        "v0.1.0": {
+          "OBAMA.addon.v0.1.0.zip": 39
+        },
+        "v0.0.1": {
+          "OBAMA.addon.v0.0.1.zip": 21
+        }
+      },
+      "published": {
+        "v1.1.2": "2025-02-19",
+        "v.1.1.1": "2022-10-20",
+        "v1.1.0": "2022-07-27",
+        "v0.2.0": "2019-12-10",
+        "v0.1.0": "2018-03-23",
+        "v0.0.1": "2017-04-14"
+      }
+    },
+    "BICEPS": {
+      "repo": "rbouckaert/biceps",
+      "releases": {
+        "v1.2.0": {
+          "BICEPS.v1.2.0.zip": 8
+        },
+        "v1.1.2": {
+          "BICEPS.addon.v1.1.2.zip": 2047
+        },
+        "v1.1.0": {
+          "BICEPS.addon.v1.1.0.zip": 245,
+          "BICEPS.addon.v1.1.1.zip": 775
+        }
+      },
+      "published": {
+        "v1.2.0": "2026-05-18",
+        "v1.1.2": "2023-09-28",
+        "v1.1.0": "2022-08-01"
+      }
+    },
+    "ORC": {
+      "repo": "jordandouglas/ORC",
+      "releases": {
+        "v1.3.1": {
+          "ORC.v1.3.1.zip": 63
+        },
+        "v1.3.0": {
+          "ORC.v1.3.0.zip": 20
+        },
+        "v1.2.1": {
+          "ORC.addon.v1.2.1.zip": 10026
+        },
+        "v1.2.0": {
+          "ORC.addon.v1.2.0.zip": 10825
+        },
+        "v1.1.2": {
+          "ORC.addon.v1.1.2.zip": 5531
+        },
+        "v1.1.1": {
+          "ORC.addon.v1.1.1.zip": 8024
+        },
+        "v1.1.0": {
+          "ORC.addon.v1.1.0.zip": 1032
+        },
+        "v1.0.0": {
+          "ORC.addon.v1.0.0.zip": 27,
+          "ORC.addon.v1.0.1.zip": 51,
+          "ORC.addon.v1.0.2.zip": 42
+        }
+      },
+      "published": {
+        "v1.3.1": "2026-05-13",
+        "v1.3.0": "2026-04-01",
+        "v1.2.1": "2025-07-11",
+        "v1.2.0": "2024-02-19",
+        "v1.1.2": "2023-08-03",
+        "v1.1.1": "2022-10-20",
+        "v1.1.0": "2022-08-01",
+        "v1.0.0": "2020-09-03"
+      }
+    },
+    "speedemon": {
+      "repo": "rbouckaert/speedemon",
+      "releases": {
+        "v1.2.0": {
+          "speedemon.v1.2.0.zip": 4
+        },
+        "publish": {
+          "speedemon.addon.v1.1.0.zip": 1954
+        }
+      },
+      "published": {
+        "v1.2.0": "2026-09-29",
+        "publish": "2022-09-05"
+      }
+    },
+    "gammaspike": {
+      "repo": "jordandouglas/GammaSpikeModel",
+      "releases": {
+        "v1.3.0": {
+          "gammaspike.v1.3.0.zip": 7
+        },
+        "v1.2.0": {
+          "gammaspike.package.v1.2.0.zip": 235
+        },
+        "v1.1.0": {
+          "gammaspike.package.v1.1.0.zip": 214
+        },
+        "v1.0.1": {
+          "gammaspike.package.v1.0.1.zip": 59
+        },
+        "v1.0.0": {
+          "gammaspike.package.v1.0.0.zip": 64
+        },
+        "v0.0.3": {
+          "gammaspike.package.v0.0.3.zip": 19
+        },
+        "v0.0.2": {
+          "gammaspike.package.v0.0.2.zip": 12
+        },
+        "v0.0.1": {
+          "gammaspike.package.v0.0.1.zip": 8
+        }
+      },
+      "published": {
+        "v1.3.0": "2026-04-02",
+        "v1.2.0": "2026-01-12",
+        "v1.1.0": "2025-07-03",
+        "v1.0.1": "2025-05-28",
+        "v1.0.0": "2025-03-12",
+        "v0.0.3": "2024-10-23",
+        "v0.0.2": "2024-09-12",
+        "v0.0.1": "2024-09-04"
+      }
+    },
+    "resub": {
+      "repo": "jordandouglas/resub",
+      "releases": {
+        "v1.0.0": {
+          "resub.v1.0.0.package.zip": 212
+        },
+        "v0.0.1": {
+          "resub.package.v0.0.1.zip": 9
+        }
+      },
+      "published": {
+        "v1.0.0": "2025-08-05",
+        "v0.0.1": "2025-02-13"
+      }
+    },
+    "contraband": {
+      "repo": "fkmendes/contraband",
+      "releases": {
+        "v1.0.2": {
+          "contraband.addon.v1.0.2.zip": 460
+        }
+      },
+      "published": {
+        "v1.0.2": "2025-07-15"
+      }
+    },
+    "Babel": {
+      "repo": "rbouckaert/Babel",
+      "releases": {
+        "v0.4.0": {
+          "Babel.addon.v0.4.0.zip": 265,
+          "Babel.addon.v0.4.1.zip": 422,
+          "Babel.addon.v0.4.2.zip": 1444
+        },
+        "v0.3.0": {
+          "Babel.addon.v0.3.0.zip": 12,
+          "Babel.addon.v0.3.1.zip": 641
+        },
+        "v0.2.0": {
+          "Babel.addon.v0.2.0.zip": 180,
+          "Babel.addon.v0.2.1.zip": 8464
+        },
+        "0.0.1": {
+          "Babel.addon.v0.1.0.zip": 35,
+          "Babel.addon.v0.1.1.zip": 87,
+          "Babel.addon.v0.1.2.zip": 19,
+          "Babel.addon.v0.1.3.zip": 51,
+          "Babel.addon.v0.1.4.zip": 88,
+          "Babel.addon.v0.1.5.zip": 53,
+          "Babel.addon.v0.1.6.zip": 33,
+          "Babel.addon.v0.1.7.zip": 37,
+          "tutorial_data.zip": 10
+        }
+      },
+      "published": {
+        "v0.4.0": "2022-08-09",
+        "v0.3.0": "2019-06-19",
+        "v0.2.0": "2018-03-21",
+        "0.0.1": "2015-09-28"
+      }
+    },
+    "BEAST_CLASSIC": {
+      "repo": "BEAST2-Dev/beast-classic",
+      "releases": {
+        "v1.7.1": {
+          "BEAST_CLASSIC.v1.7.1.zip": 6
+        },
+        "v1.7.0-beta1": {
+          "BEAST_CLASSIC.v1.7.0.zip": 31
+        },
+        "v1.6.0": {
+          "BEAST_CLASSIC.addon.v1.6.0.zip": 1199,
+          "BEAST_CLASSIC.addon.v1.6.1.zip": 27,
+          "BEAST_CLASSIC.package.v1.6.2.zip": 477,
+          "BEAST_CLASSIC.package.v1.6.3.zip": 1882,
+          "BEAST_CLASSIC.package.v1.6.4.zip": 3637
+        },
+        "v1.5.0": {
+          "BEAST_CLASSIC.addon.v1.5.0.zip": 1639
+        },
+        "v1.4.0": {
+          "BEAST_CLASSIC.addon.v1.4.0.zip": 1708
+        },
+        "v1.3.0": {
+          "BEAST_CLASSIC.addon.v1.3.0.zip": 1156,
+          "BEAST_CLASSIC.addon.v1.3.1.zip": 143,
+          "BEAST_CLASSIC.addon.v1.3.2.zip": 832
+        },
+        "v1.2.0": {
+          "BEAST_CLASSIC.addon.v1.2.0.zip": 94,
+          "BEAST_CLASSIC.addon.v1.2.1.zip": 1064
+        }
+      },
+      "published": {
+        "v1.7.1": "2026-10-20",
+        "v1.7.0-beta1": "2026-05-01",
+        "v1.6.0": "2022-08-09",
+        "v1.5.0": "2019-07-24",
+        "v1.4.0": "2018-03-21",
+        "v1.3.0": "2016-02-24",
+        "v1.2.0": "2015-05-24"
+      }
+    },
+    "SNAPP": {
+      "repo": "BEAST2-Dev/SNAPP",
+      "releases": {
+        "v1.6.0": {
+          "SNAPP.addon.v1.6.0.zip": 217,
+          "SNAPP.addon.v1.6.1.zip": 5159
+        },
+        "v1.5.0": {
+          "SNAPP.addon.v1.5.0.zip": 2314,
+          "SNAPP.addon.v1.5.1.zip": 983
+        },
+        "v1.4.0": {
+          "SNAPP.addon.v1.4.0.zip": 289,
+          "SNAPP.addon.v1.4.1.zip": 494,
+          "SNAPP.addon.v1.4.2.zip": 2388
+        },
+        "v1.3.0": {
+          "SNAPP.addon.v1.3.0.zip": 3996
+        },
+        "v1.2.0": {
+          "SNAPP.addon.v1.2.0.zip": 24,
+          "SNAPP.addon.v1.2.1.zip": 256,
+          "SNAPP.addon.v1.2.2.zip": 73,
+          "SNAPP.addon.v1.2.3.zip": 110,
+          "SNAPP.addon.v1.2.4.zip": 298,
+          "SNAPP.addon.v1.2.5.zip": 798
+        }
+      },
+      "published": {
+        "v1.6.0": "2022-08-21",
+        "v1.5.0": "2019-06-19",
+        "v1.4.0": "2018-03-21",
+        "v1.3.0": "2016-02-24",
+        "v1.2.0": "2015-05-13"
+      }
+    },
+    "snapper": {
+      "repo": "rbouckaert/snapper",
+      "releases": {
+        "v1.1.0": {
+          "snapper.addon.v1.1.0.zip": 505,
+          "snapper.addon.v1.1.1.zip": 111,
+          "snapper.addon.v1.1.2.zip": 367,
+          "snapper.addon.v1.1.3.zip": 510,
+          "snapper.package.v1.1.4.zip": 1127,
+          "snapper.package.v1.1.5.zip": 1163
+        },
+        "v1.0.0": {
+          "snapper.addon.v1.0.0.zip": 259
+        },
+        "v0.0.1": {
+          "snapper.addon.v0.0.1.zip": 31
+        }
+      },
+      "published": {
+        "v1.1.0": "2022-08-21",
+        "v1.0.0": "2020-07-15",
+        "v0.0.1": "2018-10-23"
+      }
+    },
+    "TreeStat2": {
+      "repo": "alexeid/TreeStat2",
+      "releases": {
+        "v0.2.0": {
+          "TreeStat2.v0.2.0.zip": 822
+        },
+        "v0.1.0": {
+          "TreeStat2.v0.1.0.zip": 418,
+          "TreeStat2.v0.1.1.zip": 912
+        },
+        "v0.0.1": {
+          "TreeStat2.v0.0.1.zip": 62,
+          "TreeStat2.v0.0.2.zip": 1747
+        }
+      },
+      "published": {
+        "v0.2.0": "2024-11-07",
+        "v0.1.0": "2022-08-10",
+        "v0.0.1": "2017-06-22"
+      }
+    },
+    "starbeast3": {
+      "repo": "rbouckaert/starbeast3",
+      "releases": {
+        "v1.3.0": {
+          "starbeast3.v1.3.0.zip": 17
+        },
+        "v1.2.1": {
+          "starbeast3.addon.v1.2.1.zip": 9321
+        },
+        "v1.2.0": {
+          "starbeast3.addon.v1.2.0.zip": 222
+        },
+        "v1.1.9": {
+          "starbeast3.addon.v1.1.9.zip": 6443
+        },
+        "v1.1.8": {
+          "starbeast3.addon.v1.1.8.zip": 7677
+        },
+        "v1.1.7": {
+          "starbeast3.addon.v1.1.7.zip": 5844
+        },
+        "v1.1.6": {
+          "starbeast3.addon.v1.1.6.zip": 911
+        },
+        "v1.1.5": {
+          "starbeast3.addon.v1.1.5.zip": 585
+        },
+        "v1.1.4": {
+          "starbeast3.addon.v1.1.4.zip": 1009
+        },
+        "v.1.1.3": {
+          "starbeast3.addon.v1.1.3.zip": 1769
+        },
+        "v.1.1.2": {
+          "starbeast3.addon.v1.1.2.zip": 735
+        },
+        "v.1.1.1": {
+          "starbeast3.addon.v1.1.1.zip": 346
+        },
+        "v1.1.0": {
+          "starbeast3.addon.v1.1.0.zip": 45
+        },
+        "v0.0.1": {
+          "starbeast3.addon.v0.0.1.zip": 35
+        }
+      },
+      "published": {
+        "v1.3.0": "2026-09-29",
+        "v1.2.1": "2025-07-07",
+        "v1.2.0": "2025-07-03",
+        "v1.1.9": "2024-09-10",
+        "v1.1.8": "2023-10-01",
+        "v1.1.7": "2023-03-07",
+        "v1.1.6": "2023-02-16",
+        "v1.1.5": "2023-01-31",
+        "v1.1.4": "2022-12-15",
+        "v.1.1.3": "2022-10-20",
+        "v.1.1.2": "2022-09-22",
+        "v.1.1.1": "2022-09-05",
+        "v1.1.0": "2022-08-17",
+        "v0.0.1": "2020-07-29"
+      }
+    },
+    "SpeciesNetwork": {
+      "repo": "zhangchicool/speciesnetwork",
+      "releases": {
+        "v1.0.0": {
+          "SpeciesNetwork.zip": 1154
+        },
+        "v0.13.0": {
+          "SpeciesNetwork.zip": 820,
+          "Tutorial.zip": 291
+        },
+        "v0.12.2": {
+          "SpeciesNetwork.zip": 31
+        }
+      },
+      "published": {
+        "v1.0.0": "2023-02-17",
+        "v0.13.0": "2019-10-03",
+        "v0.12.2": "2023-02-20"
+      }
+    },
+    "MODEL_SELECTION": {
+      "repo": "BEAST2-Dev/model-selection",
+      "releases": {
+        "v1.7.0": {
+          "MODEL_SELECTION.v1.7.0.zip": 7
+        },
+        "v1.6.0": {
+          "MODEL_SELECTION.addon.v1.6.0.zip": 829,
+          "MODEL_SELECTION.addon.v1.6.1.zip": 766,
+          "MODEL_SELECTION.addon.v1.6.2.zip": 3634
+        },
+        "v1.5.0": {
+          "MODEL_SELECTION.addon.v1.5.0.zip": 1666,
+          "MODEL_SELECTION.addon.v1.5.1.zip": 1301,
+          "MODEL_SELECTION.addon.v1.5.2.zip": 16709,
+          "MODEL_SELECTION.addon.v1.5.3.zip": 3727
+        },
+        "v1.4.0": {
+          "MODEL_SELECTION.addon.v1.4.0.zip": 185,
+          "MODEL_SELECTION.addon.v1.4.1.zip": 376,
+          "MODEL_SELECTION.addon.v1.4.2.zip": 9301
+        },
+        "v1.3.0": {
+          "MODEL_SELECTION.addon.v1.3.0.zip": 22,
+          "MODEL_SELECTION.addon.v1.3.1.zip": 287,
+          "MODEL_SELECTION.addon.v1.3.2.zip": 277,
+          "MODEL_SELECTION.addon.v1.3.3.zip": 269,
+          "MODEL_SELECTION.addon.v1.3.4.zip": 2205
+        },
+        "v1.2.0": {
+          "MODEL_SELECTION.addon.v1.2.0.zip": 66
+        },
+        "v1.1.0": {
+          "MODEL_SELECTION.addon.v1.1.0.zip": 459,
+          "MODEL_SELECTION.addon.v1.1.1.zip": 199,
+          "MODEL_SELECTION.addon.v1.1.2.zip": 16,
+          "MODEL_SELECTION.addon.v1.1.3.zip": 463
+        }
+      },
+      "published": {
+        "v1.7.0": "2026-08-12",
+        "v1.6.0": "2022-08-08",
+        "v1.5.0": "2019-06-19",
+        "v1.4.0": "2018-03-21",
+        "v1.3.0": "2016-03-28",
+        "v1.2.0": "2016-02-24",
+        "v1.1.0": "2015-05-24"
+      }
+    },
+    "NS": {
+      "repo": "BEAST2-Dev/nested-sampling",
+      "releases": {
+        "v1.3.1": {
+          "NS.v1.3.1.zip": 8
+        },
+        "v1.2.0": {
+          "NS.addon.v1.2.0.zip": 585,
+          "NS.package.v1.2.1.zip": 674,
+          "NS.package.v1.2.2.zip": 1198
+        },
+        "v1.1.0": {
+          "NS.addon.v1.1.0.zip": 30837
+        },
+        "v1.0.0": {
+          "NS.addon.v1.0.0.zip": 69,
+          "NS.addon.v1.0.1.zip": 315,
+          "NS.addon.v1.0.2.zip": 1185,
+          "NS.addon.v1.0.3.zip": 3073,
+          "NS.addon.v1.0.4.zip": 6933
+        },
+        "v0.1.0": {
+          "NS.addon.v0.1.0.zip": 26
+        },
+        "v0.0.1": {
+          "NS.addon.v0.0.1.zip": 28
+        }
+      },
+      "published": {
+        "v1.3.1": "2026-08-12",
+        "v1.2.0": "2022-08-08",
+        "v1.1.0": "2019-06-19",
+        "v1.0.0": "2018-06-16",
+        "v0.1.0": "2018-03-23",
+        "v0.0.1": "2017-11-16"
+      }
+    },
+    "CoupledMCMC": {
+      "repo": "nicfel/CoupledMCMC",
+      "releases": {
+        "v1.3.0-beta1": {
+          "CoupledMCMC.v1.3.0.zip": 16
+        },
+        "v1.2.0": {
+          "CoupledMCMC.v1.2.0.zip": 723,
+          "CoupledMCMC.v1.2.1.zip": 945,
+          "CoupledMCMC.v1.2.2.zip": 1308
+        },
+        "v1.1.0": {
+          "CoupledMCMC.v1.1.0.zip": 49
+        },
+        "v1.0.2": {
+          "CoupledMCMC.v1.0.2.zip": 410
+        },
+        "v1.0.1": {
+          "CoupledMCMC.v1.0.1.zip": 500
+        },
+        "v1.0.0": {
+          "CoupledMCMC.v1.0.0.zip": 18
+        },
+        "v0.1.8": {
+          "CoupledMCMC.v0.1.8.zip": 342
+        },
+        "v0.1.7": {
+          "CoupledMCMC.v0.1.7.zip": 340
+        },
+        "v0.1.6": {
+          "CoupledMCMC.v0.1.6.zip": 148
+        },
+        "v0.1.5": {
+          "CoupledMCMC.v0.1.5.zip": 101
+        },
+        "v0.1.4": {
+          "CoupledMCMC.v0.1.4.zip": 77
+        },
+        "v0.1.3": {
+          "CoupledMCMC.v0.1.3.zip": 94
+        },
+        "v0.1.2": {
+          "CoupledMCMC.v0.1.2.zip": 90
+        },
+        "v0.1.1": {
+          "CoupledMCMC.v0.1.1.zip": 13
+        },
+        "v0.1.0": {
+          "CoupledMCMC.v0.1.0.zip": 28
+        },
+        "v0.0.1": {
+          "CoupledMCMC.v0.0.1.zip": 7
+        }
+      },
+      "published": {
+        "v1.3.0-beta1": "2026-05-05",
+        "v1.2.0": "2022-08-15",
+        "v1.1.0": "2021-07-07",
+        "v1.0.2": "2020-07-02",
+        "v1.0.1": "2020-01-14",
+        "v1.0.0": "2019-12-05",
+        "v0.1.8": "2019-09-03",
+        "v0.1.7": "2019-05-29",
+        "v0.1.6": "2019-05-27",
+        "v0.1.5": "2019-04-29",
+        "v0.1.4": "2019-03-25",
+        "v0.1.3": "2019-03-05",
+        "v0.1.2": "2019-02-18",
+        "v0.1.1": "2019-02-18",
+        "v0.1.0": "2019-02-15",
+        "v0.0.1": "2018-11-01"
+      }
+    },
+    "MM": {
+      "repo": "CompEvol/morph-models",
+      "releases": {
+        "v1.3.1-beta1": {
+          "MM.v1.3.1.zip": 4
+        },
+        "v1.3.0": {
+          "MM.v1.3.0.zip": 16
+        },
+        "v1.2.0": {
+          "MM.addon.v1.2.0.zip": 276,
+          "MM.addon.v1.2.1.zip": 4730
+        },
+        "untagged-74152ea8507b4e08d3ad": {
+          "MM.addon.v1.1.1.zip": 5536
+        },
+        "v1.1.0": {
+          "MM.addon.v1.1.0.zip": 295
+        },
+        "1.0.5": {
+          "MM.addon.v1.0.5.zip": 1876
+        },
+        "1.0.4": {
+          "MM.addon.v1.0.4.zip": 592
+        },
+        "v1.0.3": {
+          "MM.addon.v1.0.3.zip": 482
+        },
+        "v1.0.2": {
+          "MM.addon.v1.0.2.zip": 39
+        },
+        "v1.0.1": {
+          "MM.addon.v1.0.1.zip": 318
+        },
+        "pre-v1.0.0": {
+          "MM.addon.v1.0.0.zip": 79
+        }
+      },
+      "published": {
+        "v1.3.1-beta1": "2026-10-14",
+        "v1.3.0": "2026-03-19",
+        "v1.2.0": "2022-08-30",
+        "untagged-74152ea8507b4e08d3ad": "2018-06-27",
+        "v1.1.0": "2018-03-22",
+        "1.0.5": "2017-01-24",
+        "1.0.4": "2016-03-07",
+        "v1.0.3": "2015-07-19",
+        "v1.0.2": "2015-06-29",
+        "v1.0.1": "2015-02-23",
+        "pre-v1.0.0": "2014-08-24"
+      }
+    },
+    "GEO_SPHERE": {
+      "repo": "BEAST2-Dev/beast-geo",
+      "releases": {
+        "v1.4.0": {
+          "GEO_SPHERE.addon.v1.4.0.zip": 522,
+          "GEO_SPHERE.package.v1.4.1.zip": 1056,
+          "GEO_SPHERE.package.v1.4.2.zip": 767
+        },
+        "v1.3.0": {
+          "GEO_SPHERE.addon.v1.3.0.zip": 995
+        },
+        "v1.2.0": {
+          "GEO_SPHERE.addon.v1.2.0.zip": 418,
+          "GEO_SPHERE.addon.v1.2.1.zip": 82,
+          "GEO_SPHERE.addon.v1.2.1.zip.old.zip": 35,
+          "GEO_SPHERE.addon.v1.2.1.zip.old2.zip": 20,
+          "GEO_SPHERE.addon.v1.2.2.zip": 787
+        },
+        "v1.1.0": {
+          "GEO_SPHERE.addon.v1.1.0.zip": 33,
+          "GEO_SPHERE.addon.v1.1.1.zip": 549,
+          "GEO_SPHERE.addon.v1.1.2.zip": 964
+        },
+        "v1.0.0": {
+          "GEO_SPHERE.addon.v1.0.0.zip": 35
+        },
+        "v0.3.0": {
+          "GEO_SPHERE.addon.v0.3.0.zip": 49,
+          "GEO_SPHERE.addon.v0.3.1.zip": 6,
+          "GEO_SPHERE.addon.v0.3.2.zip": 213
+        },
+        "v0.2.0": {
+          "GEO_SPHERE.addon.v0.2.0.zip": 48
+        },
+        "v0.0.6": {
+          "GEO_SPHERE.addon.v0.0.6.zip": 28,
+          "GEO_SPHERE.addon.v0.0.8.zip": 55,
+          "GEO_SPHERE.addon.v0.0.9.zip": 97,
+          "GEO_SPHERE.addon.v0.1.0.zip": 13,
+          "GEO_SPHERE.addon.v0.1.1.zip": 167,
+          "GEO_SPHERE.addon.v0.1.2.zip": 141,
+          "GEO_SPHERE.addon.v0.1.3.zip": 14,
+          "GEO_SPHERE.addon.v0.1.4.zip": 302
+        }
+      },
+      "published": {
+        "v1.4.0": "2022-08-29",
+        "v1.3.0": "2019-06-19",
+        "v1.2.0": "2018-03-22",
+        "v1.1.0": "2016-08-21",
+        "v1.0.0": "2016-08-07",
+        "v0.3.0": "2016-03-28",
+        "v0.2.0": "2016-02-24",
+        "v0.0.6": "2015-05-21"
+      }
+    },
+    "BREAK_AWAY": {
+      "repo": "rbouckaert/break-away",
+      "releases": {
+        "v1.2.0": {
+          "BREAK_AWAY.addon.v1.2.0.zip": 1190
+        },
+        "v1.0.0": {
+          "BREAK_AWAY.addon.v1.0.0.zip": 1097
+        },
+        "v0.0.1": {
+          "BREAK_AWAY.addon.v0.0.1.zip": 41
+        }
+      },
+      "published": {
+        "v1.2.0": "2022-08-29",
+        "v1.0.0": "2018-03-23",
+        "v0.0.1": "2017-07-05"
+      }
+    },
+    "SSM": {
+      "repo": "BEAST2-Dev/substmodels",
+      "releases": {
+        "v1.3.0": {
+          "SSM.v1.3.0.zip": 6,
+          "SSM.v1.3.1.zip": 10
+        },
+        "v1.2.0": {
+          "SSM.v1.2.0.zip": 2468,
+          "SSM.v1.2.1.zip": 479,
+          "SSM.v1.2.2.zip": 1098
+        },
+        "v1.1.0": {
+          "SSM.v1.1.0.zip": 2332
+        },
+        "v1.0.1": {
+          "SSM.v1.0.1.zip": 790
+        },
+        "v1.0.0": {
+          "SSM.v1.0.0.zip": 187
+        },
+        "v0.0.3": {
+          "SSM.v0.0.3.zip": 9
+        },
+        "v0.0.2": {
+          "SSM.v0.0.2.zip": 6
+        }
+      },
+      "published": {
+        "v1.3.0": "2026-05-18",
+        "v1.2.0": "2022-10-03",
+        "v1.1.0": "2018-03-22",
+        "v1.0.1": "2017-09-25",
+        "v1.0.0": "2017-05-25",
+        "v0.0.3": "2017-05-24",
+        "v0.0.2": "2017-05-16"
+      }
+    },
+    "MGSM": {
+      "repo": "BEAST2-Dev/MGSM",
+      "releases": {
+        "v0.4.0": {
+          "MGSM.addon.v0.4.0.zip": 1215
+        },
+        "v0.3.0": {
+          "MGSM.addon.v0.3.0.zip": 1205
+        },
+        "v0.2.0": {
+          "MGSM.addon.v0.2.0.zip": 188,
+          "MGSM.addon.v0.2.1.zip": 900
+        },
+        "0.0.1": {
+          "MSGM.addon.v0.0.1.zip": 14,
+          "MSGM.addon.v0.0.2.zip": 310,
+          "MSGM.addon.v0.1.0.zip": 4,
+          "MSGM.addon.v0.1.1.zip": 7,
+          "MSGM.addon.v0.1.2.zip": 5,
+          "MSGM.addon.v0.1.3.zip": 426
+        }
+      },
+      "published": {
+        "v0.4.0": "2022-10-05",
+        "v0.3.0": "2018-03-21",
+        "v0.2.0": "2016-02-24",
+        "0.0.1": "2015-03-11"
+      }
+    },
+    "SA": {
+      "repo": "CompEvol/sampled-ancestors",
+      "releases": {
+        "v2.3.0-beta2": {
+          "SA.v2.3.0.zip": 25
+        },
+        "v2.2.0": {
+          "SA.v2.2.0.zip": 10
+        },
+        "v2.1.1": {
+          "SA.v2.1.1.zip": 25462
+        },
+        "v2.1.0": {
+          "SA.v2.1.0.zip": 3898
+        },
+        "v2.0.2": {
+          "SA.v2.0.2.zip": 3579
+        },
+        "v2.0.1": {
+          "SA.v2.0.1.zip": 2684
+        },
+        "2.0.0": {
+          "SA.v2.0.0.zip": 1009
+        },
+        "v1.1.7": {
+          "SA.addon.v1.1.7.zip": 2771
+        },
+        "v1.1.6": {
+          "SA.addon.v1.1.6.zip": 162
+        },
+        "v1.1.4": {
+          "SA.addon.v1.1.4.zip": 246,
+          "SA.addon.v1.1.5.zip": 519
+        },
+        "v1.1.3": {
+          "SA.addon.v1.1.3.zip": 970
+        }
+      },
+      "published": {
+        "v2.3.0-beta2": "2026-03-25",
+        "v2.2.0": "2026-03-19",
+        "v2.1.1": "2023-03-19",
+        "v2.1.0": "2022-10-10",
+        "v2.0.2": "2019-07-09",
+        "v2.0.1": "2018-12-19",
+        "2.0.0": "2018-04-09",
+        "v1.1.7": "2016-12-21",
+        "v1.1.6": "2016-11-10",
+        "v1.1.4": "2016-03-07",
+        "v1.1.3": "2015-05-26"
+      }
+    },
+    "BDSKY": {
+      "repo": "BEAST2-Dev/bdsky",
+      "releases": {
+        "v1.5.1": {
+          "BDSKY.v1.5.1.zip": 2796
+        },
+        "v1.4.8": {
+          "BDSKY.v1.4.8.zip": 1995
+        },
+        "v1.5.0": {
+          "BDSKY.v1.5.0.zip": 3086
+        },
+        "v1.4.7": {
+          "BDSKY.v1.4.7.zip": 27
+        },
+        "v1.4.6": {
+          "BDSKY.v1.4.6.zip": 958
+        },
+        "1.4.5": {
+          "BDSKY.addon.v1.4.5.zip": 3971
+        },
+        "1.4.4": {
+          "BDSKY.addon.v1.4.4.zip": 299
+        },
+        "v1.4.3": {
+          "BDSKY.addon.v1.4.3.zip": 385
+        },
+        "1.4.2": {
+          "BDSKY.addon.1.4.2.zip": 232
+        },
+        "1.4.1": {
+          "BDSKY.addon.1.4.1.zip": 375
+        },
+        "1.4.0": {
+          "BDSKY.addon.1.4.0.zip": 433
+        },
+        "1.3.3": {
+          "BDSKY.addon.1.3.3.zip": 2208
+        },
+        "1.3.2": {
+          "BDSKY.addon.1.3.2.zip": 347
+        },
+        "1.3.1": {
+          "BDSKY.addon.1.3.1.zip": 37
+        },
+        "1.3.0": {
+          "BDSKY.addon.1.3.0.zip": 62
+        },
+        "1.2.2": {
+          "BDSKY.addon.1.2.2.zip": 1383
+        }
+      },
+      "published": {
+        "v1.5.1": "2024-10-14",
+        "v1.4.8": "2022-10-11",
+        "v1.5.0": "2022-10-10",
+        "v1.4.7": "2021-07-09",
+        "v1.4.6": "2020-08-13",
+        "1.4.5": "2019-03-08",
+        "1.4.4": "2019-02-18",
+        "v1.4.3": "2018-12-20",
+        "1.4.2": "2018-11-20",
+        "1.4.1": "2018-07-31",
+        "1.4.0": "2018-04-25",
+        "1.3.3": "2016-11-07",
+        "1.3.2": "2016-07-11",
+        "1.3.1": "2016-04-25",
+        "1.3.0": "2016-03-21",
+        "1.2.2": "2015-06-01"
+      }
+    },
+    "feast": {
+      "repo": "tgvaughan/feast",
+      "releases": {
+        "v11.0.1": {
+          "feast.v11.0.1.zip": 26
+        },
+        "v11.0.0": {
+          "feast.v11.0.0.zip": 3
+        },
+        "v10.6.1": {
+          "feast.v10.6.1.zip": 809
+        },
+        "v10.6.0": {
+          "feast.v10.6.0.zip": 442
+        },
+        "v10.5.0": {
+          "feast.v10.5.0.zip": 453
+        },
+        "v10.4.0": {
+          "feast.v10.4.0.zip": 680
+        },
+        "v10.3.1": {
+          "feast.v10.3.1.zip": 300
+        },
+        "v10.3.0": {
+          "feast.v10.3.0.zip": 425
+        },
+        "v10.2.0": {
+          "feast.v10.2.0.zip": 234
+        },
+        "v10.1.0": {
+          "feast.v10.1.0.zip": 27
+        },
+        "v10.0.0": {
+          "feast.v10.0.0.zip": 113
+        },
+        "v9.8.5": {
+          "feast.v9.8.5.zip": 52
+        },
+        "v9.8.4": {
+          "feast.v9.8.4.zip": 64
+        },
+        "v9.8.3": {
+          "feast.v9.8.3.zip": 8
+        },
+        "v9.8.2": {
+          "feast.v9.8.2.zip": 28
+        },
+        "v9.8.1": {
+          "feast.v9.8.1.zip": 38
+        },
+        "v9.8.0": {
+          "feast.v9.8.0.zip": 30
+        },
+        "v9.7.1": {
+          "feast.v9.7.1.zip": 73
+        },
+        "v9.7.0": {
+          "feast.v9.7.0.zip": 44
+        },
+        "v8.4.0": {
+          "feast.v8.4.0.zip": 565
+        },
+        "v9.6.3": {
+          "feast.v9.6.3.zip": 160
+        },
+        "v9.6.2": {
+          "feast.v9.6.2.zip": 54
+        },
+        "v9.6.1": {
+          "feast.v9.6.1.zip": 3
+        },
+        "v9.6.0": {
+          "feast.v9.6.0.zip": 69
+        },
+        "v9.5.0": {
+          "feast.v9.5.0.zip": 19
+        },
+        "v9.4.0": {
+          "feast.v9.4.0.zip": 631
+        },
+        "v9.3.1": {
+          "feast.v9.3.1.zip": 99
+        },
+        "v9.3.0": {
+          "feast.v9.3.0.zip": 50
+        },
+        "v9.2.1": {
+          "feast.v9.2.1.zip": 184
+        },
+        "v8.3.1": {
+          "feast.v8.3.1.zip": 333
+        },
+        "v9.2.0": {
+          "feast.v9.2.0.zip": 273
+        },
+        "v8.3.0": {
+          "feast.v8.3.0.zip": 205
+        },
+        "v9.1.1": {
+          "feast.v9.1.1.zip": 35
+        },
+        "v8.2.0": {
+          "feast.v8.2.0.zip": 77
+        },
+        "v9.1.0": {
+          "feast.v9.1.0-jarsOnly.zip": 1,
+          "feast.v9.1.0.zip": 45
+        },
+        "v9.0.0": {
+          "feast.v9.0.0-jarsOnly.zip": 3,
+          "feast.v9.0.0.zip": 43
+        },
+        "v8.1.0": {
+          "feast.v8.1.0-jarsOnly.zip": 2,
+          "feast.v8.1.0.zip": 330
+        },
+        "v8.0.0": {
+          "feast.v8.0.0-jarsOnly.zip": 1,
+          "feast.v8.0.0.zip": 20
+        },
+        "v7.15.0": {
+          "feast.v7.15.0-jarsOnly.zip": 1,
+          "feast.v7.15.0.zip": 121
+        },
+        "v7.13.0": {
+          "feast.v7.13.0-jarsOnly.zip": 2,
+          "feast.v7.13.0.zip": 386
+        },
+        "v7.12.1": {
+          "feast.v7.12.1-jarsOnly.zip": 1,
+          "feast.v7.12.1.zip": 51
+        },
+        "v7.12.0": {
+          "feast.v7.12.0-jarsOnly.zip": 1,
+          "feast.v7.12.0.zip": 42
+        },
+        "v7.11.0": {
+          "feast.v7.11.0-jarsOnly.zip": 8,
+          "feast.v7.11.0.zip": 92
+        },
+        "v7.10.0": {
+          "feast.v7.10.0-jarsOnly.zip": 1,
+          "feast.v7.10.0.zip": 95
+        },
+        "v7.9.3": {
+          "feast.v7.9.3-jarsOnly.zip": 1,
+          "feast.v7.9.3.zip": 161
+        },
+        "v7.9.2": {
+          "feast.v7.9.2-jarsOnly.zip": 6,
+          "feast.v7.9.2.zip": 103
+        },
+        "v7.9.1": {
+          "feast.v7.9.1-jarsOnly.zip": 7,
+          "feast.v7.9.1.zip": 16
+        },
+        "v7.9.0": {
+          "feast.v7.9.0-jarsOnly.zip": 6,
+          "feast.v7.9.0.zip": 15
+        },
+        "v7.8.0": {
+          "feast.v7.8.0-jarsOnly.zip": 8,
+          "feast.v7.8.0.zip": 7
+        },
+        "v7.7.0": {
+          "feast.v7.7.0.zip": 8
+        },
+        "v7.6.0": {
+          "feast.v7.6.0-jarsOnly.zip": 7,
+          "feast.v7.6.0.zip": 7
+        },
+        "v7.5.3": {
+          "feast.v7.5.3.zip": 51
+        },
+        "v7.5.2": {
+          "feast.v7.5.2-jarsOnly.zip": 9,
+          "feast.v7.5.2.zip": 54
+        },
+        "v7.5.1": {
+          "feast.v7.5.1-jarsOnly.zip": 9,
+          "feast.v7.5.1.zip": 10
+        },
+        "v7.5.0": {
+          "feast.v7.5.0-jarsOnly.zip": 10,
+          "feast.v7.5.0.zip": 16
+        },
+        "v7.4.1": {
+          "feast.v7.4.1-jarsOnly.zip": 3,
+          "feast.v7.4.1.zip": 7
+        },
+        "v7.4.0": {
+          "feast.v7.4.0-jarsOnly.zip": 9,
+          "feast.v7.4.0.zip": 12
+        },
+        "v7.3.0": {
+          "feast.v7.3.0-jarsOnly.zip": 9,
+          "feast.v7.3.0.zip": 19
+        },
+        "v7.2.1": {
+          "feast.v7.2.1-jarsOnly.zip": 9,
+          "feast.v7.2.1.zip": 11
+        },
+        "v7.2.0": {
+          "feast.v7.2.0-jarsOnly.zip": 6,
+          "feast.v7.2.0.zip": 13
+        },
+        "v7.1.1": {
+          "feast.v7.1.1-jarsOnly.zip": 4,
+          "feast.v7.1.1.zip": 11
+        },
+        "v7.1.0": {
+          "feast.v7.1.0-jarsOnly.zip": 5,
+          "feast.v7.1.0.zip": 9
+        },
+        "v7.0.1": {
+          "feast.v7.0.1-jarsOnly.zip": 6,
+          "feast.v7.0.1.zip": 7
+        },
+        "v7.0.0": {
+          "feast.v7.0.0-jarsOnly.zip": 6,
+          "feast.v7.0.0.zip": 7
+        },
+        "v6.1.1": {
+          "feast.v6.1.1-jarsOnly.zip": 7,
+          "feast.v6.1.1.zip": 12
+        },
+        "v6.1.0": {
+          "feast.v6.1.0-jarsOnly.zip": 9,
+          "feast.v6.1.0.zip": 7
+        },
+        "v6.0.0": {
+          "feast.v6.0.0-jarsOnly.zip": 6,
+          "feast.v6.0.0.zip": 8
+        },
+        "v5.2.0": {
+          "feast.v5.2.0-jarsOnly.zip": 8,
+          "feast.v5.2.0.zip": 22
+        },
+        "v5.1.0": {
+          "feast.v5.1.0-jarsOnly.zip": 7,
+          "feast.v5.1.0.zip": 10
+        },
+        "v5.0.0": {
+          "feast.v5.0.0-jarsOnly.zip": 19,
+          "feast.v5.0.0.zip": 12
+        },
+        "v4.5.0": {
+          "feast.v4.5.0-jarsOnly.zip": 7,
+          "feast.v4.5.0.zip": 9
+        },
+        "v4.4.0": {
+          "feast.v4.4.0-jarsOnly.zip": 6,
+          "feast.v4.4.0.zip": 9
+        },
+        "v4.3.0": {
+          "feast.v4.3.0-jarsOnly.zip": 9,
+          "feast.v4.3.0.zip": 10
+        },
+        "v4.2.0": {
+          "feast.v4.2.0-jarsOnly.zip": 9,
+          "feast.v4.2.0.zip": 14
+        },
+        "v4.1.0": {
+          "feast.v4.1.0-jarsOnly.zip": 7,
+          "feast.v4.1.0.zip": 9
+        },
+        "v4.0.0": {
+          "feast.v4.0.0-jarsOnly.zip": 7,
+          "feast.v4.0.0.zip": 8
+        },
+        "v3.1.0": {
+          "feast.v3.1.0-jarsOnly.zip": 7,
+          "feast.v3.1.0.zip": 7
+        },
+        "v3.0.0": {
+          "feast.v3.0.0-jarsOnly.zip": 7,
+          "feast.v3.0.0.zip": 7
+        },
+        "v2.2.1": {
+          "feast.v2.2.1-jarsOnly.zip": 6,
+          "feast.v2.2.1.zip": 6
+        },
+        "v2.2.0": {
+          "feast.v2.2.0-jarsOnly.zip": 6,
+          "feast.v2.2.0.zip": 6
+        },
+        "v2.1.0": {
+          "feast.v2.1.0-jarsOnly.zip": 6,
+          "feast.v2.1.0.zip": 7
+        },
+        "v2.0.0": {
+          "feast.v2.0.0-jarsOnly.zip": 8,
+          "feast.v2.0.0.zip": 10
+        },
+        "v1.8.1": {
+          "feast.v1.8.1-jarsOnly.zip": 8,
+          "feast.v1.8.1.zip": 8
+        },
+        "v1.8.0": {
+          "feast.v1.8.0-jarsOnly.zip": 8,
+          "feast.v1.8.0.zip": 8
+        },
+        "v1.7.1": {
+          "feast.v1.7.1-jarsOnly.zip": 9,
+          "feast.v1.7.1.zip": 10
+        },
+        "v1.7.0": {
+          "feast.v1.7.0.zip": 9
+        },
+        "v1.6.0": {
+          "feast.v1.6.0-jarsOnly.zip": 6,
+          "feast.v1.6.0.zip": 10
+        },
+        "v1.5.1": {
+          "feast.v1.5.1-jarsOnly.zip": 9,
+          "feast.v1.5.1.zip": 12
+        },
+        "v1.5.0": {
+          "feast.v1.5.0-jarsOnly.zip": 6,
+          "feast.v1.5.0.zip": 34
+        },
+        "v1.4.0": {
+          "feast.v1.4.0.zip": 22
+        },
+        "v1.3.0": {
+          "feast.v1.3.0.zip": 18
+        },
+        "v1.2.0": {
+          "feast.v1.2.0.zip": 10
+        },
+        "1.1.0": {
+          "feast.v1.1.0.zip": 8
+        },
+        "v1.0.0": {
+          "feast.v1.0.0.zip": 9
+        }
+      },
+      "published": {
+        "v11.0.1": "2026-05-13",
+        "v11.0.0": "2026-04-29",
+        "v10.6.1": "2026-02-20",
+        "v10.6.0": "2025-09-18",
+        "v10.5.0": "2025-05-26",
+        "v10.4.0": "2024-10-29",
+        "v10.3.1": "2024-07-17",
+        "v10.3.0": "2024-02-09",
+        "v10.2.0": "2023-12-22",
+        "v10.1.0": "2023-12-21",
+        "v10.0.0": "2023-12-01",
+        "v9.8.5": "2023-11-30",
+        "v9.8.4": "2023-11-23",
+        "v9.8.3": "2023-11-23",
+        "v9.8.2": "2023-11-22",
+        "v9.8.1": "2023-11-20",
+        "v9.8.0": "2023-11-17",
+        "v9.7.1": "2023-11-07",
+        "v9.7.0": "2023-11-03",
+        "v8.4.0": "2023-11-03",
+        "v9.6.3": "2023-10-04",
+        "v9.6.2": "2023-09-26",
+        "v9.6.1": "2023-09-20",
+        "v9.6.0": "2023-09-19",
+        "v9.5.0": "2023-09-18",
+        "v9.4.0": "2023-04-14",
+        "v9.3.1": "2023-04-03",
+        "v9.3.0": "2023-03-27",
+        "v9.2.1": "2023-02-13",
+        "v8.3.1": "2023-02-13",
+        "v9.2.0": "2022-12-07",
+        "v8.3.0": "2022-12-07",
+        "v9.1.1": "2022-11-25",
+        "v8.2.0": "2022-11-25",
+        "v9.1.0": "2022-11-08",
+        "v9.0.0": "2022-10-21",
+        "v8.1.0": "2022-09-07",
+        "v8.0.0": "2022-09-07",
+        "v7.15.0": "2022-08-31",
+        "v7.13.0": "2022-05-31",
+        "v7.12.1": "2022-05-25",
+        "v7.12.0": "2022-05-20",
+        "v7.11.0": "2022-04-29",
+        "v7.10.0": "2022-03-30",
+        "v7.9.3": "2021-12-08",
+        "v7.9.2": "2021-10-21",
+        "v7.9.1": "2021-07-26",
+        "v7.9.0": "2021-07-21",
+        "v7.8.0": "2021-05-27",
+        "v7.7.0": "2021-04-21",
+        "v7.6.0": "2021-03-24",
+        "v7.5.3": "2020-12-16",
+        "v7.5.2": "2020-11-12",
+        "v7.5.1": "2020-11-12",
+        "v7.5.0": "2020-10-30",
+        "v7.4.1": "2020-10-08",
+        "v7.4.0": "2020-09-30",
+        "v7.3.0": "2020-09-18",
+        "v7.2.1": "2020-07-24",
+        "v7.2.0": "2020-05-20",
+        "v7.1.1": "2020-04-16",
+        "v7.1.0": "2020-04-01",
+        "v7.0.1": "2020-03-30",
+        "v7.0.0": "2020-03-24",
+        "v6.1.1": "2019-08-27",
+        "v6.1.0": "2019-08-27",
+        "v6.0.0": "2019-07-01",
+        "v5.2.0": "2018-10-03",
+        "v5.1.0": "2018-09-26",
+        "v5.0.0": "2018-03-29",
+        "v4.5.0": "2017-10-20",
+        "v4.4.0": "2017-09-18",
+        "v4.3.0": "2017-09-14",
+        "v4.2.0": "2016-07-12",
+        "v4.1.0": "2016-07-04",
+        "v4.0.0": "2016-07-04",
+        "v3.1.0": "2016-02-03",
+        "v3.0.0": "2015-11-09",
+        "v2.2.1": "2015-10-30",
+        "v2.2.0": "2015-10-07",
+        "v2.1.0": "2015-08-26",
+        "v2.0.0": "2015-07-22",
+        "v1.8.1": "2015-06-10",
+        "v1.8.0": "2015-05-28",
+        "v1.7.1": "2015-05-27",
+        "v1.7.0": "2015-02-25",
+        "v1.6.0": "2014-06-20",
+        "v1.5.1": "2014-04-22",
+        "v1.5.0": "2014-04-11",
+        "v1.4.0": "2014-04-10",
+        "v1.3.0": "2014-03-31",
+        "v1.2.0": "2014-03-27",
+        "1.1.0": "2014-03-25",
+        "v1.0.0": "2014-03-22"
+      }
+    },
+    "TiDeTree": {
+      "repo": "seidels/tidetree",
+      "releases": {
+        "v2.0.0": {
+          "tidetree.v2.0.0.zip": 2
+        },
+        "v1.0.2": {
+          "tidetree.v1.0.2.zip": 12
+        },
+        "v1.0.1": {
+          "tidetree.v1.0.1.zip": 560
+        },
+        "v1.0.0": {
+          "tidetree.v1.0.0.zip": 14
+        },
+        "v1.0.0-alpha.1": {
+          "tidetree.v1.0.0-alpha.1.zip": 11
+        }
+      },
+      "published": {
+        "v2.0.0": "2026-10-07",
+        "v1.0.2": "2025-05-16",
+        "v1.0.1": "2024-11-27",
+        "v1.0.0": "2023-04-12",
+        "v1.0.0-alpha.1": "2022-06-16"
+      }
+    },
+    "MultiTypeTree": {
+      "repo": "tgvaughan/MultiTypeTree",
+      "releases": {
+        "v8.3.0": {
+          "MultiTypeTree.v8.3.0.zip": 833
+        },
+        "v8.2.0": {
+          "MultiTypeTree.v8.2.0.zip": 545
+        },
+        "v8.1.0": {
+          "MultiTypeTree.v8.1.0.zip": 1028
+        },
+        "v8.0.0": {
+          "MultiTypeTree.v8.0.0.zip": 1056
+        },
+        "v7.0.2": {
+          "MultiTypeTree.v7.0.2.zip": 1660
+        },
+        "v7.0.1": {
+          "MultiTypeTree.v7.0.1.zip": 1114
+        },
+        "v7.0.0": {
+          "MultiTypeTree.v7.0.0.zip": 1487
+        },
+        "v6.3.1": {
+          "MultiTypeTree.v6.3.1.zip": 778
+        },
+        "v7.0.0-pre": {
+          "MultiTypeTree.v7.0.0-pre.zip": 30
+        },
+        "v6.3.0": {
+          "MultiTypeTree.v6.3.0.zip": 733
+        },
+        "v6.2.1": {
+          "MultiTypeTree.v6.2.1.zip": 617
+        },
+        "v6.2.0": {
+          "MultiTypeTree.v6.2.0.zip": 185
+        },
+        "v6.1.0": {
+          "MultiTypeTree.v6.1.0.zip": 104
+        },
+        "v6.0.0": {
+          "MultiTypeTree.v6.0.0.zip": 63
+        },
+        "v5.5.0": {
+          "MultiTypeTree.v5.5.0.zip": 320
+        },
+        "v5.4.1": {
+          "MultiTypeTree.v5.4.1.zip": 69
+        },
+        "v5.4.0": {
+          "MultiTypeTree.v5.4.0.zip": 312
+        },
+        "v5.3.0": {
+          "MultiTypeTree.v5.3.0.zip": 351
+        },
+        "v5.2.3": {
+          "MultiTypeTree.v5.2.3.zip": 15
+        },
+        "v5.2.2": {
+          "MultiTypeTree.v5.2.2.zip": 30
+        },
+        "v5.2.1": {
+          "MultiTypeTree.v5.2.1.zip": 121
+        },
+        "v4.0.0": {
+          "MultiTypeTree.v4.0.0.zip": 61
+        },
+        "v3.0.0": {
+          "MultiTypeTree.v3.0.0.zip": 298
+        },
+        "v2.0.2": {
+          "MultiTypeTree.v2.0.2.zip": 156
+        },
+        "v2.0.1": {
+          "MultiTypeTree.v2.0.1.zip": 53
+        }
+      },
+      "published": {
+        "v8.3.0": "2025-08-11",
+        "v8.2.0": "2025-03-03",
+        "v8.1.0": "2023-11-30",
+        "v8.0.0": "2022-11-07",
+        "v7.0.2": "2020-06-22",
+        "v7.0.1": "2019-07-01",
+        "v7.0.0": "2018-03-28",
+        "v6.3.1": "2017-11-29",
+        "v7.0.0-pre": "2017-04-13",
+        "v6.3.0": "2017-03-24",
+        "v6.2.1": "2016-06-29",
+        "v6.2.0": "2016-05-09",
+        "v6.1.0": "2016-04-06",
+        "v6.0.0": "2016-03-07",
+        "v5.5.0": "2016-01-26",
+        "v5.4.1": "2016-01-21",
+        "v5.4.0": "2015-10-12",
+        "v5.3.0": "2015-05-06",
+        "v5.2.3": "2015-05-05",
+        "v5.2.2": "2015-04-29",
+        "v5.2.1": "2015-03-03",
+        "v4.0.0": "2015-01-20",
+        "v3.0.0": "2014-07-08",
+        "v2.0.2": "2014-04-28",
+        "v2.0.1": "2014-04-07"
+      }
+    },
+    "MASTER": {
+      "repo": "tgvaughan/MASTER",
+      "releases": {
+        "v7.0.0": {
+          "MASTER.v7.0.0.zip": 2314
+        },
+        "v6.1.2": {
+          "MASTER-6.1.2.zip": 30,
+          "MASTER.package.v6.1.2.zip": 1642
+        },
+        "v6.1.1": {
+          "MASTER-6.1.1.zip": 17,
+          "MASTER.package.v6.1.1.zip": 1079
+        },
+        "v6.1.0": {
+          "MASTER-6.1.0.zip": 25,
+          "MASTER.package.v6.1.0.zip": 1195
+        },
+        "v6.0.1": {
+          "MASTER-6.0.1.zip": 11,
+          "MASTER.package.v6.0.1.zip": 138
+        },
+        "v6.0.0": {
+          "MASTER-6.0.0.zip": 13,
+          "MASTER.package.v6.0.0.zip": 321
+        },
+        "v5.1.1": {
+          "MASTER-5.1.1.zip": 25,
+          "MASTER.package.v5.1.1.zip": 664
+        },
+        "v5.1.0": {
+          "MASTER-5.1.0.zip": 12,
+          "MASTER.package.v5.1.0.zip": 86
+        },
+        "v5.0.2": {
+          "MASTER-5.0.2.zip": 23,
+          "MASTER.package.v5.0.2.zip": 286
+        },
+        "v5.0.1": {
+          "MASTER-5.0.1.zip": 11,
+          "MASTER.package.v5.0.1.zip": 23
+        },
+        "v5.0.0": {
+          "MASTER-5.0.0.zip": 18,
+          "MASTER.package.v5.0.0.zip": 127
+        },
+        "v4.1.3": {
+          "MASTER-4.1.3.zip": 24,
+          "MASTER.package.v4.1.3.zip": 347
+        },
+        "v4.1.2": {
+          "MASTER-4.1.2.zip": 12,
+          "MASTER.package.v4.1.2.zip": 16
+        },
+        "v4.1.1": {
+          "MASTER-4.1.1.zip": 20,
+          "MASTER.package.v4.1.1.zip": 239
+        },
+        "v4.1.0": {
+          "MASTER-4.1.0.zip": 13,
+          "MASTER.package.v4.1.0.zip": 43
+        },
+        "v4.0.0": {
+          "MASTER-4.0.0.zip": 9,
+          "MASTER.package.v4.0.0.zip": 13
+        },
+        "v3.0.0": {
+          "MASTER-3.0.0.zip": 13,
+          "MASTER.package.v3.0.0.zip": 77
+        },
+        "v2.0.0": {
+          "MASTER-2.0.0.zip": 30,
+          "MASTER.package.v2.0.0.zip": 254
+        },
+        "v1.10.0": {
+          "MASTER-1.10.0.zip": 23,
+          "MASTER.package.v1.10.0.zip": 75
+        },
+        "v1.9.0": {
+          "MASTER-1.9.0.zip": 12,
+          "MASTER.package.v1.9.0.zip": 18
+        },
+        "v1.8.0": {
+          "MASTER-1.8.0.zip": 11,
+          "MASTER.package.v1.8.0.zip": 15
+        },
+        "v1.7.1": {
+          "MASTER-1.7.1.zip": 13,
+          "MASTER.package.v1.7.1.zip": 59
+        },
+        "v1.6.0": {
+          "MASTER-1.6.0.zip": 16,
+          "MASTER.package.v1.6.0.zip": 101
+        },
+        "v1.5.2": {
+          "MASTER-1.5.2.zip": 16,
+          "MASTER.addon.v1.5.2.zip": 32
+        },
+        "v1.4.1": {
+          "MASTER-1.4.1.zip": 24,
+          "MASTER.addon.v1.4.1.zip": 142
+        },
+        "v1.3.0": {
+          "MASTER-1.3.0.zip": 13
+        },
+        "v1.2.0": {
+          "MASTER-1.2.0.zip": 12
+        },
+        "v1.1.1": {
+          "MASTER-1.1.1.zip": 12
+        }
+      },
+      "published": {
+        "v7.0.0": "2022-11-11",
+        "v6.1.2": "2020-07-07",
+        "v6.1.1": "2019-07-01",
+        "v6.1.0": "2018-10-11",
+        "v6.0.1": "2018-09-19",
+        "v6.0.0": "2018-03-28",
+        "v5.1.1": "2017-04-10",
+        "v5.1.0": "2017-02-27",
+        "v5.0.2": "2016-06-28",
+        "v5.0.1": "2016-06-22",
+        "v5.0.0": "2016-03-16",
+        "v4.1.3": "2015-09-19",
+        "v4.1.2": "2015-09-11",
+        "v4.1.1": "2015-04-07",
+        "v4.1.0": "2015-03-16",
+        "v4.0.0": "2015-03-16",
+        "v3.0.0": "2015-01-20",
+        "v2.0.0": "2014-08-20",
+        "v1.10.0": "2014-06-18",
+        "v1.9.0": "2014-06-18",
+        "v1.8.0": "2014-06-17",
+        "v1.7.1": "2014-06-06",
+        "v1.6.0": "2014-04-04",
+        "v1.5.2": "2014-03-17",
+        "v1.4.1": "2013-11-13",
+        "v1.3.0": "2013-07-10",
+        "v1.2.0": "2013-07-09",
+        "v1.1.1": "2013-07-08"
+      }
+    },
+    "ReMASTER": {
+      "repo": "tgvaughan/remaster",
+      "releases": {
+        "v3.0.1": {
+          "remaster.v3.0.1.zip": 7
+        },
+        "v3.0.0": {
+          "remaster.v3.0.0.zip": 1
+        },
+        "v2.7.4": {
+          "remaster.v2.7.4.zip": 228
+        },
+        "v2.7.3": {
+          "remaster.v2.7.3.zip": 146
+        },
+        "v2.7.2": {
+          "remaster.v2.7.2.zip": 504
+        },
+        "v2.7.1": {
+          "remaster.v2.7.1.zip": 12
+        },
+        "v2.7.0": {
+          "remaster.v2.7.0.zip": 94
+        },
+        "v2.6.2": {
+          "remaster.v2.6.2.zip": 146
+        },
+        "v2.6.1": {
+          "remaster.v2.6.1.zip": 6
+        },
+        "v2.6.0": {
+          "remaster.v2.6.0.zip": 19
+        },
+        "v2.5.1": {
+          "remaster.v2.5.1.zip": 90
+        },
+        "v2.5.0": {
+          "remaster.v2.5.0.zip": 76
+        },
+        "v2.4.0": {
+          "remaster.v2.4.0.zip": 39
+        },
+        "v2.3.3": {
+          "remaster.v2.3.3.zip": 60
+        },
+        "v2.3.2": {
+          "remaster.v2.3.2.zip": 39
+        },
+        "v2.3.1": {
+          "remaster.v2.3.1.zip": 5
+        },
+        "v2.3.0": {
+          "remaster.v2.3.0.zip": 19
+        },
+        "v2.2.0": {
+          "remaster.v2.2.0.zip": 12
+        },
+        "v2.1.0": {
+          "remaster.v2.1.0.zip": 4
+        },
+        "v2.0.0": {
+          "remaster.v2.0.0.zip": 2
+        },
+        "v1.0.0": {
+          "remaster.v1.0.0.zip": 23
+        },
+        "v0.0.3": {
+          "remaster.v0.0.3.zip": 5
+        },
+        "v0.0.2": {
+          "remaster.v0.0.2.zip": 3
+        },
+        "v0.0.1": {
+          "remaster.v0.0.1.zip": 6
+        }
+      },
+      "published": {
+        "v3.0.1": "2026-05-13",
+        "v3.0.0": "2026-04-29",
+        "v2.7.4": "2026-02-07",
+        "v2.7.3": "2025-10-28",
+        "v2.7.2": "2024-10-18",
+        "v2.7.1": "2024-10-17",
+        "v2.7.0": "2024-08-29",
+        "v2.6.2": "2024-04-11",
+        "v2.6.1": "2024-04-11",
+        "v2.6.0": "2024-04-08",
+        "v2.5.1": "2024-01-24",
+        "v2.5.0": "2023-12-13",
+        "v2.4.0": "2023-11-23",
+        "v2.3.3": "2023-10-24",
+        "v2.3.2": "2023-10-05",
+        "v2.3.1": "2023-10-05",
+        "v2.3.0": "2023-08-18",
+        "v2.2.0": "2023-03-31",
+        "v2.1.0": "2023-03-29",
+        "v2.0.0": "2023-03-29",
+        "v1.0.0": "2022-10-24",
+        "v0.0.3": "2022-09-19",
+        "v0.0.2": "2022-08-29",
+        "v0.0.1": "2022-05-24"
+      }
+    },
+    "Mascot": {
+      "repo": "nicfel/Mascot",
+      "releases": {
+        "v3.1.0-beta1": {
+          "Mascot.v3.1.0.zip": 12
+        },
+        "v3.0.8": {
+          "Mascot.v3.0.8.zip": 39
+        },
+        "v3.0.7": {
+          "Mascot.v3.0.7.zip": 1685
+        },
+        "v3.0.6": {
+          "Mascot.v3.0.6.zip": 108
+        },
+        "v3.0.5": {
+          "Mascot.v3.0.5.zip": 15
+        },
+        "v3.0.4": {
+          "Mascot.v3.0.4.zip": 69
+        },
+        "v3.0.3": {
+          "Mascot.v3.0.3.zip": 41
+        },
+        "v3.0.2": {
+          "Mascot.v3.0.2.zip": 29
+        },
+        "v3.0.1": {
+          "Mascot.v3.1.0.zip": 13
+        },
+        "v3.0.0": {
+          "Mascot.v3.0.0.zip": 976
+        },
+        "v2.2.0": {
+          "Mascot.v2.2.0.zip": 23
+        },
+        "v2.1.3": {
+          "Mascot.v2.1.3.zip": 23
+        },
+        "v2.1.2": {
+          "Mascot.v2.1.2.zip": 333
+        },
+        "v2.1.1": {
+          "Mascot.v2.1.1.zip": 27
+        },
+        "v2.0.1": {
+          "Mascot.v2.0.1.zip": 32
+        },
+        "v2.0.0": {
+          "Mascot.v2.0.0.zip": 65
+        },
+        "v1.2.2": {
+          "Mascot.v1.2.2.zip": 1505
+        },
+        "v.1.2.1": {
+          "Mascot.v1.2.1.zip": 56
+        },
+        "v1.1.2": {
+          "Mascot.v1.1.2.zip": 248
+        },
+        "v1.1.1": {
+          "Mascot.v1.1.1.zip": 217
+        },
+        "v1.1.0": {
+          "Mascot.v1.1.0.zip": 86
+        },
+        "v1.0.3": {
+          "Mascot.v1.0.3.zip": 7
+        },
+        "v1.0.2": {
+          "Mascot.v1.0.2.zip": 240
+        },
+        "v1.0.1": {
+          "Mascot.v1.0.1.zip": 62
+        },
+        "v1.0.0": {
+          "Mascot.v1.0.0.zip": 80
+        },
+        "v0.0.6": {
+          "Mascot.v0.0.6.zip": 13
+        },
+        "v0.0.5": {
+          "Mascot.v0.0.5.zip": 392
+        },
+        "v0.0.4": {
+          "Mascot.v0.0.4.zip": 202
+        },
+        "v0.0.3": {
+          "Mascot.v0.0.3.zip": 100
+        },
+        "v0.0.2": {
+          "Mascot.v0.0.2.zip": 32
+        },
+        "v0.0.1": {
+          "Mascot.v0.0.1.zip": 16
+        }
+      },
+      "published": {
+        "v3.1.0-beta1": "2026-05-05",
+        "v3.0.8": "2025-04-24",
+        "v3.0.7": "2024-04-01",
+        "v3.0.6": "2024-02-20",
+        "v3.0.5": "2023-08-01",
+        "v3.0.4": "2023-03-13",
+        "v3.0.3": "2023-03-07",
+        "v3.0.2": "2023-02-09",
+        "v3.0.1": "2023-02-07",
+        "v3.0.0": "2022-11-18",
+        "v2.2.0": "2021-03-17",
+        "v2.1.3": "2020-12-08",
+        "v2.1.2": "2020-07-24",
+        "v2.1.1": "2020-04-27",
+        "v2.0.1": "2020-02-25",
+        "v2.0.0": "2019-12-16",
+        "v1.2.2": "2019-02-05",
+        "v.1.2.1": "2019-01-29",
+        "v1.1.2": "2018-10-17",
+        "v1.1.1": "2018-08-02",
+        "v1.1.0": "2018-07-23",
+        "v1.0.3": "2018-06-22",
+        "v1.0.2": "2018-06-20",
+        "v1.0.1": "2018-06-17",
+        "v1.0.0": "2018-05-04",
+        "v0.0.6": "2018-01-16",
+        "v0.0.5": "2018-01-15",
+        "v0.0.4": "2017-08-01",
+        "v0.0.3": "2017-07-20",
+        "v0.0.2": "2017-07-18",
+        "v0.0.1": "2017-07-17"
+      }
+    },
+    "Recombination": {
+      "repo": "nicfel/Recombination",
+      "releases": {
+        "v1.0.1": {
+          "Recombination.v1.0.1.zip": 1127
+        },
+        "v1.0.0": {
+          "Recombination.v1.0.0.zip": 199
+        },
+        "v0.1.0": {
+          "Recombination.v0.1.0.zip": 8
+        },
+        "v0.0.2": {
+          "Recombination.v0.0.2.zip": 13
+        },
+        "v0.0.1": {
+          "Recombination.v0.0.1.zip": 3
+        }
+      },
+      "published": {
+        "v1.0.1": "2023-03-23",
+        "v1.0.0": "2022-11-18",
+        "v0.1.0": "2021-07-07",
+        "v0.0.2": "2021-03-16",
+        "v0.0.1": "2021-03-09"
+      }
+    },
+    "CoalRe": {
+      "repo": "nicfel/CoalRe",
+      "releases": {
+        "v3.0.3": {
+          "CoalRe.v3.0.3.zip": 35
+        },
+        "v2.7.1": {
+          "CoalRe.v2.7.1.zip": 6
+        },
+        "v2.6.3": {
+          "CoalRe.v2.6.3.zip": 26
+        },
+        "v2.4.0": {
+          "CoalRe.v2.4.0.zip": 3
+        },
+        "v2.2.1": {
+          "CoalRe.v2.2.1.zip": 5
+        },
+        "v2.0.0": {
+          "CoalRe.v2.0.0.zip": 5
+        },
+        "v1.0.4": {
+          "CoalRe.v1.0.4.zip": 1103
+        },
+        "v1.0.3": {
+          "CoalRe.v1.0.3.zip": 342
+        },
+        "v1.0.2": {
+          "CoalRe.v1.0.2.zip": 49
+        },
+        "v1.0.1": {
+          "CoalRe.v1.0.1.zip": 119
+        },
+        "v1.0.0": {
+          "CoalRe.v1.0.0.zip": 11
+        },
+        "v0.0.7": {
+          "CoalRe.v0.0.7.zip": 17
+        },
+        "v0.0.6": {
+          "CoalRe.v0.0.6.zip": 7
+        },
+        "v0.0.5": {
+          "CoalRe.v0.0.5.zip": 258
+        },
+        "v0.0.4": {
+          "CoalRe.v0.0.4.zip": 431
+        },
+        "v0.0.3": {
+          "CoalRe.v0.0.3.zip": 13
+        },
+        "v0.0.2": {
+          "CoalRe.v0.0.2.zip": 12
+        }
+      },
+      "published": {
+        "v3.0.3": "2026-01-29",
+        "v2.7.1": "2025-06-09",
+        "v2.6.3": "2025-05-05",
+        "v2.4.0": "2025-03-14",
+        "v2.2.1": "2025-01-23",
+        "v2.0.0": "2024-08-13",
+        "v1.0.4": "2023-09-11",
+        "v1.0.3": "2023-03-09",
+        "v1.0.2": "2023-03-03",
+        "v1.0.1": "2022-12-15",
+        "v1.0.0": "2022-12-15",
+        "v0.0.7": "2021-12-02",
+        "v0.0.6": "2021-06-26",
+        "v0.0.5": "2020-05-26",
+        "v0.0.4": "2019-08-05",
+        "v0.0.3": "2019-08-05",
+        "v0.0.2": "2019-08-05"
+      }
+    },
+    "CodonSubstModels": {
+      "repo": "BEAST2-Dev/codonsubstmodels",
+      "releases": {
+        "v2.0.0": {
+          "CodonSubstModels.v2.0.0.zip": 1156,
+          "CodonSubstModels.v2.0.1.zip": 439
+        },
+        "v1.1.3": {
+          "CodonSubstModels.v1.1.3.zip": 982
+        },
+        "v1.1.2": {
+          "CodonSubstModels.v1.1.2.zip": 226
+        },
+        "v1.1.1": {
+          "CodonSubstModels.v1.1.1.zip": 186
+        },
+        "v1.1.0": {
+          "CodonSubstModels.v1.1.0.zip": 350
+        }
+      },
+      "published": {
+        "v2.0.0": "2022-11-18",
+        "v1.1.3": "2019-07-12",
+        "v1.1.2": "2019-04-18",
+        "v1.1.1": "2019-02-21",
+        "v1.1.0": "2018-04-12"
+      }
+    },
+    "timtam": {
+      "repo": "aezarebski/timtam2",
+      "releases": {
+        "v0.4.1": {
+          "timtam.v0.4.1.zip": 37
+        },
+        "v0.4.0": {
+          "timtam.v0.4.0.zip": 999
+        },
+        "v0.3.1": {
+          "timtam.v0.3.1.zip": 292
+        },
+        "v0.3.0": {
+          "timtam.v0.3.0.zip": 4
+        },
+        "v0.2.1": {
+          "timtam.v0.2.1.zip": 8
+        },
+        "v0.2.0": {
+          "timtam.v0.2.0.zip": 13
+        },
+        "v0.1.1": {
+          "timtam.v0.1.1.zip": 12
+        },
+        "v0.1.0": {
+          "timtam.v0.1.0.zip": 8
+        }
+      },
+      "published": {
+        "v0.4.1": "2023-09-11",
+        "v0.4.0": "2022-11-08",
+        "v0.3.1": "2022-09-28",
+        "v0.3.0": "2022-08-25",
+        "v0.2.1": "2022-07-21",
+        "v0.2.0": "2022-06-24",
+        "v0.1.1": "2022-05-06",
+        "v0.1.0": "2022-04-23"
+      }
+    },
+    "BEASTvntr": {
+      "repo": "arjun-1/BEASTvntr",
+      "releases": {
+        "v0.2.0": {
+          "BEASTvntr.addon.v0.2.0.zip": 1020
+        },
+        "v0.1.4pre": {
+          "BEASTvntr.addon.v0.1.4.zip": 5
+        },
+        "v0.1.3": {
+          "BEASTvntr.addon.v0.1.3.zip": 956
+        },
+        "v0.1.2": {
+          "BEASTvntr.addon.v0.1.2.zip": 242
+        },
+        "v0.1.1": {
+          "BEASTvntr.addon.v0.1.1.zip": 702
+        },
+        "v0.1.0": {
+          "BEASTvntr.addon.v0.1.0.zip": 233
+        },
+        "v0.0.2": {
+          "BEASTvntr.addon.v0.0.2.zip": 5
+        },
+        "v0.0.1": {
+          "BEASTvntr.addon.v0.0.1.zip": 13
+        }
+      },
+      "published": {
+        "v0.2.0": "2022-11-30",
+        "v0.1.4pre": "2020-05-26",
+        "v0.1.3": "2019-02-10",
+        "v0.1.2": "2018-04-14",
+        "v0.1.1": "2017-03-08",
+        "v0.1.0": "2016-08-01",
+        "v0.0.2": "2016-07-20",
+        "v0.0.1": "2016-07-06"
+      }
+    },
+    "PIQMEE": {
+      "repo": "boskovav/piqmee",
+      "releases": {
+        "v1.1.0": {
+          "PIQMEE.v1.1.0.zip": 1179
+        },
+        "1.0.2": {
+          "PIQMEE.v1.0.2.zip": 135
+        },
+        "1.0.1": {
+          "PIQMEE.v1.0.1.zip": 54
+        },
+        "1.0.0": {
+          "PIQMEE.v1.0.0.zip": 112
+        },
+        "v0.0.3": {
+          "PIQMEE.v0.0.3.zip": 12
+        }
+      },
+      "published": {
+        "v1.1.0": "2022-12-01",
+        "1.0.2": "2020-10-06",
+        "1.0.1": "2020-09-15",
+        "1.0.0": "2020-06-17",
+        "v0.0.3": "2020-03-30"
+      }
+    },
+    "EpiInf": {
+      "repo": "tgvaughan/epiinf",
+      "releases": {
+        "v8.0.1": {
+          "EpiInf.v8.0.1.zip": 4
+        },
+        "v8.0.0": {
+          "EpiInf.v8.0.0.zip": 1019
+        },
+        "v7.5.2": {
+          "EpiInf.v7.5.2.zip": 659
+        },
+        "v7.5.1": {
+          "EpiInf.v7.5.1.zip": 108
+        },
+        "v7.5.0": {
+          "EpiInf.v7.5.0.zip": 111
+        },
+        "v7.4.0": {
+          "EpiInf.v7.4.0.zip": 78
+        },
+        "v7.3.0": {
+          "EpiInf.v7.3.0.zip": 13
+        },
+        "v7.2.0": {
+          "EpiInf.v7.2.0.zip": 360
+        },
+        "v7.1.5": {
+          "EpiInf.v7.1.5.zip": 221
+        },
+        "v7.1.4": {
+          "EpiInf.v7.1.4.zip": 139
+        },
+        "v7.1.3": {
+          "EpiInf.v7.1.3.zip": 8
+        },
+        "v7.1.2": {
+          "EpiInf.v7.1.2.zip": 8
+        },
+        "v7.1.1": {
+          "EpiInf.v7.1.1.zip": 348
+        },
+        "v7.1.0": {
+          "EpiInf.v7.1.0.zip": 11
+        },
+        "v7.0.2": {
+          "EpiInf.v7.0.2.zip": 118
+        },
+        "v7.0.1": {
+          "EpiInf.v7.0.1.zip": 18
+        },
+        "v7.0.0": {
+          "EpiInf.v7.0.0.zip": 80
+        },
+        "v6.0.0": {
+          "EpiInf.v6.0.0.zip": 363
+        },
+        "v6.0.0-pre": {
+          "EpiInf.v6.0.0-pre.zip": 7
+        },
+        "v5.0.1": {
+          "EpiInf.v5.0.1.zip": 148
+        },
+        "v5.0.0": {
+          "EpiInf.v5.0.0.zip": 9
+        },
+        "v4.0.1": {
+          "EpiInf.v4.0.1.zip": 10
+        },
+        "v4.0.0": {
+          "EpiInf.v4.0.0.zip": 8
+        },
+        "v3.2.1": {
+          "EpiInf.v3.2.1.zip": 12
+        },
+        "v3.2.0": {
+          "EpiInf.v3.2.0.zip": 9
+        },
+        "v3.1.0": {
+          "EpiInf.v3.1.0.zip": 15
+        },
+        "v3.0.0": {
+          "EpiInf.v3.0.0.zip": 9
+        },
+        "v2.1.0": {
+          "EpiInf.v2.1.0.zip": 9
+        },
+        "v2.0.1": {
+          "EpiInf.v2.0.1.zip": 8
+        },
+        "v2.0.0": {
+          "EpiInf.v2.0.0.zip": 11
+        },
+        "v1.1.0": {
+          "EpiInf.v1.1.0.zip": 9
+        },
+        "v1.0.0": {
+          "EpiInf.v1.0.0.zip": 7
+        },
+        "v1.0.0-pre": {
+          "EpiInf.v1.0.0-pre.zip": 11
+        }
+      },
+      "published": {
+        "v8.0.1": "2025-09-29",
+        "v8.0.0": "2022-12-13",
+        "v7.5.2": "2020-07-24",
+        "v7.5.1": "2020-06-11",
+        "v7.5.0": "2020-04-30",
+        "v7.4.0": "2020-04-01",
+        "v7.3.0": "2020-04-01",
+        "v7.2.0": "2019-08-21",
+        "v7.1.5": "2019-08-05",
+        "v7.1.4": "2019-07-08",
+        "v7.1.3": "2019-07-01",
+        "v7.1.2": "2019-07-01",
+        "v7.1.1": "2018-10-22",
+        "v7.1.0": "2018-07-27",
+        "v7.0.2": "2018-06-19",
+        "v7.0.1": "2018-06-19",
+        "v7.0.0": "2018-03-29",
+        "v6.0.0": "2017-08-30",
+        "v6.0.0-pre": "2017-06-13",
+        "v5.0.1": "2017-03-03",
+        "v5.0.0": "2017-02-28",
+        "v4.0.1": "2016-07-05",
+        "v4.0.0": "2016-03-20",
+        "v3.2.1": "2016-02-26",
+        "v3.2.0": "2016-02-13",
+        "v3.1.0": "2016-01-28",
+        "v3.0.0": "2016-01-27",
+        "v2.1.0": "2016-01-26",
+        "v2.0.1": "2016-01-21",
+        "v2.0.0": "2016-01-20",
+        "v1.1.0": "2015-12-11",
+        "v1.0.0": "2015-12-08",
+        "v1.0.0-pre": "2015-11-24"
+      }
+    },
+    "FastRelaxedClockLogNormal": {
+      "repo": "Rong419/ConstantDistanceOperator",
+      "releases": {
+        "v1.2.0": {
+          "FastRelaxedClockLogNormal.addon.v1.2.0.zip": 2489
+        },
+        "v1.1.0": {
+          "FastRelaxedClockLogNormal.addon.v1.1.0.zip": 208,
+          "FastRelaxedClockLogNormal.addon.v1.1.1.zip": 68
+        },
+        "V1.0.0": {
+          "FastRelaxedClockLogNormal.addon.v1.0.0.zip": 173
+        },
+        "v0.0.5": {
+          "FastRelaxedClockLogNormal.addon.v0.0.5.zip": 13
+        },
+        "v0.0.4": {
+          "FastRelaxedClockLogNormal.addon.v0.0.4.zip": 7
+        },
+        "v0.0.3": {
+          "FastRelaxedClockLogNormal.addon.v0.0.3.zip": 9
+        },
+        "v0.0.2": {
+          "FastRelaxedClockLogNormal.addon.v0.0.2.zip": 8
+        },
+        "v0.0.1": {
+          "FastRelaxedClockLogNormal.addon.v0.0.1.zip": 9
+        }
+      },
+      "published": {
+        "v1.2.0": "2022-12-14",
+        "v1.1.0": "2020-09-03",
+        "V1.0.0": "2020-05-19",
+        "v0.0.5": "2019-08-11",
+        "v0.0.4": "2019-08-09",
+        "v0.0.3": "2019-08-08",
+        "v0.0.2": "2019-08-08",
+        "v0.0.1": "2019-08-08"
+      }
+    },
+    "bacter": {
+      "repo": "tgvaughan/bacter",
+      "releases": {
+        "v3.0.1": {
+          "bacter.v3.0.1.zip": 1209
+        },
+        "v3.0.0": {
+          "bacter.v3.0.0.zip": 178
+        },
+        "v2.2.5": {
+          "bacter.v2.2.5.zip": 625
+        },
+        "v2.2.4": {
+          "bacter.v2.2.4.zip": 21
+        },
+        "v2.2.3": {
+          "bacter.v2.2.3.zip": 869
+        },
+        "v2.2.2": {
+          "bacter.v2.2.2.zip": 9
+        },
+        "v2.2.1": {
+          "bacter.v2.2.1.zip": 4031
+        },
+        "v2.2.0": {
+          "bacter.v2.2.0.zip": 983
+        },
+        "v2.1.1": {
+          "bacter.v2.1.1.zip": 79
+        },
+        "v2.1.0": {
+          "bacter.v2.1.0.zip": 71
+        },
+        "v2.0.1": {
+          "bacter.v2.0.1.zip": 32
+        },
+        "v2.0.0": {
+          "bacter.v2.0.0.zip": 24
+        },
+        "v1.2.3": {
+          "bacter.v1.2.3.zip": 433
+        },
+        "v1.2.2": {
+          "bacter.v1.2.2.zip": 122
+        },
+        "v1.2.1": {
+          "bacter.v1.2.1.zip": 389
+        },
+        "v1.2.0": {
+          "bacter.v1.2.0.zip": 83
+        },
+        "v1.1.1": {
+          "bacter.v1.1.1.zip": 52
+        },
+        "v1.1.0": {
+          "bacter.v1.1.0.zip": 113
+        },
+        "v1.0.1": {
+          "bacter.v1.0.1.zip": 137
+        },
+        "v1.0.0": {
+          "bacter.v1.0.0.zip": 53
+        },
+        "v1.0.0-pre6": {
+          "bacter.v1.0.0-pre6.zip": 257
+        },
+        "v1.0.0-pre5": {
+          "bacter.v1.0.0-pre5.zip": 153
+        },
+        "v1.0.0-pre4": {
+          "bacter.v1.0.0-pre4.zip": 86
+        },
+        "v1.0.0-pre3": {
+          "bacter.v1.0.0-pre3.zip": 30
+        },
+        "v1.0.0-pre2": {
+          "bacter.v1.0.0-pre2.zip": 84
+        },
+        "v1.0.0-pre": {
+          "bacter.v1.0.0-pre.zip": 51
+        }
+      },
+      "published": {
+        "v3.0.1": "2023-03-30",
+        "v3.0.0": "2022-12-15",
+        "v2.2.5": "2021-10-05",
+        "v2.2.4": "2021-06-28",
+        "v2.2.3": "2019-07-01",
+        "v2.2.2": "2019-07-01",
+        "v2.2.1": "2019-01-17",
+        "v2.2.0": "2018-07-04",
+        "v2.1.1": "2018-06-08",
+        "v2.1.0": "2018-04-24",
+        "v2.0.1": "2018-04-16",
+        "v2.0.0": "2018-04-16",
+        "v1.2.3": "2017-10-31",
+        "v1.2.2": "2017-07-31",
+        "v1.2.1": "2017-01-04",
+        "v1.2.0": "2016-11-02",
+        "v1.1.1": "2016-09-30",
+        "v1.1.0": "2016-07-27",
+        "v1.0.1": "2016-04-08",
+        "v1.0.0": "2016-03-15",
+        "v1.0.0-pre6": "2016-01-12",
+        "v1.0.0-pre5": "2015-12-08",
+        "v1.0.0-pre4": "2015-11-01",
+        "v1.0.0-pre3": "2015-10-26",
+        "v1.0.0-pre2": "2015-09-15",
+        "v1.0.0-pre": "2015-08-06"
+      }
+    },
+    "StarBEAST2": {
+      "repo": "genomescale/starbeast2",
+      "releases": {
+        "v1.0.0": {
+          "StarBEAST2-tutorial-data.zip": 97,
+          "StarBEAST2-tutorial-example-output.zip": 28,
+          "StarBEAST2-tutorial-example-xml-files.zip": 22,
+          "StarBEAST2.v1.0.0.zip": 3166
+        },
+        "v0.15.13": {
+          "StarBEAST2.v0.15.13.zip": 61
+        },
+        "v0.15.11": {
+          "StarBEAST2.zip": 299
+        },
+        "v0.15.10": {
+          "StarBEAST2-tutorial.zip": 394,
+          "StarBEAST2.zip": 7
+        },
+        "v0.15.9": {
+          "StarBEAST2-tutorial.zip": 24,
+          "StarBEAST2.zip": 9
+        },
+        "v0.15.7": {
+          "StarBEAST2.zip": 19
+        },
+        "v0.15.5": {
+          "StarBEAST2.zip": 3365
+        },
+        "v0.15.2": {
+          "StarBEAST2.zip": 1191
+        },
+        "v0.15.1": {
+          "StarBEAST2.zip": 709
+        },
+        "v0.15.0": {
+          "StarBEAST2.zip": 223
+        },
+        "v0.14.1": {
+          "StarBEAST2-tutorial.zip": 42,
+          "StarBEAST2.zip": 261
+        },
+        "v0.14.0": {
+          "StarBEAST2-tutorial.zip": 878,
+          "StarBEAST2.zip": 1154
+        },
+        "v0.13.5": {
+          "StarBEAST2.zip": 1008
+        },
+        "v0.13.4": {
+          "StarBEAST2.zip": 21
+        },
+        "v0.13.3": {
+          "StarBEAST2.zip": 116
+        },
+        "v0.13.2": {
+          "StarBEAST2.zip": 184
+        },
+        "v0.13.1": {
+          "StarBEAST2.zip": 291
+        },
+        "v0.13.0": {
+          "starbeast2.zip": 116
+        },
+        "v0.12.1": {
+          "starbeast2.zip": 172
+        },
+        "v0.12.0": {
+          "starbeast2.zip": 125
+        },
+        "v0.11.0": {
+          "starbeast2.zip": 52
+        },
+        "v0.10.0": {
+          "starbeast2.zip": 39
+        },
+        "v0.9.0": {
+          "starbeast2.zip": 40
+        },
+        "v0.8.0": {
+          "starbeast2.zip": 37
+        },
+        "v0.7.2": {
+          "starbeast2.zip": 130
+        },
+        "v0.6.1": {
+          "starbeast2.zip": 10
+        },
+        "v0.3.0": {
+          "starbeast2.zip": 7
+        },
+        "v0.1.0": {
+          "starbeast2.zip": 17
+        }
+      },
+      "published": {
+        "v1.0.0": "2022-12-20",
+        "v0.15.13": "2021-02-11",
+        "v0.15.11": "2020-12-06",
+        "v0.15.10": "2020-11-28",
+        "v0.15.9": "2020-11-05",
+        "v0.15.7": "2020-07-16",
+        "v0.15.5": "2019-07-09",
+        "v0.15.2": "2019-02-19",
+        "v0.15.1": "2018-07-26",
+        "v0.15.0": "2018-06-20",
+        "v0.14.1": "2018-03-26",
+        "v0.14.0": "2017-12-09",
+        "v0.13.5": "2017-03-31",
+        "v0.13.4": "2017-03-19",
+        "v0.13.3": "2017-03-13",
+        "v0.13.2": "2017-02-01",
+        "v0.13.1": "2016-10-25",
+        "v0.13.0": "2016-09-29",
+        "v0.12.1": "2016-08-16",
+        "v0.12.0": "2016-07-18",
+        "v0.11.0": "2016-07-04",
+        "v0.10.0": "2016-06-26",
+        "v0.9.0": "2016-06-16",
+        "v0.8.0": "2016-06-07",
+        "v0.7.2": "2016-04-27",
+        "v0.6.1": "2016-04-13",
+        "v0.3.0": "2016-01-22",
+        "v0.1.0": "2015-10-14"
+      }
+    },
+    "bdtree": {
+      "repo": "fkmendes/bdtree",
+      "releases": {
+        "v.0.0.2": {
+          "bdtree.v0.0.2.zip": 554
+        },
+        "v0.0.1": {
+          "bdtree.v0.0.1.zip": 1537
+        }
+      },
+      "published": {
+        "v.0.0.2": "2025-07-14",
+        "v0.0.1": "2022-12-21"
+      }
+    },
+    "bdmm": {
+      "repo": "denisekuehnert/bdmm",
+      "releases": {
+        "v2.0.0": {
+          "BDMM.v2.0.0.zip": 2035
+        },
+        "v1.0.2": {
+          "BDMM.v1.0.2.zip": 1006
+        },
+        "v1.0.1": {
+          "BDMM.v1.0.1.zip": 42
+        },
+        "v1.0": {
+          "BDMM.v1.0.zip": 710
+        },
+        "0.3.5": {
+          "BDMM.v0.3.5.zip": 517
+        },
+        "0.3.4": {
+          "BDMM.v0.3.4.zip": 11
+        },
+        "0.3.3": {
+          "BDMM.v0.3.3.zip": 834
+        },
+        "0.3.2": {
+          "BDMM.v0.3.2.zip": 84
+        },
+        "0.3.1": {
+          "BDMM.v0.3.1.zip": 190
+        },
+        "0.3.0": {
+          "BDMM.addon.0.3.0.zip": 58
+        },
+        "0.2.0": {
+          "BDMM.addon.0.2.0.zip": 804
+        },
+        "0.1.1": {
+          "BDMM.addon.0.1.1.zip": 327
+        },
+        "0.1.0": {
+          "BDMM.addon.v0.1.0.zip": 48
+        }
+      },
+      "published": {
+        "v2.0.0": "2022-12-21",
+        "v1.0.2": "2022-06-10",
+        "v1.0.1": "2022-06-08",
+        "v1.0": "2020-01-29",
+        "0.3.5": "2019-07-02",
+        "0.3.4": "2019-04-11",
+        "0.3.3": "2018-10-18",
+        "0.3.2": "2018-09-17",
+        "0.3.1": "2018-06-11",
+        "0.3.0": "2018-04-25",
+        "0.2.0": "2017-03-28",
+        "0.1.1": "2016-07-11",
+        "0.1.0": "2016-05-02"
+      }
+    },
+    "PhyDyn": {
+      "repo": "mrc-ide/PhyDyn",
+      "releases": {
+        "v1.4.0": {
+          "PhyDyn.v1.4.0.zip": 1273
+        },
+        "v1.3.8": {
+          "PhyDyn.v1.3.8.zip": 13
+        },
+        "v1.3.7": {
+          "PhyDyn.v1.3.7.zip": 7
+        },
+        "v1.3.6": {
+          "PhyDyn.v1.3.6.zip": 29
+        },
+        "v1.3.5": {
+          "PhyDyn.v1.3.5.zip": 352
+        },
+        "v1.3.4": {
+          "PhyDyn.v1.3.4.zip": 107
+        },
+        "v1.3.3": {
+          "PhyDyn.v1.3.3.zip": 362
+        },
+        "v1.3.2": {
+          "PhyDyn.v1.3.2.zip": 170
+        },
+        "v1.3.1": {
+          "PhyDyn.v1.3.1.zip": 160
+        },
+        "v1.3.0": {
+          "PhyDyn.v1.3.0.zip": 187
+        },
+        "v1.2.2": {
+          "PhyDyn.v1.2.2.zip": 101
+        },
+        "v1.2.1": {
+          "PhyDyn.v1.2.1.zip": 140
+        },
+        "v1.2.0": {
+          "PhyDyn.v1.2.0.BEASTv2.4.7.zip": 8,
+          "PhyDyn.v1.2.0.zip": 102
+        },
+        "v1.1.0": {
+          "PhyDyn.v1.1.0.zip": 79
+        }
+      },
+      "published": {
+        "v1.4.0": "2022-12-22",
+        "v1.3.8": "2021-07-06",
+        "v1.3.7": "2020-06-17",
+        "v1.3.6": "2020-03-11",
+        "v1.3.5": "2019-08-23",
+        "v1.3.4": "2019-07-08",
+        "v1.3.3": "2019-04-11",
+        "v1.3.2": "2019-02-14",
+        "v1.3.1": "2018-10-26",
+        "v1.3.0": "2018-07-17",
+        "v1.2.2": "2018-06-14",
+        "v1.2.1": "2018-06-14",
+        "v1.2.0": "2018-05-04",
+        "v1.1.0": "2018-02-21"
+      }
+    },
+    "CA": {
+      "repo": "BEAST2-Dev/cladeage",
+      "releases": {
+        "v2.1.0": {
+          "CA.addon.v2.1.0.zip": 1626
+        },
+        "v.2.0.0": {
+          "CA.addon.v2.0.0.zip": 1082
+        },
+        "v1.3.0": {
+          "CA.addon.v1.3.0.zip": 1063
+        },
+        "v1.2.0": {
+          "CA.addon.v1.2.0.zip": 134,
+          "CA.addon.v1.2.1.zip": 1364
+        },
+        "v1.1.0": {
+          "CA.addon.v1.1.0.zip": 577
+        }
+      },
+      "published": {
+        "v2.1.0": "2022-12-18",
+        "v.2.0.0": "2019-07-09",
+        "v1.3.0": "2018-03-22",
+        "v1.2.0": "2016-02-24",
+        "v1.1.0": "2015-05-24"
+      }
+    },
+    "phylodynamics": {
+      "repo": "BEAST2-Dev/phylodynamics",
+      "releases": {
+        "v1.5.0": {
+          "phylodynamics.addon.v1.5.0.zip": 162
+        },
+        "v1.4.0": {
+          "phylodynamics.addon.v1.4.0.zip": 1345
+        },
+        "1.3.0": {
+          "phylodynamics.addon.1.3.0.zip": 2132
+        },
+        "1.2.0": {
+          "phylodynamics.addon.1.2.0.zip": 518,
+          "phylodynamics.addon.1.2.1.zip": 914
+        },
+        "1.1.2": {
+          "phylodynamics.addon.1.1.2.zip": 600
+        }
+      },
+      "published": {
+        "v1.5.0": "2026-06-01",
+        "v1.4.0": "2023-02-22",
+        "1.3.0": "2018-05-07",
+        "1.2.0": "2016-03-21",
+        "1.1.2": "2015-06-01"
+      }
+    },
+    "PopFunc": {
+      "repo": "LinguaPhylo/PopFunc",
+      "releases": {
+        "v0.0.1": {
+          "pop.v0.0.1.zip": 77
+        }
+      },
+      "published": {
+        "v0.0.1": "2026-02-25"
+      }
+    },
+    "phylonco": {
+      "repo": "bioDS/beast-phylonco",
+      "releases": {
+        "v1.2.1-patch": {
+          "phylonco-beast-1.2.1.zip": 148
+        },
+        "v1.2.1": {
+          "phylonco-beast-1.2.0.zip": 9,
+          "phylonco-lphy-1.2.0-examples.zip": 12,
+          "phylonco-lphybeast-1.2.1.zip": 393
+        },
+        "v1.2.0": {
+          "phylonco-beast-1.2.0.zip": 456,
+          "phylonco-lphy-1.2.0-examples.zip": 30,
+          "phylonco-lphybeast-1.2.0.zip": 49
+        },
+        "v1.0.1": {
+          "phylonco-lphy-examples.zip": 13,
+          "phylonco-lphybeast-1.0.1.zip": 474
+        },
+        "v1.0.0": {
+          "phylonco-lphy-examples.zip": 20,
+          "phylonco-lphybeast-1.0.0.zip": 116
+        },
+        "v0.0.7-pre": {
+          "phylonco-addon-0.0.7.zip": 216
+        },
+        "v0.0.6": {
+          "phylonco.addon.v0.0.6.zip": 12
+        },
+        "v0.0.5-pre": {
+          "phylonco.addon.v0.0.5.zip": 6
+        },
+        "v.0.0.4": {
+          "phylonco.addon.v0.0.4.zip": 7
+        }
+      },
+      "published": {
+        "v1.2.1-patch": "2026-02-19",
+        "v1.2.1": "2024-10-31",
+        "v1.2.0": "2024-09-25",
+        "v1.0.1": "2023-06-22",
+        "v1.0.0": "2023-04-13",
+        "v0.0.7-pre": "2022-08-21",
+        "v0.0.6": "2022-02-23",
+        "v0.0.5-pre": "2022-01-13",
+        "v.0.0.4": "2021-07-04"
+      }
+    },
+    "lphybeast": {
+      "repo": "LinguaPhylo/LPhyBeast",
+      "releases": {
+        "1.3.0": {
+          "lphybeast-1.3.0.zip": 423
+        },
+        "1.2.1": {
+          "lphybeast-1.2.1.zip": 285
+        },
+        "1.2.0": {
+          "lphybeast-1.2.0.zip": 71,
+          "lphybeast-ext-1.0.0.zip": 538
+        },
+        "0.0.1": {
+          "LPhyBEAST.v0.0.1.zip": 10
+        }
+      },
+      "published": {
+        "1.3.0": "2025-07-01",
+        "1.2.1": "2024-10-29",
+        "1.2.0": "2024-09-19",
+        "0.0.1": "2020-11-22"
+      }
+    },
+    "contacTrees": {
+      "repo": "NicoNeureiter/contacTrees",
+      "releases": {
+        "v2.0.0": {
+          "contacTrees.v2.0.0.zip": 6
+        },
+        "v1.2.0": {
+          "contactrees.addon.v1.2.0.zip": 192
+        },
+        "v1.1.0": {
+          "contactrees.v1.1.0.zip.org.zip": 6,
+          "contactrees.v1.1.0.zip.zip": 6
+        }
+      },
+      "published": {
+        "v2.0.0": "2026-07-14",
+        "v1.2.0": "2023-07-05",
+        "v1.1.0": "2023-05-23"
+      }
+    },
+    "FixedTreeAnalysis": {
+      "repo": "rbouckaert/FixedTreeAnalysis",
+      "releases": {
+        "v0.0.2": {
+          "FixedTreeAnalysis.pacakge.v0.0.2.zip": 1494
+        },
+        "v0.0.1": {
+          "FixedTreeAnalysis.addon.v0.0.1.zip": 54
+        }
+      },
+      "published": {
+        "v0.0.2": "2023-06-13",
+        "v0.0.1": "2020-07-26"
+      }
+    },
+    "CCD": {
+      "repo": "CompEvol/CCD",
+      "releases": {
+        "v1.2.2": {
+          "CCD.v1.2.2.zip": 5
+        },
+        "v1.2.0": {
+          "CCD.v1.2.0.zip": 37
+        },
+        "v1.1.0": {
+          "CCD.package.v1.1.0.zip": 9
+        },
+        "v1.0.4": {
+          "CCD.package.v1.0.4.zip": 6
+        },
+        "v1.0.3": {
+          "CCD.package.v1.0.3.zip": 11025
+        },
+        "v1.0.2": {
+          "CCD.package.v1.0.2.zip": 613
+        },
+        "v1.0.1": {
+          "CCD.package.v1.0.1.zip": 1640
+        },
+        "v1.0.0": {
+          "CCD.package.v1.0.0.zip": 1742
+        },
+        "v0.0.1": {
+          "CCD.package.v0.0.1.zip": 11,
+          "CCD.package.v0.0.2.zip": 12,
+          "CCD.package.v0.0.3.zip": 9,
+          "CCD.package.v0.0.4.zip": 41
+        }
+      },
+      "published": {
+        "v1.2.2": "2026-10-19",
+        "v1.2.0": "2026-08-04",
+        "v1.1.0": "2026-03-04",
+        "v1.0.4": "2025-12-18",
+        "v1.0.3": "2025-02-02",
+        "v1.0.2": "2025-01-20",
+        "v1.0.1": "2024-10-24",
+        "v1.0.0": "2024-06-10",
+        "v0.0.1": "2024-01-31"
+      }
+    },
+    "FLC": {
+      "repo": "4ment/flc",
+      "releases": {
+        "v1.2.0": {
+          "flc.v1.2.0.zip": 581
+        },
+        "v1.1.0": {
+          "flc.v1.1.0.zip": 1015
+        },
+        "v1.0.0": {
+          "flc.v1.0.0.zip": 142
+        }
+      },
+      "published": {
+        "v1.2.0": "2024-07-05",
+        "v1.1.0": "2018-10-25",
+        "v1.0.0": "2018-03-01"
+      }
+    },
+    "CubeVB": {
+      "repo": "rbouckaert/cubevb",
+      "releases": {
+        "v1.0.0": {
+          "CubeVB.v1.0.0.zip": 6,
+          "CubeVB.v1.0.1.zip": 2,
+          "CubeVB.v1.0.2.zip": 393
+        }
+      },
+      "published": {
+        "v1.0.0": "2023-10-19"
+      }
+    },
+    "FreeRateModel": {
+      "repo": "BEAST2-Dev/FreeRateModel",
+      "releases": {
+        "v1.0.0": {
+          "FreeRateModel.package.v1.0.0.zip": 277
+        }
+      },
+      "published": {
+        "v1.0.0": "2025-09-11"
+      }
+    },
+    "BDMM-Prime": {
+      "repo": "tgvaughan/BDMM-Prime",
+      "releases": {
+        "v3.1.0": {
+          "bdmm-prime.v3.1.0.zip": 1
+        },
+        "v2.7.3": {
+          "BDMM-Prime.v2.7.3.zip": 28
+        },
+        "v2.7.2": {
+          "BDMM-Prime.v2.7.2.zip": 312
+        },
+        "v3.0.0": {
+          "bdmm-prime.v3.0.0.zip": 10
+        },
+        "v2.7.1": {
+          "BDMM-Prime.v2.7.1.zip": 128
+        },
+        "v2.7.0": {
+          "BDMM-Prime.v2.7.0.zip": 76
+        },
+        "v2.6.3": {
+          "BDMM-Prime.v2.6.3.zip": 61
+        },
+        "v2.6.2": {
+          "BDMM-Prime.v2.6.2.zip": 17
+        },
+        "v2.6.1": {
+          "BDMM-Prime.v2.6.1.zip": 10
+        },
+        "v2.6.0": {
+          "BDMM-Prime.v2.6.0.zip": 16
+        },
+        "v2.5.0": {
+          "BDMM-Prime.v2.5.0.zip": 16
+        },
+        "v2.4.1": {
+          "BDMM-Prime.v2.4.1.zip": 85
+        },
+        "v2.4.0": {
+          "BDMM-Prime.v2.4.0.zip": 147
+        },
+        "v2.3.0": {
+          "BDMM-Prime.v2.3.0.zip": 70
+        },
+        "v2.2.4": {
+          "BDMM-Prime.v2.2.4.zip": 50
+        },
+        "v2.2.3": {
+          "BDMM-Prime.v2.2.3.zip": 12
+        },
+        "v2.2.2": {
+          "BDMM-Prime.v2.2.2.zip": 72
+        },
+        "v2.2.1": {
+          "BDMM-Prime.v2.2.1.zip": 24
+        },
+        "v2.2.0": {
+          "BDMM-Prime.v2.2.0.zip": 10
+        },
+        "v2.1.0": {
+          "BDMM-Prime.v2.1.0.zip": 13
+        },
+        "v2.0.1": {
+          "BDMM-Prime.v2.0.1.zip": 9
+        },
+        "v2.0.0": {
+          "BDMM-Prime.v2.0.0.zip": 7
+        },
+        "v1.1.0": {
+          "BDMM-Prime.v1.1.0.zip": 6
+        },
+        "v1.0.1": {
+          "BDMM-Prime.v1.0.1.zip": 51
+        },
+        "v1.0.0": {
+          "BDMM-Prime.v1.0.0.zip": 18
+        },
+        "v1.0.0-pre": {
+          "BDMM-Prime.v1.0.0-pre.zip": 14
+        },
+        "v0.0.33": {
+          "BDMM-Prime.v0.0.33.zip": 78
+        },
+        "v0.0.32": {
+          "BDMM-Prime.v0.0.32.zip": 32
+        },
+        "v0.0.31": {
+          "BDMM-Prime.v0.0.31.zip": 10
+        },
+        "v0.0.30": {
+          "BDMM-Prime.v0.0.30.zip": 62
+        },
+        "v0.0.29": {
+          "BDMM-Prime.v0.0.29.zip": 6
+        },
+        "v0.0.28": {
+          "BDMM-Prime.v0.0.28.zip": 19
+        },
+        "v0.0.27": {
+          "BDMM-Prime.v0.0.27.zip": 68
+        },
+        "v0.0.26": {
+          "BDMM-Prime.v0.0.26.zip": 30
+        },
+        "v0.0.25": {
+          "BDMM-Prime.v0.0.25.zip": 15
+        },
+        "v0.0.24": {
+          "BDMM-Prime.v0.0.24.zip": 21
+        },
+        "v0.0.23": {
+          "BDMM-Prime.v0.0.23.zip": 14
+        },
+        "v0.0.22": {
+          "BDMM-Prime.v0.0.22.zip": 19
+        },
+        "v0.0.21": {
+          "BDMM-Prime.v0.0.21.zip": 25
+        },
+        "v0.0.20": {
+          "BDMM-Prime.v0.0.20.zip": 17
+        },
+        "v0.0.19": {
+          "BDMM-Prime.v0.0.19.zip": 26
+        },
+        "v0.0.18": {
+          "BDMM-Prime.v0.0.18.zip": 13
+        },
+        "v0.0.17": {
+          "BDMM-Prime.v0.0.17.zip": 48
+        },
+        "v0.0.16": {
+          "BDMM-Prime.v0.0.16.zip": 40
+        },
+        "v0.0.15": {
+          "BDMM-Prime.v0.0.15.zip": 9
+        },
+        "v0.0.14": {
+          "BDMM-Prime.v0.0.14.zip": 13
+        },
+        "v0.0.13": {
+          "BDMM-Prime.v0.0.13.zip": 11
+        },
+        "v0.0.12": {
+          "BDMM-Prime.v0.0.12.zip": 46
+        },
+        "v0.0.11": {
+          "BDMM-Prime.v0.0.11.zip": 96
+        },
+        "v0.0.10": {
+          "BDMM-Prime.v0.0.10.zip": 16
+        },
+        "v0.0.9": {
+          "BDMM-Prime.v0.0.9.zip": 23
+        },
+        "v0.0.8": {
+          "BDMM-Prime.v0.0.8.zip": 9
+        },
+        "v0.0.7": {
+          "BDMM-Prime.v0.0.7.zip": 14
+        },
+        "v0.0.5": {
+          "BDMM-Prime.v0.0.5.zip": 8
+        },
+        "v0.0.4": {
+          "BDMM-Prime.v0.0.4.zip": 9
+        },
+        "v0.0.3": {
+          "BDMM-Prime.v0.0.3.zip": 16
+        },
+        "v0.0.2": {
+          "BDMM-Prime.v0.0.2.zip": 12
+        },
+        "v0.0.1": {
+          "BDMM-Prime.v0.0.1.zip": 13
+        }
+      },
+      "published": {
+        "v3.1.0": "2026-10-23",
+        "v2.7.3": "2026-10-23",
+        "v2.7.2": "2026-06-12",
+        "v3.0.0": "2026-05-11",
+        "v2.7.1": "2026-04-20",
+        "v2.7.0": "2026-01-22",
+        "v2.6.3": "2025-12-10",
+        "v2.6.2": "2025-12-03",
+        "v2.6.1": "2025-11-28",
+        "v2.6.0": "2025-11-21",
+        "v2.5.0": "2025-11-19",
+        "v2.4.1": "2025-09-17",
+        "v2.4.0": "2025-06-26",
+        "v2.3.0": "2025-04-28",
+        "v2.2.4": "2025-03-21",
+        "v2.2.3": "2025-03-17",
+        "v2.2.2": "2024-08-19",
+        "v2.2.1": "2024-07-19",
+        "v2.2.0": "2024-07-12",
+        "v2.1.0": "2024-07-08",
+        "v2.0.1": "2024-07-05",
+        "v2.0.0": "2024-07-05",
+        "v1.1.0": "2024-07-05",
+        "v1.0.1": "2024-03-07",
+        "v1.0.0": "2023-12-08",
+        "v1.0.0-pre": "2023-10-17",
+        "v0.0.33": "2023-04-13",
+        "v0.0.32": "2023-01-12",
+        "v0.0.31": "2023-01-10",
+        "v0.0.30": "2022-12-22",
+        "v0.0.29": "2022-12-20",
+        "v0.0.28": "2022-12-07",
+        "v0.0.27": "2022-06-23",
+        "v0.0.26": "2022-05-11",
+        "v0.0.25": "2022-05-04",
+        "v0.0.24": "2022-04-08",
+        "v0.0.23": "2022-03-22",
+        "v0.0.22": "2022-03-07",
+        "v0.0.21": "2021-12-16",
+        "v0.0.20": "2021-11-26",
+        "v0.0.19": "2021-11-03",
+        "v0.0.18": "2021-10-25",
+        "v0.0.17": "2021-06-04",
+        "v0.0.16": "2021-04-20",
+        "v0.0.15": "2021-04-19",
+        "v0.0.14": "2021-04-16",
+        "v0.0.13": "2021-03-19",
+        "v0.0.12": "2021-02-05",
+        "v0.0.11": "2020-11-12",
+        "v0.0.10": "2020-10-21",
+        "v0.0.9": "2020-06-19",
+        "v0.0.8": "2020-06-18",
+        "v0.0.7": "2020-06-15",
+        "v0.0.5": "2020-02-27",
+        "v0.0.4": "2020-02-26",
+        "v0.0.3": "2019-04-04",
+        "v0.0.2": "2019-04-04",
+        "v0.0.1": "2019-04-02"
+      }
+    },
+    "ASM": {
+      "repo": "rbouckaert/asm",
+      "releases": {
+        "v0.0.1": {
+          "ASM.package.v0.0.1.zip": 154
+        }
+      },
+      "published": {
+        "v0.0.1": "2023-07-12"
+      }
+    },
+    "TyCHE": {
+      "repo": "hoehnlab/tyche",
+      "releases": {
+        "v1.0.0": {
+          "TyCHE.v1.0.0.zip": 3
+        },
+        "v0.0.11": {
+          "TyCHE.v0.0.11.zip": 13
+        },
+        "v0.0.10": {
+          "TyCHE.v0.0.10.zip": 69
+        },
+        "v0.0.9": {
+          "TyCHE.v0.0.9.zip": 9
+        },
+        "v0.0.8": {
+          "TyCHE.v0.0.8.zip": 8
+        },
+        "v0.0.7": {
+          "TyCHE.v0.0.7.zip": 24
+        },
+        "v0.0.6": {
+          "TyCHE.v0.0.6.zip": 11
+        },
+        "v0.0.5": {
+          "TyCHE.v0.0.5.zip": 15
+        },
+        "v0.0.3": {
+          "TyCHE.v0.0.3.zip": 46
+        },
+        "v0.0.2": {
+          "TyCHE.v0.0.2.zip": 0
+        },
+        "v0.0.1": {
+          "TyCHE.v0.0.1.zip": 10
+        },
+        "v0.0.1-beta.1": {
+          "TyCHE.v0.0.1-beta.1.zip": 2
+        },
+        "v0.0.1-beta": {
+          "TyCHE.v0.0.1-beta.zip": 2
+        },
+        "v0.0.0-alpha.4": {
+          "TypeLinked.zip": 2
+        },
+        "v0.0.0-alpha.3": {
+          "TypeLinked.zip": 3
+        },
+        "v0.0.0-alpha.2": {
+          "examples.zip": 0,
+          "TypeLinked.zip": 5
+        },
+        "v0.0.0-alpha.1": {
+          "examples.zip": 3,
+          "TypeLinked.zip": 3
+        },
+        "v0.0.0-alpha": {
+          "TypeLinked.zip": 0
+        }
+      },
+      "published": {
+        "v1.0.0": "2026-10-23",
+        "v0.0.11": "2026-09-11",
+        "v0.0.10": "2026-04-23",
+        "v0.0.9": "2026-03-17",
+        "v0.0.8": "2026-03-10",
+        "v0.0.7": "2026-01-29",
+        "v0.0.6": "2026-01-28",
+        "v0.0.5": "2025-12-16",
+        "v0.0.3": "2025-08-20",
+        "v0.0.2": "2025-08-19",
+        "v0.0.1": "2025-07-18",
+        "v0.0.1-beta.1": "2025-07-15",
+        "v0.0.1-beta": "2025-07-11",
+        "v0.0.0-alpha.4": "2025-07-02",
+        "v0.0.0-alpha.3": "2025-06-20",
+        "v0.0.0-alpha.2": "2025-06-06",
+        "v0.0.0-alpha.1": "2025-05-22",
+        "v0.0.0-alpha": "2025-05-22"
+      }
+    },
+    "AlmostDistributions": {
+      "repo": "rbouckaert/AlmostDistributions",
+      "releases": {
+        "v0.2.0": {
+          "AlmostDistributions.addon.v0.2.0.zip": 77,
+          "AlmostDistributions.package.v0.2.1.zip": 45
+        },
+        "v0.1.1": {
+          "AlmostDistributions.addon.v0.1.1.zip": 12
+        },
+        "v0.1.0": {
+          "AlmostDistribution.addon.v0.1.0.zip": 27
+        },
+        "v0.0.1": {
+          "AlmostDistributions.v0.0.2.zip": 28,
+          "AlmostDistributions.v0.0.4.zip": 19,
+          "AlmostDistributions.v0.0.5.zip": 31,
+          "AlmostDistributions.v0.0.6.zip": 60
+        }
+      },
+      "published": {
+        "v0.2.0": "2022-07-19",
+        "v0.1.1": "2021-08-31",
+        "v0.1.0": "2020-09-16",
+        "v0.0.1": "2017-11-01"
+      }
+    },
+    "Experimenter": {
+      "repo": "christiaanjs/beast-validation",
+      "releases": {
+        "v0.2.0": {
+          "Experimenter.addon.v0.2.0.zip": 19
+        },
+        "v0.0.1": {
+          "Experimenter.addon.v0.0.1.zip": 10
+        }
+      },
+      "published": {
+        "v0.2.0": "2022-09-11",
+        "v0.0.1": "2022-08-02"
+      }
+    },
+    "IndelDollo": {
+      "repo": "jordandouglas/IndelDollo",
+      "releases": {
+        "0.0.1": {
+          "IndelDollo.addon.v0.0.1.zip": 28
+        }
+      },
+      "published": {
+        "0.0.1": "2023-05-09"
+      }
+    },
+    "CorrelatedTrait": {
+      "repo": "rbouckaert/CorrelatedTrait",
+      "releases": {
+        "v0.0.5": {
+          "CorrelatedTrait.package.v0.0.5.zip": 22
+        },
+        "v0.0.1": {
+          "TreeSetAnalyser.addon.v0.0.1.zip": 55,
+          "TreeSetAnalyser.addon.v0.0.2.zip": 17,
+          "TreeSetAnalyser.addon.v0.0.3.zip": 68,
+          "TreeSetAnalyser.addon.v0.0.4.zip": 95
+        }
+      },
+      "published": {
+        "v0.0.5": "2023-06-14",
+        "v0.0.1": "2016-09-13"
+      }
+    },
+    "HetMM": {
+      "repo": "jordandouglas/HetMM",
+      "releases": {
+        "v0.0.1": {
+          "HetMM.addon.v0.0.1.zip": 17
+        }
+      },
+      "published": {
+        "v0.0.1": "2023-10-04"
+      }
+    },
+    "beastmap": {
+      "repo": "jordandouglas/BeastMap",
+      "releases": {
+        "v0.0.3": {
+          "beastmap.package.v0.0.3.zip": 33
+        },
+        "v0.0.2": {
+          "beastmap.package.v0.0.2.zip": 4
+        },
+        "v0.0.1": {
+          "beastmap.package.v0.0.1.zip": 4
+        }
+      },
+      "published": {
+        "v0.0.3": "2025-12-20",
+        "v0.0.2": "2025-09-23",
+        "v0.0.1": "2025-09-12"
+      }
+    },
+    "FoldBeast": {
+      "repo": "jordandouglas/FoldBeast",
+      "releases": {
+        "v0.0.2": {
+          "FoldBeast.package.v0.0.2.zip": 33
+        },
+        "v0.0.1": {
+          "FoldBeast.package.v0.0.1.zip": 14
+        }
+      },
+      "published": {
+        "v0.0.2": "2025-12-09",
+        "v0.0.1": "2024-08-14"
+      }
+    },
+    "MultiTypeSpikeModel": {
+      "repo": "EwanCiuffi/MultiTypeSpikeModel",
+      "releases": {
+        "v1.0.2": {
+          "MultiTypeSpikeModel.package.v1.0.2.zip": 3
+        },
+        "v2.0.0": {
+          "MultiTypeSpikeModel.package.v2.0.0.zip": 1
+        },
+        "v1.0.1": {
+          "MultiTypeSpikeModel.package.v1.0.1.zip": 4
+        },
+        "v1.0.0": {
+          "MultiTypeSpikeModel.package.v1.0.0.zip": 6
+        }
+      },
+      "published": {
+        "v1.0.2": "2026-10-29",
+        "v2.0.0": "2026-10-23",
+        "v1.0.1": "2026-10-23",
+        "v1.0.0": "2026-10-01"
+      }
+    },
+    "BREATH": {
+      "repo": "rbouckaert/transmission",
+      "releases": {
+        "v0.0.7": {
+          "BREATH.v0.0.7.zip": 23
+        },
+        "v0.0.6": {
+          "BREATH.v0.0.6.zip": 30
+        },
+        "v0.0.5": {
+          "BREATH.v0.0.5.defunct.zip": 7,
+          "BREATH.v0.0.5.zip": 6
+        },
+        "v0.0.4": {
+          "BREATH.v0.0.4.zip": 16
+        },
+        "v0.0.2": {
+          "BREATH.v0.0.2.zip": 11
+        },
+        "v0.0.1": {
+          "BREATH.v0.0.1.zip": 181
+        }
+      },
+      "published": {
+        "v0.0.7": "2026-08-30",
+        "v0.0.6": "2026-06-16",
+        "v0.0.5": "2026-02-25",
+        "v0.0.4": "2025-09-25",
+        "v0.0.2": "2025-02-09",
+        "v0.0.1": "2024-06-11"
+      }
+    },
+    "5rf": {
+      "repo": "rbouckaert/5rf",
+      "releases": {
+        "v0.0.1": {
+          "5rf.package.v0.0.1.zip": 18,
+          "5rf.package.v0.0.2.zip": 13
+        }
+      },
+      "published": {
+        "v0.0.1": "2024-08-12"
+      }
+    },
+    "RBS": {
+      "repo": "BEAST2-Dev/rb-beast",
+      "releases": {
+        "v1.5.0": {
+          "RBS.package.v1.5.0.zip": 25,
+          "RBS.package.v1.5.1.zip": 5,
+          "RBS.package.v1.5.2.zip": 19
+        },
+        "v1.4.0": {
+          "RBS.addon.v1.4.0.zip": 677
+        },
+        "v1.3.0": {
+          "RBS.addon.v1.3.0.zip": 66,
+          "RBS.addon.v1.3.1.zip": 1065
+        },
+        "v1.2.0": {
+          "RBS.addon.v1.2.0.zip": 11,
+          "RBS.addon.v1.2.1.zip": 7,
+          "RBS.addon.v1.2.2.zip": 13,
+          "RBS.addon.v1.2.3.zip": 21,
+          "RBS.addon.v1.2.4.zip": 161,
+          "RBS.addon.v1.2.5.zip": 330
+        }
+      },
+      "published": {
+        "v1.5.0": "2024-09-30",
+        "v1.4.0": "2018-03-22",
+        "v1.3.0": "2016-02-24",
+        "v1.2.0": "2015-05-24"
+      }
+    },
+    "rootfreqs": {
+      "repo": "rbouckaert/rootfreqs",
+      "releases": {
+        "v0.0.2": {
+          "rootfreqs.package.v0.0.2.zip": 107
+        }
+      },
+      "published": {
+        "v0.0.2": "2024-10-22"
+      }
+    },
+    "EpochClockModel": {
+      "repo": "rbouckaert/EpochClockModel",
+      "releases": {
+        "v0.0.2": {
+          "EpochClockModel.v0.0.2.zip": 51
+        },
+        "v0.0.1": {
+          "EpochClockModel.v0.0.1.zip": 29
+        }
+      },
+      "published": {
+        "v0.0.2": "2024-12-02",
+        "v0.0.1": "2017-03-01"
+      }
+    },
+    "TargetedBeast": {
+      "repo": "nicfel/targetedbeast",
+      "releases": {
+        "v2.2.0": {
+          "TargetedBeast.v2.2.0.zip": 6
+        },
+        "v2.0.0": {
+          "TargetedBeast.v2.0.0.zip": 16
+        },
+        "v1.1.0": {
+          "TargetedBeast.v1.1.0.zip": 13
+        },
+        "v.1.0.0_includingbug": {
+          "TargetedBeast.v1.0.0.zip": 128
+        },
+        "v0.8.0": {
+          "TargetedBeast.v0.8.0.zip": 3
+        },
+        "v0.6.0": {
+          "TargetedBeast.v0.6.0.zip": 0
+        },
+        "v0.2.0": {
+          "TargetedBeast.v0.2.0.zip": 0
+        }
+      },
+      "published": {
+        "v2.2.0": "2026-10-21",
+        "v2.0.0": "2026-09-04",
+        "v1.1.0": "2026-07-21",
+        "v.1.0.0_includingbug": "2025-06-17",
+        "v0.8.0": "2025-04-07",
+        "v0.6.0": "2025-03-17",
+        "v0.2.0": "2025-02-06"
+      }
+    },
+    "BEAST2Lang": {
+      "repo": "CompEvol/beast2lang",
+      "releases": {
+        "0.0.1": {
+          "BEAST2Lang.v0.0.1.zip": 16
+        }
+      },
+      "published": {
+        "0.0.1": "2025-08-21"
+      }
+    },
+    "BEASTBooster": {
+      "repo": "rbouckaert/beastbooster",
+      "releases": {
+        "v0.0.2": {
+          "BEASTBooster.v0.0.2.zip": 17
+        },
+        "v0.0.1": {
+          "BEASTBooster.addon.v0.0.1.zip": 26,
+          "online.addon.v0.0.1.zip": 20
+        }
+      },
+      "published": {
+        "v0.0.2": "2026-06-26",
+        "v0.0.1": "2022-03-29"
+      }
+    },
+    "online": {
+      "repo": "rbouckaert/online",
+      "releases": {
+        "v0.0.2": {
+          "online.package.v0.0.2.zip": 7
+        },
+        "v0.0.1": {
+          "online.addon.v0.0.1.zip": 18
+        }
+      },
+      "published": {
+        "v0.0.2": "2026-06-26",
+        "v0.0.1": "2022-05-25"
+      }
+    },
+    "PhyloPotts": {
+      "repo": "rbouckaert/potts",
+      "releases": {
+        "v0.0.1": {
+          "PhyloPotts.v0.0.1.zip": 2
+        }
+      },
+      "published": {
+        "v0.0.1": "2026-09-23"
+      }
+    },
+    "MixedEffectsClock": {
+      "repo": "sebastianduchene/MixedEffectsClock",
+      "releases": {
+        "v0.1.1": {
+          "MixedEffectsClock.v0.1.1.zip": 2
+        },
+        "v0.1.0": {
+          "MixedEffectsClock.v0.1.0.zip": 6
+        },
+        "v0.0.1": {
+          "MixedEffectsClock.v0.0.1.zip": 1
+        }
+      },
+      "published": {
+        "v0.1.1": "2026-10-15",
+        "v0.1.0": "2026-10-05",
+        "v0.0.1": "2026-09-14"
+      }
+    }
+  }
+}
